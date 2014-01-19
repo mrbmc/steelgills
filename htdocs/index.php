@@ -6,7 +6,7 @@ define("DEBUG",true);
 ini_set('display_errors', true);
 ini_set('error_reporting', (DEBUG ? (E_ERROR | E_WARNING | E_PARSE ) : E_ERROR));
 ini_set('error_reporting', E_ERROR | E_WARNING | E_PARSE);
-include_once getcwd().'/../lib/Erector.class.php';
+include_once getcwd().'/../lib/erector/Erector.class.php';
 $erector = Erector::instance();
 
 /**

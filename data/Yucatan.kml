@@ -1,0 +1,1394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2"><Document><name>Wannadive.net KML file Yucatán_Peninsula</name><open>0</open><Style id="wannanormal"><IconStyle><scale>0.7</scale><Icon><href>http://www.wannadive.net/template/wannadive/images/gps_exact.png</href></Icon></IconStyle><LabelStyle><scale>0</scale></LabelStyle></Style><Style id="wannahighlight"><IconStyle><scale>0.7</scale><Icon><href>http://www.wannadive.net/template/wannadive/images/gps_exact.png</href></Icon></IconStyle><LabelStyle><colorMode>normal</colorMode><color>ffffffff</color><scale>0.8</scale></LabelStyle></Style><StyleMap id="wanna"><Pair><key>normal</key><styleUrl>#wannanormal</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#wannahighlight</styleUrl></Pair></StyleMap><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Playa_Corona"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Playa_Corona/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Playa_Corona" class="gmMarker">Playa Corona</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 26.126' N<br />
+  Longitude: 87&deg; 0.175' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Playa_Corona">Playa Corona</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Playa Corona</name><LookAt><longitude>-87.002921104431000</longitude><latitude>20.435437986797000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.002921104431000,20.435437986797000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/La_Francesa"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/La_Francesa/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/La_Francesa" class="gmMarker">La Francesa</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 21.021' N<br />
+  Longitude: 87&deg; 1.661' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/La_Francesa">La Francesa</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>La Francesa</name><LookAt><longitude>-87.027683333333000</longitude><latitude>20.350341666667000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.027683333333000,20.350341666667000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Pelicano_Wreck"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Pelicano_Wreck/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Pelicano_Wreck" class="gmMarker">Pelicano Wreck</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 28.938' N<br />
+  Longitude: 87&deg; 14.203' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Pelicano_Wreck">Pelicano Wreck</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Pelicano Wreck</name><LookAt><longitude>-87.236723899841000</longitude><latitude>20.482300861403000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.236723899841000,20.482300861403000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Xpu-Ha_Canyon"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Xpu-Ha_Canyon/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Xpu-Ha_Canyon" class="gmMarker">Xpu-Ha Canyon</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 28.142' N<br />
+  Longitude: 87&deg; 14.917' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Xpu-Ha_Canyon">Xpu-Ha Canyon</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Xpu-Ha Canyon</name><LookAt><longitude>-87.248611450195000</longitude><latitude>20.469033545217000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.248611450195000,20.469033545217000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Xcalak/Sieto_Cocos"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Xcalak/Sieto_Cocos/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Xcalak/Sieto_Cocos" class="gmMarker">Sieto Cocos</a><br />
+  Datum: WGS84<br />
+  Latitude:  18&deg; 20.524' N<br />
+  Longitude: 87&deg; 48.113' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Xcalak/Sieto_Cocos">Sieto Cocos</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Sieto Cocos</name><LookAt><longitude>-87.801876068115000</longitude><latitude>18.342061063199000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.801876068115000,18.342061063199000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Xcalak/La_Chiminea"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Xcalak/La_Chiminea/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Xcalak/La_Chiminea" class="gmMarker">La Chiminea</a><br />
+  Datum: WGS84<br />
+  Latitude:  18&deg; 13.905' N<br />
+  Longitude: 87&deg; 49.717' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Xcalak/La_Chiminea">La Chiminea</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>La Chiminea</name><LookAt><longitude>-87.828612327576000</longitude><latitude>18.231756250600000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.828612327576000,18.231756250600000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Barracuda_Point"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Barracuda_Point/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Barracuda_Point" class="gmMarker">Barracuda Point</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 32.564' N<br />
+  Longitude: 86&deg; 56.234' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Barracuda_Point">Barracuda Point</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Barracuda Point</name><LookAt><longitude>-86.937239170074000</longitude><latitude>20.542733025693000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-86.937239170074000,20.542733025693000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Akumal/Las_Esponjas"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Akumal/Las_Esponjas/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Akumal/Las_Esponjas" class="gmMarker">Las Esponjas</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 23.527' N<br />
+  Longitude: 87&deg; 18.325' W<br />
+  GPS precision: Exact<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Akumal/Las_Esponjas">Las Esponjas</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Las Esponjas</name><LookAt><longitude>-87.305416666667000</longitude><latitude>20.392111111111000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.305416666667000,20.392111111111000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Akumal/Halfmoon_Bay"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Akumal/Halfmoon_Bay/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Akumal/Halfmoon_Bay" class="gmMarker">Halfmoon Bay</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 24.002' N<br />
+  Longitude: 87&deg; 18.135' W<br />
+  GPS precision: <br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Akumal/Halfmoon_Bay">Halfmoon Bay</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Halfmoon Bay</name><LookAt><longitude>-87.302250000000000</longitude><latitude>20.400027777778000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.302250000000000,20.400027777778000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Akumal/Las_Gorgonians"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Akumal/Las_Gorgonians/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Akumal/Las_Gorgonians" class="gmMarker">Las Gorgonians</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 26.175' N<br />
+  Longitude: 87&deg; 16.638' W<br />
+  GPS precision: Exact<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Akumal/Las_Gorgonians">Las Gorgonians</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Las Gorgonians</name><LookAt><longitude>-87.277305555556000</longitude><latitude>20.436250000000000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.277305555556000,20.436250000000000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Akumal/Yool_Caanal"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Akumal/Yool_Caanal/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Akumal/Yool_Caanal" class="gmMarker">Yool Caanal</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 24.188' N<br />
+  Longitude: 87&deg; 18.127' W<br />
+  GPS precision: Exact<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Akumal/Yool_Caanal">Yool Caanal</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Yool Caanal</name><LookAt><longitude>-87.302111111110000</longitude><latitude>20.403138888889000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.302111111110000,20.403138888889000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Akumal/Grouper_Reef"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Akumal/Grouper_Reef/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Akumal/Grouper_Reef" class="gmMarker">Grouper Reef</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 23.092' N<br />
+  Longitude: 87&deg; 18.602' W<br />
+  GPS precision: Exact<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Akumal/Grouper_Reef">Grouper Reef</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Grouper Reef</name><LookAt><longitude>-87.310027777778000</longitude><latitude>20.384861111111000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.310027777778000,20.384861111111000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Akumal/Leon"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Akumal/Leon/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Akumal/Leon" class="gmMarker">Leon</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 23.755' N<br />
+  Longitude: 87&deg; 18.354' W<br />
+  GPS precision: Exact<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Akumal/Leon">Leon</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Leon</name><LookAt><longitude>-87.305900000000000</longitude><latitude>20.395916666667000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.305900000000000,20.395916666667000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Akumal/Herraura"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Akumal/Herraura/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Akumal/Herraura" class="gmMarker">Herradura</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 23.298' N<br />
+  Longitude: 87&deg; 18.52' W<br />
+  GPS precision: Exact<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Akumal/Herraura">Herradura</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Herradura</name><LookAt><longitude>-87.308666666667000</longitude><latitude>20.388300000000000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.308666666667000,20.388300000000000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Akumal/Motorcycle_Reef"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Akumal/Motorcycle_Reef/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Akumal/Motorcycle_Reef" class="gmMarker">Motorcycle Reef</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 23.627' N<br />
+  Longitude: 87&deg; 18.447' W<br />
+  GPS precision: Exact<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Akumal/Motorcycle_Reef">Motorcycle Reef</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Motorcycle Reef</name><LookAt><longitude>-87.307444444444000</longitude><latitude>20.393777777778000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.307444444444000,20.393777777778000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Akumal/La_Inglacia"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Akumal/La_Inglacia/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Akumal/La_Inglacia" class="gmMarker">La Inglacia</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 22.457' N<br />
+  Longitude: 87&deg; 19.198' W<br />
+  GPS precision: Exact<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Akumal/La_Inglacia">La Inglacia</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>La Inglacia</name><LookAt><longitude>-87.319972222222000</longitude><latitude>20.374277777778000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.319972222222000,20.374277777778000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Akumal/Yal_Ku_North"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Akumal/Yal_Ku_North/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Akumal/Yal_Ku_North" class="gmMarker">Yal Ku North</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 24.335' N<br />
+  Longitude: 87&deg; 18.103' W<br />
+  GPS precision: Exact<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Akumal/Yal_Ku_North">Yal Ku North</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Yal Ku North</name><LookAt><longitude>-87.301722222222000</longitude><latitude>20.405583333333000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.301722222222000,20.405583333333000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Akumal/Yal_Ku_Chicu"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Akumal/Yal_Ku_Chicu/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Akumal/Yal_Ku_Chicu" class="gmMarker">Yal Ku Chicu</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 24.897' N<br />
+  Longitude: 87&deg; 17.717' W<br />
+  GPS precision: Exact<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Akumal/Yal_Ku_Chicu">Yal Ku Chicu</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Yal Ku Chicu</name><LookAt><longitude>-87.295277777778000</longitude><latitude>20.414944444444000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.295277777778000,20.414944444444000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Pared_Verde"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Pared_Verde/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Pared_Verde" class="gmMarker">Pared Verde</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 38.478' N<br />
+  Longitude: 87&deg; 3.051' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Pared_Verde">Pared Verde</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Pared Verde</name><LookAt><longitude>-87.050857543945000</longitude><latitude>20.641298498371000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.050857543945000,20.641298498371000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Sitio_de_los_tiburones_toro"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Sitio_de_los_tiburones_toro/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Sitio_de_los_tiburones_toro" class="gmMarker">Sitio de los tiburones toro</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 37.647' N<br />
+  Longitude: 87&deg; 3.547' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Sitio_de_los_tiburones_toro">Sitio de los tiburones toro</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Sitio de los tiburones toro</name><LookAt><longitude>-87.059118747711000</longitude><latitude>20.627442521416000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.059118747711000,20.627442521416000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Banco_Chinchorro/Punta_Gonzalez"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Banco_Chinchorro/Punta_Gonzalez/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Banco_Chinchorro/Punta_Gonzalez" class="gmMarker">Punta Gonzalez</a><br />
+  Datum: WGS84<br />
+  Latitude:  18&deg; 30.798' N<br />
+  Longitude: 87&deg; 26.504' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Banco_Chinchorro/Punta_Gonzalez">Punta Gonzalez</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Punta Gonzalez</name><LookAt><longitude>-87.441730499268000</longitude><latitude>18.513307394850000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.441730499268000,18.513307394850000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Banco_Chinchorro/Kai_Ha"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Banco_Chinchorro/Kai_Ha/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Banco_Chinchorro/Kai_Ha" class="gmMarker">Kai Ha</a><br />
+  Datum: WGS84<br />
+  Latitude:  18&deg; 34.07' N<br />
+  Longitude: 87&deg; 25.443' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Banco_Chinchorro/Kai_Ha">Kai Ha</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Kai Ha</name><LookAt><longitude>-87.424049377441000</longitude><latitude>18.567829291172000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.424049377441000,18.567829291172000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Banco_Chinchorro/Punta_Isabel"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Banco_Chinchorro/Punta_Isabel/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Banco_Chinchorro/Punta_Isabel" class="gmMarker">Punta Isabel</a><br />
+  Datum: WGS84<br />
+  Latitude:  18&deg; 36.388' N<br />
+  Longitude: 87&deg; 25.35' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Banco_Chinchorro/Punta_Isabel">Punta Isabel</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Punta Isabel</name><LookAt><longitude>-87.422504425049000</longitude><latitude>18.606472322747000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.422504425049000,18.606472322747000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Banco_Chinchorro/SS_Far_Star"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Banco_Chinchorro/SS_Far_Star/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Banco_Chinchorro/SS_Far_Star" class="gmMarker">SS Far Star</a><br />
+  Datum: WGS84<br />
+  Latitude:  18&deg; 23.564' N<br />
+  Longitude: 87&deg; 23.491' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Banco_Chinchorro/SS_Far_Star">SS Far Star</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>SS Far Star</name><LookAt><longitude>-87.391519546509000</longitude><latitude>18.392727990492000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.391519546509000,18.392727990492000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Banco_Chinchorro/Ginger_Scout"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Banco_Chinchorro/Ginger_Scout/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Banco_Chinchorro/Ginger_Scout" class="gmMarker">Ginger Scout</a><br />
+  Datum: WGS84<br />
+  Latitude:  18&deg; 39.697' N<br />
+  Longitude: 87&deg; 13.743' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Banco_Chinchorro/Ginger_Scout">Ginger Scout</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Ginger Scout</name><LookAt><longitude>-87.229042053223000</longitude><latitude>18.661614964854000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.229042053223000,18.661614964854000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Cueva_de_Pargo"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Cueva_de_Pargo/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Cueva_de_Pargo" class="gmMarker">Cueva de Pargo</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 37.35' N<br />
+  Longitude: 87&deg; 0.786' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Cueva_de_Pargo">Cueva de Pargo</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Cueva de Pargo</name><LookAt><longitude>-87.013092041016000</longitude><latitude>20.622502259345000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.013092041016000,20.622502259345000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Cenote_Azul"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Cenote_Azul/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Cenote_Azul" class="gmMarker">Cenote Azul</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 29.298' N<br />
+  Longitude: 87&deg; 15.124' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Cenote_Azul">Cenote Azul</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Cenote Azul</name><LookAt><longitude>-87.252066135406000</longitude><latitude>20.488295904793000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.252066135406000,20.488295904793000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Akumal/Tortuga_Reef"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Akumal/Tortuga_Reef/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Akumal/Tortuga_Reef" class="gmMarker">Tortuga Reef</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 23.541' N<br />
+  Longitude: 87&deg; 18.744' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Akumal/Tortuga_Reef">Tortuga Reef</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Tortuga Reef</name><LookAt><longitude>-87.312405109406000</longitude><latitude>20.392342095699000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.312405109406000,20.392342095699000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/XCaret_-_Snorkling_Laggon"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/XCaret_-_Snorkling_Laggon/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/XCaret_-_Snorkling_Laggon" class="gmMarker">XCaret - Snorkeling Lagoon</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 34.703' N<br />
+  Longitude: 87&deg; 7.09' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/XCaret_-_Snorkling_Laggon">XCaret - Snorkeling Lagoon</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>XCaret - Snorkeling Lagoon</name><LookAt><longitude>-87.118166666667000</longitude><latitude>20.578375000000000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.118166666667000,20.578375000000000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/El_Meco"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/El_Meco/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/El_Meco" class="gmMarker">El Meco</a><br />
+  Datum: WGS84<br />
+  Latitude:  21&deg; 13.02' N<br />
+  Longitude: 86&deg; 47.72' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/El_Meco">El Meco</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>El Meco</name><LookAt><longitude>-86.795328855515000</longitude><latitude>21.217000562963000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-86.795328855515000,21.217000562963000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/Sleepy_Shark_Caves"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/Sleepy_Shark_Caves/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/Sleepy_Shark_Caves" class="gmMarker">Sleepy Shark Caves</a><br />
+  Datum: WGS84<br />
+  Latitude:  21&deg; 16.987' N<br />
+  Longitude: 86&deg; 45.283' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/Sleepy_Shark_Caves">Sleepy Shark Caves</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Sleepy Shark Caves</name><LookAt><longitude>-86.754720211029000</longitude><latitude>21.283116297876000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-86.754720211029000,21.283116297876000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Coco_Beach"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Coco_Beach/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Coco_Beach" class="gmMarker">Coco Beach</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 36.616' N<br />
+  Longitude: 87&deg; 4.726' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Coco_Beach">Coco Beach</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Coco Beach</name><LookAt><longitude>-87.078773975372000</longitude><latitude>20.610271408768000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.078773975372000,20.610271408768000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Puerto_Morelos/Neto_s"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Puerto_Morelos/Neto_s/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Puerto_Morelos/Neto_s" class="gmMarker">Neto s</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 49.904' N<br />
+  Longitude: 86&deg; 52.603' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Puerto_Morelos/Neto_s">Neto s</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Neto s</name><LookAt><longitude>-86.876717805862000</longitude><latitude>20.831730003998000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-86.876717805862000,20.831730003998000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Puerto_Morelos/Rodman"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Puerto_Morelos/Rodman/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Puerto_Morelos/Rodman" class="gmMarker">Rodman</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 52.967' N<br />
+  Longitude: 86&deg; 50.912' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Puerto_Morelos/Rodman">Rodman</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Rodman</name><LookAt><longitude>-86.848527789116000</longitude><latitude>20.882776257488000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-86.848527789116000,20.882776257488000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Esquela"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Esquela/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Esquela" class="gmMarker">Esquela</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 29.778' N<br />
+  Longitude: 87&deg; 13.184' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Esquela">Esquela</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Esquela</name><LookAt><longitude>-87.219729423523000</longitude><latitude>20.496300655973000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.219729423523000,20.496300655973000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Xcalak/Tarpon_Hole"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Xcalak/Tarpon_Hole/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Xcalak/Tarpon_Hole" class="gmMarker">Tarpon Hole</a><br />
+  Datum: WGS84<br />
+  Latitude:  18&deg; 15.653' N<br />
+  Longitude: 87&deg; 49.504' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Xcalak/Tarpon_Hole">Tarpon Hole</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Tarpon Hole</name><LookAt><longitude>-87.825066000000000</longitude><latitude>18.260878000000000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.825066000000000,18.260878000000000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Cenote_Taj_Mahal"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Cenote_Taj_Mahal/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Cenote_Taj_Mahal" class="gmMarker">Cenote Taj Mahal</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 28.283' N<br />
+  Longitude: 87&deg; 18.417' W<br />
+  GPS precision: Exact<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Cenote_Taj_Mahal">Cenote Taj Mahal</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Cenote Taj Mahal</name><LookAt><longitude>-87.306944444444000</longitude><latitude>20.471388888889000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.306944444444000,20.471388888889000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Punta_Tunich"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Punta_Tunich/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Punta_Tunich" class="gmMarker">Punta Tunich</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 23.568' N<br />
+  Longitude: 87&deg; 1.531' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Punta_Tunich">Punta Tunich</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Punta Tunich</name><LookAt><longitude>-87.025519444444000</longitude><latitude>20.392808333333000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.025519444444000,20.392808333333000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Cordona_Reef"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Cordona_Reef/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Cordona_Reef" class="gmMarker">Cordona Reef</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 23.062' N<br />
+  Longitude: 87&deg; 1.454' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Cordona_Reef">Cordona Reef</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Cordona Reef</name><LookAt><longitude>-87.024238888889000</longitude><latitude>20.384366666667000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.024238888889000,20.384366666667000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Mamitas"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Mamitas/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Mamitas" class="gmMarker">Mamitas</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 37.57' N<br />
+  Longitude: 87&deg; 3.795' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Mamitas">Mamitas</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Mamitas</name><LookAt><longitude>-87.063243985176000</longitude><latitude>20.626162285965000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.063243985176000,20.626162285965000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Puerto_Morelos/La_Pared"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Puerto_Morelos/La_Pared/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Puerto_Morelos/La_Pared" class="gmMarker">La Pared</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 49.463' N<br />
+  Longitude: 86&deg; 52.582' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Puerto_Morelos/La_Pared">La Pared</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>La Pared</name><LookAt><longitude>-86.876374483109000</longitude><latitude>20.824379681787000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-86.876374483109000,20.824379681787000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Cozumel_plane_wreck"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Cozumel_plane_wreck/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Cozumel_plane_wreck" class="gmMarker">Cozumel plane wreck</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 28.798' N<br />
+  Longitude: 86&deg; 58.422' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Cozumel_plane_wreck">Cozumel plane wreck</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Cozumel plane wreck</name><LookAt><longitude>-86.973701119423000</longitude><latitude>20.479959062454000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-86.973701119423000,20.479959062454000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Chac_Mool_Cenote"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Chac_Mool_Cenote/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Chac_Mool_Cenote" class="gmMarker">Chac Mool Cenote</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 30.771' N<br />
+  Longitude: 87&deg; 14.814' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Chac_Mool_Cenote">Chac Mool Cenote</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Chac Mool Cenote</name><LookAt><longitude>-87.246900200844000</longitude><latitude>20.512846503007000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.246900200844000,20.512846503007000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Mahahual/Rio_Bermejo"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Mahahual/Rio_Bermejo/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Mahahual/Rio_Bermejo" class="gmMarker">Rio Bermejo</a><br />
+  Datum: WGS84<br />
+  Latitude:  18&deg; 41.054' N<br />
+  Longitude: 87&deg; 42.647' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Mahahual/Rio_Bermejo">Rio Bermejo</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Rio Bermejo</name><LookAt><longitude>-87.710788249969000</longitude><latitude>18.684240224486000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.710788249969000,18.684240224486000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Mahahual/Jardin"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Mahahual/Jardin/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Mahahual/Jardin" class="gmMarker">Jardin</a><br />
+  Datum: WGS84<br />
+  Latitude:  18&deg; 42.662' N<br />
+  Longitude: 87&deg; 42.257' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Mahahual/Jardin">Jardin</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Jardin</name><LookAt><longitude>-87.704286575317000</longitude><latitude>18.711028853043000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.704286575317000,18.711028853043000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Mahahual/Faro_Nuevo"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Mahahual/Faro_Nuevo/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Mahahual/Faro_Nuevo" class="gmMarker">Faro Nuevo</a><br />
+  Datum: WGS84<br />
+  Latitude:  18&deg; 43.465' N<br />
+  Longitude: 87&deg; 41.742' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Mahahual/Faro_Nuevo">Faro Nuevo</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Faro Nuevo</name><LookAt><longitude>-87.695703506470000</longitude><latitude>18.724421577083000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.695703506470000,18.724421577083000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Mahahual/Escalones"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Mahahual/Escalones/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Mahahual/Escalones" class="gmMarker">Escalones</a><br />
+  Datum: WGS84<br />
+  Latitude:  18&deg; 43.326' N<br />
+  Longitude: 87&deg; 41.915' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Mahahual/Escalones">Escalones</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Escalones</name><LookAt><longitude>-87.698578834534000</longitude><latitude>18.722104853962000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.698578834534000,18.722104853962000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Yucab_Reef"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Yucab_Reef/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Yucab_Reef" class="gmMarker">Yucab Reef</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 24.33' N<br />
+  Longitude: 87&deg; 1.272' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Yucab_Reef">Yucab Reef</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Yucab Reef</name><LookAt><longitude>-87.021192312241000</longitude><latitude>20.405505419366000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.021192312241000,20.405505419366000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/Sleeping_Sharks_Cave"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/Sleeping_Sharks_Cave/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/Sleeping_Sharks_Cave" class="gmMarker">Sleeping Sharks Cave</a><br />
+  Datum: WGS84<br />
+  Latitude:  21&deg; 17.245' N<br />
+  Longitude: 86&deg; 45.359' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/Sleeping_Sharks_Cave">Sleeping Sharks Cave</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Sleeping Sharks Cave</name><LookAt><longitude>-86.755975484848000</longitude><latitude>21.287409994132000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-86.755975484848000,21.287409994132000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/Ultrafreeze_Wreck"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/Ultrafreeze_Wreck/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/Ultrafreeze_Wreck" class="gmMarker">Ultrafreeze Wreck</a><br />
+  Datum: WGS84<br />
+  Latitude:  21&deg; 9.864' N<br />
+  Longitude: 86&deg; 41.031' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/Ultrafreeze_Wreck">Ultrafreeze Wreck</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Ultrafreeze Wreck</name><LookAt><longitude>-86.683845520020000</longitude><latitude>21.164402800023000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-86.683845520020000,21.164402800023000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/La_Boya_de_los_Locos"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/La_Boya_de_los_Locos/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/La_Boya_de_los_Locos" class="gmMarker">La Boya de los Locos</a><br />
+  Datum: WGS84<br />
+  Latitude:  21&deg; 2.165' N<br />
+  Longitude: 86&deg; 46.195' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/La_Boya_de_los_Locos">La Boya de los Locos</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>La Boya de los Locos</name><LookAt><longitude>-86.769924000000000</longitude><latitude>21.036089000000000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-86.769924000000000,21.036089000000000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/C-58_Wreck"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/C-58_Wreck/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/C-58_Wreck" class="gmMarker">C-58 Wreck</a><br />
+  Datum: WGS84<br />
+  Latitude:  21&deg; 7.104' N<br />
+  Longitude: 86&deg; 43.515' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/C-58_Wreck">C-58 Wreck</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>C-58 Wreck</name><LookAt><longitude>-86.725255555556000</longitude><latitude>21.118408333333000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-86.725255555556000,21.118408333333000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/San_Toribio"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/San_Toribio/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/San_Toribio" class="gmMarker">San Toribio</a><br />
+  Datum: WGS84<br />
+  Latitude:  21&deg; 7.369' N<br />
+  Longitude: 86&deg; 43.28' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/San_Toribio">San Toribio</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>San Toribio</name><LookAt><longitude>-86.721330555556000</longitude><latitude>21.122813888889000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-86.721330555556000,21.122813888889000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/Aristos"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/Aristos/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/Aristos" class="gmMarker">Aristos</a><br />
+  Datum: WGS84<br />
+  Latitude:  21&deg; 7.26' N<br />
+  Longitude: 86&deg; 44.49' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/Aristos">Aristos</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Aristos</name><LookAt><longitude>-86.741505555556000</longitude><latitude>21.120997222222000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-86.741505555556000,21.120997222222000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/Cuevas_de_Afuera"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/Cuevas_de_Afuera/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/Cuevas_de_Afuera" class="gmMarker">Cuevas de Afuera</a><br />
+  Datum: WGS84<br />
+  Latitude:  21&deg; 7.7' N<br />
+  Longitude: 86&deg; 42.931' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/Cuevas_de_Afuera">Cuevas de Afuera</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Cuevas de Afuera</name><LookAt><longitude>-86.715516666667000</longitude><latitude>21.128338888889000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-86.715516666667000,21.128338888889000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/Punta_Negra"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/Punta_Negra/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/Punta_Negra" class="gmMarker">Punta Negra</a><br />
+  Datum: WGS84<br />
+  Latitude:  21&deg; 7.672' N<br />
+  Longitude: 86&deg; 43.862' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/Punta_Negra">Punta Negra</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Punta Negra</name><LookAt><longitude>-86.731038888889000</longitude><latitude>21.127872222222000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-86.731038888889000,21.127872222222000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/Grampin"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/Grampin/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/Grampin" class="gmMarker">Grampin</a><br />
+  Datum: WGS84<br />
+  Latitude:  21&deg; 8.446' N<br />
+  Longitude: 86&deg; 44.198' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/Grampin">Grampin</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Grampin</name><LookAt><longitude>-86.736636111111000</longitude><latitude>21.140772222222000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-86.736636111111000,21.140772222222000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/Chitales"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/Chitales/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/Chitales" class="gmMarker">Chitales</a><br />
+  Datum: WGS84<br />
+  Latitude:  21&deg; 9.946' N<br />
+  Longitude: 86&deg; 44.133' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/Chitales">Chitales</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Chitales</name><LookAt><longitude>-86.735558333333000</longitude><latitude>21.165772222222000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-86.735558333333000,21.165772222222000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/El_Tunel"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/El_Tunel/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/El_Tunel" class="gmMarker">El Tunel</a><br />
+  Datum: WGS84<br />
+  Latitude:  21&deg; 8.799' N<br />
+  Longitude: 86&deg; 43.625' W<br />
+  GPS precision: <br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/El_Tunel">El Tunel</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>El Tunel</name><LookAt><longitude>-86.727086111111000</longitude><latitude>21.146650000000000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-86.727086111111000,21.146650000000000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/Santo_Remedio"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/Santo_Remedio/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/Santo_Remedio" class="gmMarker">Santo Remedio</a><br />
+  Datum: WGS84<br />
+  Latitude:  21&deg; 10.09' N<br />
+  Longitude: 86&deg; 43.815' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/Santo_Remedio">Santo Remedio</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Santo Remedio</name><LookAt><longitude>-86.730255555556000</longitude><latitude>21.168172222222000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-86.730255555556000,21.168172222222000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/Bandera"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/Bandera/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/Bandera" class="gmMarker">Bandera</a><br />
+  Datum: WGS84<br />
+  Latitude:  21&deg; 11.241' N<br />
+  Longitude: 86&deg; 43.488' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/Bandera">Bandera</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Bandera</name><LookAt><longitude>-86.724800000000000</longitude><latitude>21.187341666667000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-86.724800000000000,21.187341666667000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/Manchones"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/Manchones/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/Manchones" class="gmMarker">Manchones</a><br />
+  Datum: WGS84<br />
+  Latitude:  21&deg; 12.146' N<br />
+  Longitude: 86&deg; 43' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/Manchones">Manchones</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Manchones</name><LookAt><longitude>-86.716666666667000</longitude><latitude>21.202430555556000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-86.716666666667000,21.202430555556000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/Herradura"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/Herradura/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/Herradura" class="gmMarker">Herradura</a><br />
+  Datum: WGS84<br />
+  Latitude:  21&deg; 6.613' N<br />
+  Longitude: 86&deg; 44.612' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cancun/Herradura">Herradura</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Herradura</name><LookAt><longitude>-86.743525000000000</longitude><latitude>21.110219444444000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-86.743525000000000,21.110219444444000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Jardines"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Jardines/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Jardines" class="gmMarker">Jardines</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 37.443' N<br />
+  Longitude: 87&deg; 1.136' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Jardines">Jardines</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Jardines</name><LookAt><longitude>-87.018928527832000</longitude><latitude>20.624044598355000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.018928527832000,20.624044598355000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Chikin_Ha_Cenote"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Chikin_Ha_Cenote/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Chikin_Ha_Cenote" class="gmMarker">Chikin Ha Cenote</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 29.955' N<br />
+  Longitude: 87&deg; 15.617' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Chikin_Ha_Cenote">Chikin Ha Cenote</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Chikin Ha Cenote</name><LookAt><longitude>-87.260289788246000</longitude><latitude>20.499255223105000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.260289788246000,20.499255223105000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Las_Palmas_Shallows"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Las_Palmas_Shallows/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Las_Palmas_Shallows" class="gmMarker">Las Palmas Shallows</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 27.482' N<br />
+  Longitude: 86&deg; 59.432' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Las_Palmas_Shallows">Las Palmas Shallows</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Las Palmas Shallows</name><LookAt><longitude>-86.990536111111000</longitude><latitude>20.458033333333000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-86.990536111111000,20.458033333333000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Tulum/Angelita_Cenote"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Tulum/Angelita_Cenote/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Tulum/Angelita_Cenote" class="gmMarker">Angelita Cenote</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 8.254' N<br />
+  Longitude: 87&deg; 34.678' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Tulum/Angelita_Cenote">Angelita Cenote</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Angelita Cenote</name><LookAt><longitude>-87.577965259552000</longitude><latitude>20.137563747887000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.577965259552000,20.137563747887000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Chankanaab_Bolones"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Chankanaab_Bolones/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Chankanaab_Bolones" class="gmMarker">Chankanaab Bolones</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 26.176' N<br />
+  Longitude: 87&deg; 0.688' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Chankanaab_Bolones">Chankanaab Bolones</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Chankanaab Bolones</name><LookAt><longitude>-87.011461257935000</longitude><latitude>20.436262382230000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.011461257935000,20.436262382230000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/San_Francisco"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/San_Francisco/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/San_Francisco" class="gmMarker">San Francisco</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 22.244' N<br />
+  Longitude: 87&deg; 1.606' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/San_Francisco">San Francisco</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>San Francisco</name><LookAt><longitude>-87.026760578156000</longitude><latitude>20.370729281640000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.026760578156000,20.370729281640000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Cenote_Eden"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Cenote_Eden/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Cenote_Eden" class="gmMarker">Cenote PonDeRosa</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 29.504' N<br />
+  Longitude: 87&deg; 15.495' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Cenote_Eden">Cenote PonDeRosa</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Cenote PonDeRosa</name><LookAt><longitude>-87.258245944977000</longitude><latitude>20.491738049271000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.258245944977000,20.491738049271000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Tulum/Gran_Cenote"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Tulum/Gran_Cenote/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Tulum/Gran_Cenote" class="gmMarker">Gran Cenote</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 14.788' N<br />
+  Longitude: 87&deg; 27.842' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Tulum/Gran_Cenote">Gran Cenote</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Gran Cenote</name><LookAt><longitude>-87.464041113853000</longitude><latitude>20.246474938298000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.464041113853000,20.246474938298000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Tulum/Cenote_Carwash"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Tulum/Cenote_Carwash/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Tulum/Cenote_Carwash" class="gmMarker">Cenote Carwash</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 16.448' N<br />
+  Longitude: 87&deg; 29.173' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Tulum/Cenote_Carwash">Cenote Carwash</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Cenote Carwash</name><LookAt><longitude>-87.486212253571000</longitude><latitude>20.274133648736000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.486212253571000,20.274133648736000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Punta_Sur_-_Devil_s_Throat"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Punta_Sur_-_Devil_s_Throat/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Punta_Sur_-_Devil_s_Throat" class="gmMarker">Punta Sur - Devil s Throat</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 17.77' N<br />
+  Longitude: 87&deg; 1.228' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Punta_Sur_-_Devil_s_Throat">Punta Sur - Devil s Throat</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Punta Sur - Devil s Throat</name><LookAt><longitude>-87.020473480225000</longitude><latitude>20.296172540141000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.020473480225000,20.296172540141000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Palancar_Horseshoe"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Palancar_Horseshoe/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Palancar_Horseshoe" class="gmMarker">Palancar Horseshoe</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 19.596' N<br />
+  Longitude: 87&deg; 1.96' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Palancar_Horseshoe">Palancar Horseshoe</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Palancar Horseshoe</name><LookAt><longitude>-87.032661437988000</longitude><latitude>20.326599171112000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.032661437988000,20.326599171112000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Columbia_Deep"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Columbia_Deep/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Columbia_Deep" class="gmMarker">Columbia Deep</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 18.983' N<br />
+  Longitude: 87&deg; 1.582' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Columbia_Deep">Columbia Deep</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Columbia Deep</name><LookAt><longitude>-87.026372222222000</longitude><latitude>20.316380555556000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.026372222222000,20.316380555556000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Paso_del_Cedral"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Paso_del_Cedral/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Paso_del_Cedral" class="gmMarker">Paso del Cedral</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 21.257' N<br />
+  Longitude: 87&deg; 1.696' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Paso_del_Cedral">Paso del Cedral</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Paso del Cedral</name><LookAt><longitude>-87.028272222222000</longitude><latitude>20.354288888889000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.028272222222000,20.354288888889000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Villa_Blanca"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Villa_Blanca/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Villa_Blanca" class="gmMarker">Villa Blanca</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 30.963' N<br />
+  Longitude: 86&deg; 57.258' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Villa_Blanca">Villa Blanca</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Villa Blanca</name><LookAt><longitude>-86.954305555556000</longitude><latitude>20.516058333333000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-86.954305555556000,20.516058333333000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Punta_Dalila"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Punta_Dalila/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Punta_Dalila" class="gmMarker">Punta Dalila</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 20.723' N<br />
+  Longitude: 87&deg; 1.374' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Punta_Dalila">Punta Dalila</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Punta Dalila</name><LookAt><longitude>-87.022902777778000</longitude><latitude>20.345388888889000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.022902777778000,20.345388888889000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Tortugas_Reef"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Tortugas_Reef/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Tortugas_Reef" class="gmMarker">Tortugas Reef</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 34.936' N<br />
+  Longitude: 87&deg; 6.51' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Playa_del_Carmen/Tortugas_Reef">Tortugas Reef</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Tortugas Reef</name><LookAt><longitude>-87.108503580093000</longitude><latitude>20.582261272207000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.108503580093000,20.582261272207000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Palancar_Deep"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Palancar_Deep/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Palancar_Deep" class="gmMarker">Palancar Deep</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 19.987' N<br />
+  Longitude: 87&deg; 1.512' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Palancar_Deep">Palancar Deep</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Palancar Deep</name><LookAt><longitude>-87.025194168091000</longitude><latitude>20.333118385140000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.025194168091000,20.333118385140000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Paraiso_Bajo"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Paraiso_Bajo/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Paraiso_Bajo" class="gmMarker">Paraiso Bajo</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 28.313' N<br />
+  Longitude: 86&deg; 58.888' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Paraiso_Bajo">Paraiso Bajo</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Paraiso Bajo</name><LookAt><longitude>-86.981463432312000</longitude><latitude>20.471888125246000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-86.981463432312000,20.471888125246000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Santa_Rosa_Wall"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Santa_Rosa_Wall/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Santa_Rosa_Wall" class="gmMarker">Santa Rosa Wall</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 21.931' N<br />
+  Longitude: 87&deg; 1.641' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Santa_Rosa_Wall">Santa Rosa Wall</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Santa Rosa Wall</name><LookAt><longitude>-87.027350664139000</longitude><latitude>20.365519225302000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.027350664139000,20.365519225302000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Tulum/Cenote_Dos_Ojos"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Tulum/Cenote_Dos_Ojos/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Tulum/Cenote_Dos_Ojos" class="gmMarker">Cenote Dos Ojos</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 19.485' N<br />
+  Longitude: 87&deg; 23.467' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Tulum/Cenote_Dos_Ojos">Cenote Dos Ojos</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Cenote Dos Ojos</name><LookAt><longitude>-87.391116666667000</longitude><latitude>20.324750000000000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.391116666667000,20.324750000000000,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Columbia_Reef"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Columbia_Reef/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Columbia_Reef" class="gmMarker">Columbia Reef</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 18.987' N<br />
+  Longitude: 87&deg; 1.012' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Columbia_Reef">Columbia Reef</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Columbia Reef</name><LookAt><longitude>-87.016868591309006</longitude><latitude>20.316457625350001</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.016868591309006,20.316457625350001,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Punta_Sur"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Punta_Sur/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Punta_Sur" class="gmMarker">Punta Sur</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 18.113' N<br />
+  Longitude: 87&deg; 1.12' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Punta_Sur">Punta Sur</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Punta Sur</name><LookAt><longitude>-87.018671035766999</longitude><latitude>20.301888051279999</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.018671035766999,20.301888051279999,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Tormentos_Reef"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Tormentos_Reef/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Tormentos_Reef" class="gmMarker">Tormentos Reef</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 26.445' N<br />
+  Longitude: 87&deg; 0.279' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/Tormentos_Reef">Tormentos Reef</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>Tormentos Reef</name><LookAt><longitude>-87.004649999999998</longitude><latitude>20.440750000000001</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.004649999999998,20.440750000000001,0</coordinates></Point></Placemark><Placemark><description><![CDATA[<table>
+<tr valign="top">
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/C-53_Xicotencatl"><img src="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/C-53_Xicotencatl/photo/index.html?wdaction=lib.WDPageSpot.showBestPicture" border="0"></a></td>
+  <td class="kml-spot"><a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/C-53_Xicotencatl" class="gmMarker">C-53 Xicotencatl</a><br />
+  Datum: WGS84<br />
+  Latitude:  20&deg; 26.712' N<br />
+  Longitude: 87&deg; 0.032' W<br />
+  GPS precision: Approximate<br />
+  <br />
+  <b>Get all information about <a href="http://www.wannadive.net/spot/Central_America/Mexico/Yucatan/Cozumel_Isalnd/C-53_Xicotencatl">C-53 Xicotencatl</a> on <a href="http://www.wannadive.net">Wannadive.net</a>.</b><br />
+  <br />
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><div class="copyright" align="center">&copy; Wannasurf.com ltd - All right reserved</div></td>  
+</tr>
+</table>]]></description><name>C-53 Xicotencatl</name><LookAt><longitude>-87.000533333332996</longitude><latitude>20.445200000000000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.000533333332996,20.445200000000000,0</coordinates></Point></Placemark></Document></kml>

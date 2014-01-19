@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document>
+<Placemark><name>Playa Corona</name><LookAt><longitude>-87.002921104431000</longitude><latitude>20.435437986797000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.002921104431000,20.435437986797000,0</coordinates></Point></Placemark>
+<Placemark>
+<name>La Francesa</name><LookAt><longitude>-87.027683333333000</longitude><latitude>20.350341666667000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.027683333333000,20.350341666667000,0</coordinates></Point></Placemark>
+<Placemark>
+<name>Barracuda Point</name><LookAt><longitude>-86.937239170074000</longitude><latitude>20.542733025693000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-86.937239170074000,20.542733025693000,0</coordinates></Point></Placemark>
+<Placemark>
+<name>Punta Tunich</name><LookAt><longitude>-87.025519444444000</longitude><latitude>20.392808333333000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.025519444444000,20.392808333333000,0</coordinates></Point></Placemark>
+<Placemark>
+<name>Cordona Reef</name><LookAt><longitude>-87.024238888889000</longitude><latitude>20.384366666667000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.024238888889000,20.384366666667000,0</coordinates></Point></Placemark>
+<Placemark>
+<name>Cozumel plane wreck</name><LookAt><longitude>-86.973701119423000</longitude><latitude>20.479959062454000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-86.973701119423000,20.479959062454000,0</coordinates></Point></Placemark>
+<Placemark>
+<name>Yucab Reef</name><LookAt><longitude>-87.021192312241000</longitude><latitude>20.405505419366000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.021192312241000,20.405505419366000,0</coordinates></Point></Placemark>
+<Placemark>
+<name>Las Palmas Shallows</name><LookAt><longitude>-86.990536111111000</longitude><latitude>20.458033333333000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-86.990536111111000,20.458033333333000,0</coordinates></Point></Placemark>
+<Placemark>
+<name>Chankanaab Bolones</name><LookAt><longitude>-87.011461257935000</longitude><latitude>20.436262382230000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.011461257935000,20.436262382230000,0</coordinates></Point></Placemark>
+<Placemark>
+<name>San Francisco</name><LookAt><longitude>-87.026760578156000</longitude><latitude>20.370729281640000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.026760578156000,20.370729281640000,0</coordinates></Point></Placemark>
+<Placemark>
+<name>Punta Sur - Devil s Throat</name><LookAt><longitude>-87.020473480225000</longitude><latitude>20.296172540141000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.020473480225000,20.296172540141000,0</coordinates></Point></Placemark>
+<Placemark>
+<name>Palancar Horseshoe</name><LookAt><longitude>-87.032661437988000</longitude><latitude>20.326599171112000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.032661437988000,20.326599171112000,0</coordinates></Point></Placemark>
+<Placemark>
+<name>Columbia Deep</name><LookAt><longitude>-87.026372222222000</longitude><latitude>20.316380555556000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.026372222222000,20.316380555556000,0</coordinates></Point></Placemark>
+<Placemark>
+<name>Paso del Cedral</name><LookAt><longitude>-87.028272222222000</longitude><latitude>20.354288888889000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.028272222222000,20.354288888889000,0</coordinates></Point></Placemark>
+<Placemark>
+<name>Villa Blanca</name><LookAt><longitude>-86.954305555556000</longitude><latitude>20.516058333333000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-86.954305555556000,20.516058333333000,0</coordinates></Point></Placemark>
+<Placemark>
+<name>Punta Dalila</name><LookAt><longitude>-87.022902777778000</longitude><latitude>20.345388888889000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.022902777778000,20.345388888889000,0</coordinates></Point></Placemark>
+<Placemark>
+<name>Palancar Deep</name><LookAt><longitude>-87.025194168091000</longitude><latitude>20.333118385140000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.025194168091000,20.333118385140000,0</coordinates></Point></Placemark>
+<Placemark>
+<name>Paraiso Bajo</name><LookAt><longitude>-86.981463432312000</longitude><latitude>20.471888125246000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-86.981463432312000,20.471888125246000,0</coordinates></Point></Placemark>
+<Placemark>
+<name>Santa Rosa Wall</name><LookAt><longitude>-87.027350664139000</longitude><latitude>20.365519225302000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.027350664139000,20.365519225302000,0</coordinates></Point></Placemark>
+<Placemark>
+<name>Columbia Reef</name><LookAt><longitude>-87.016868591309006</longitude><latitude>20.316457625350001</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.016868591309006,20.316457625350001,0</coordinates></Point></Placemark>
+<Placemark>
+<name>Punta Sur</name><LookAt><longitude>-87.018671035766999</longitude><latitude>20.301888051279999</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.018671035766999,20.301888051279999,0</coordinates></Point></Placemark>
+<Placemark>
+<name>Tormentos Reef</name><LookAt><longitude>-87.004649999999998</longitude><latitude>20.440750000000001</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.004649999999998,20.440750000000001,0</coordinates></Point></Placemark>
+<Placemark>
+<name>C-53 Xicotencatl</name><LookAt><longitude>-87.000533333332996</longitude><latitude>20.445200000000000</latitude><range>1</range><tilt>0</tilt><heading>3</heading></LookAt><styleUrl>#wanna</styleUrl><Point><coordinates>-87.000533333332996,20.445200000000000,0</coordinates></Point></Placemark>
+</Document>

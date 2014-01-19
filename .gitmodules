@@ -1,0 +1,6 @@
+[submodule "lib/dompdf"]
+	path = lib/dompdf
+	url = https://github.com/dompdf/dompdf.git
+[submodule "lib/smarty"]
+	path = lib/smarty
+	url = https://github.com/ericingram/smarty.git

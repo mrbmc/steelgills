@@ -10,17 +10,19 @@ class Erector {
 		 * Load the code
 		 */
 		define('LIB',realpath(getcwd() . "/../lib"));
+		define('ERECTOR',LIB . "/erector"));
 		define('WEBROOT',getcwd());
 		define('APP',realpath(getcwd() . "/../application"));
 		include_once APP.'/Config.class.php';				//Settings and configuration
-		include_once LIB.'/Model.class.php';				//Parent data model class - ORM
-		include_once LIB.'/Cache.class.php';					//Data caching
-		include_once LIB.'/Controller.class.php';			//Page controller class
-		include_once LIB.'/Dispatcher.class.php';			//URL routing and control
-		include_once LIB.'/Presenter.class.php';			//View handler
-		include_once LIB.'/Session.class.php';				//Session management
-		include_once LIB.'/Paginate.class.php';				//List pagination class
-		include_once LIB.'/Debugger.class.php';				//Debugging tools
+		include_once ERECTOR.'/Model.class.php';				//Parent data model class - ORM
+		include_once ERECTOR.'/Cache.class.php';					//Data caching
+		include_once ERECTOR.'/Controller.class.php';			//Page controller class
+		include_once ERECTOR.'/Dispatcher.class.php';			//URL routing and control
+		include_once ERECTOR.'/Presenter.class.php';			//View handler
+		include_once ERECTOR.'/Session.class.php';				//Session management
+		include_once ERECTOR.'/Paginate.class.php';				//List pagination class
+		include_once ERECTOR.'/Debugger.class.php';				//Debugging tools
+
 		include_once LIB.'/facebook/facebook.php';			//Facebook applications & pages
 		
 		/**

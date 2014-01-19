@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document>
+  <Placemark>
+    <name>Galapagos Islands</name>
+    <description><![CDATA[<DIV><A href="http://www.galapagosdiscover.com/images/galapagosmap950.gif">Galapagos Islands, Ecuador</A></DIV>
+
+<DIV>&nbsp;<IMG style="width:164px" height="86" src="http://www.echeng.com/journal/images/misc/061006_113519_echeng6553.jpg"></DIV>]]></description>
+    <styleUrl>#style19</styleUrl>
+    <Point>
+      <coordinates>-91.096725,-0.823141,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Cocos Island</name>
+    <description><![CDATA[<DIV><A href="http://www.westnet.com/~wjakab/diving/cocos/cocosmap3.jpg">Cocos Island, Costa Rica</A></DIV>
+
+<DIV><IMG src="http://www.divingworld.co.uk/imagescompressed/Cocos%20Islands/cocos_island1_clip_image002_0000.jpg"></DIV>]]></description>
+    <styleUrl>#style32</styleUrl>
+    <Point>
+      <coordinates>-87.063904,5.528510,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Truk Lagoon</name>
+    <description><![CDATA[<DIV><A href="http://www.underwatercolours.com/img/chuuk_A.jpg">Chuuk Island, Micronesia</A></DIV>
+
+<DIV><IMG height="849" src="http://www.o2technicaldiving.com/images/photos/1076936232.jpg" width="1132"></DIV>]]></description>
+    <styleUrl>#style8</styleUrl>
+    <Point>
+      <coordinates>151.725311,7.352933,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>The Great Blue Hole</name>
+    <description><![CDATA[Lighthouse Reef, Belize]]></description>
+    <styleUrl>#style30</styleUrl>
+    <Point>
+      <coordinates>-87.371521,18.547325,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>The Yongala</name>
+    <description><![CDATA[Great Barrier Reef, Australia]]></description>
+    <styleUrl>#style15</styleUrl>
+    <Point>
+      <coordinates>147.656250,-18.812717,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Red Sea</name>
+    <description><![CDATA[<DIV>Eilat, Israel</DIV>
+
+<DIV><IMG src="http://seaotter.com/marine/html/redsea/Image34.jpg"></DIV>]]></description>
+    <styleUrl>#style26</styleUrl>
+    <Point>
+      <coordinates>34.958496,29.499378,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Ambergris Caye</name>
+    <description><![CDATA[Ambergris Caye, Belize]]></description>
+    <styleUrl>#style1</styleUrl>
+    <Point>
+      <coordinates>-87.901611,17.970896,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Bikini Atoll</name>
+    <description><![CDATA[<DIV>Bikini Atoll, Marshall Islands<BR><IMG style="width:239px" src="http://www.cynical-c.com/archives/bloggraphics/95129c.jpg"></DIV>]]></description>
+    <styleUrl>#style46</styleUrl>
+    <Point>
+      <coordinates>168.549500,7.480941,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>The Maldives</name>
+    <description><![CDATA[The Maldives]]></description>
+    <styleUrl>#style16</styleUrl>
+    <Point>
+      <coordinates>73.160706,-0.639939,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Similan Island</name>
+    <description><![CDATA[Surin and Similan Islands, Thailand]]></description>
+    <styleUrl>#style13</styleUrl>
+    <Point>
+      <coordinates>97.635498,8.629903,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Sipadan Island</name>
+    <description><![CDATA[Sipadan Island, Malaysian Borneo]]></description>
+    <styleUrl>#style49</styleUrl>
+    <Point>
+      <coordinates>118.655090,4.373797,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Bazaruto Archipelago</name>
+    <description><![CDATA[Bazaruto Archipelago, Mozambique]]></description>
+    <styleUrl>#style2</styleUrl>
+    <Point>
+      <coordinates>35.494080,-21.787556,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Beqa Lagoon</name>
+    <description><![CDATA[<div dir="ltr">Beqa Island, Fiji</div>]]></description>
+    <styleUrl>#style21</styleUrl>
+    <Point>
+      <coordinates>178.158417,-18.380592,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Solomon Islands</name>
+    <description><![CDATA[Solomon Islands]]></description>
+    <styleUrl>#style36</styleUrl>
+    <Point>
+      <coordinates>160.048828,-9.449061,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Walindi Plantation</name>
+    <description><![CDATA[Kimbe Bay, New Guinea]]></description>
+    <styleUrl>#style56</styleUrl>
+    <Point>
+      <coordinates>150.117188,-5.506639,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Gladden Spit</name>
+    <description><![CDATA[Placencia, Belize]]></description>
+    <styleUrl>#style51</styleUrl>
+    <Point>
+      <coordinates>-88.190002,16.470327,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Curaçao</name>
+    <description><![CDATA[Curaçao, Netherlands Antilles ]]></description>
+    <styleUrl>#style34</styleUrl>
+    <Point>
+      <coordinates>-69.016113,12.173595,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Bonaire</name>
+    <description><![CDATA[Bonaire, Netherlands Antilles <BR><BR>]]></description>
+    <styleUrl>#style23</styleUrl>
+    <Point>
+      <coordinates>-68.304382,12.160842,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Great Barrier Reef</name>
+    <description><![CDATA[Great Barrier Reef, Australia]]></description>
+    <styleUrl>#style53</styleUrl>
+    <Polygon>
+      <outerBoundaryIs>
+        <LinearRing>
+          <tessellate>1</tessellate>
+          <coordinates>
+            145.546875,-16.003574,0.000000
+            146.535645,-18.333670,0.000000
+            148.095703,-19.414791,0.000000
+            150.424805,-21.637005,0.000000
+            152.248535,-22.187405,0.000000
+            153.171387,-21.983801,0.000000
+            152.973633,-20.776657,0.000000
+            147.897949,-18.479609,0.000000
+            145.986328,-15.580711,0.000000
+            145.546875,-16.003574,0.000000
+          </coordinates>
+        </LinearRing>
+      </outerBoundaryIs>
+    </Polygon>
+  </Placemark>
+  <Placemark>
+    <name>Coral Sea</name>
+    <description><![CDATA[Coral Sea, Australia]]></description>
+    <styleUrl>#style11</styleUrl>
+    <Polygon>
+      <outerBoundaryIs>
+        <LinearRing>
+          <tessellate>1</tessellate>
+          <coordinates>
+            147.546387,-16.551962,0.000000
+            148.348389,-18.114529,0.000000
+            149.414062,-18.333670,0.000000
+            152.446289,-17.518343,0.000000
+            152.281494,-16.499298,0.000000
+            150.007324,-15.453680,0.000000
+            147.711182,-16.288506,0.000000
+            147.546387,-16.551962,0.000000
+          </coordinates>
+        </LinearRing>
+      </outerBoundaryIs>
+    </Polygon>
+  </Placemark>
+  <Placemark>
+    <name>Blue Corner</name>
+    <description><![CDATA[<div dir="ltr">Palau, Micronesia</div>]]></description>
+    <styleUrl>#style18</styleUrl>
+    <Point>
+      <coordinates>134.211731,7.053194,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Bali</name>
+    <description><![CDATA[Bali, Indonesia]]></description>
+    <styleUrl>#style38</styleUrl>
+    <Point>
+      <coordinates>115.169678,-8.428903,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Rocktail/Sodwana Bay</name>
+    <description><![CDATA[Rocktail Bay, Kwazulu-Natal, South Africa]]></description>
+    <styleUrl>#style24</styleUrl>
+    <Point>
+      <coordinates>32.876587,-27.027325,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Great White Shark Alley</name>
+    <description><![CDATA[<DIV><A href="http://goafrica.about.com/od/adventuretravel/a/sharkdiving.htm">btw Gansbaai and Dyer Island, South Africa</A> </DIV>
+
+<DIV>&nbsp;<IMG src="http://www.zuid-afrika.nl/addimages/245.jpg"></DIV>]]></description>
+    <styleUrl>#style9</styleUrl>
+    <Point>
+      <coordinates>19.346924,-34.755154,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Tuamotu Archipelago</name>
+    <description><![CDATA[Rangiroa, French Polynesia<BR><BR>]]></description>
+    <styleUrl>#style35</styleUrl>
+    <Point>
+      <coordinates>-147.651077,-14.950400,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>The Bismarck Sea</name>
+    <styleUrl>#style3</styleUrl>
+    <Polygon>
+      <outerBoundaryIs>
+        <LinearRing>
+          <tessellate>1</tessellate>
+          <coordinates>
+            145.151367,-3.206332,0.000000
+            146.293945,-5.528510,0.000000
+            149.150391,-6.577302,0.000000
+            152.753906,-5.572250,0.000000
+            154.160156,-2.943041,0.000000
+            149.458008,-0.703107,0.000000
+            147.216797,-0.966751,0.000000
+            145.898438,-2.460180,0.000000
+            145.151367,-3.206332,0.000000
+          </coordinates>
+        </LinearRing>
+      </outerBoundaryIs>
+    </Polygon>
+  </Placemark>
+  <Placemark>
+    <name>The Graveyard of the Atlantic</name>
+    <description><![CDATA[Morehead City, North Carolina, USA]]></description>
+    <styleUrl>#style33</styleUrl>
+    <Polygon>
+      <outerBoundaryIs>
+        <LinearRing>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -76.289062,34.506557,0.000000
+            -78.101807,33.523079,0.000000
+            -77.211914,31.765535,0.000000
+            -73.740234,33.614616,0.000000
+            -76.289062,34.506557,0.000000
+          </coordinates>
+        </LinearRing>
+      </outerBoundaryIs>
+    </Polygon>
+  </Placemark>
+  <Placemark>
+    <name>Cozumel</name>
+    <description><![CDATA[Cozumel, Mexico<BR><BR>]]></description>
+    <styleUrl>#style7</styleUrl>
+    <Point>
+      <coordinates>-86.879173,20.428642,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Tobermory</name>
+    <description><![CDATA[<DIV>Tobermory, ON, Canada</DIV>
+
+<DIV>Georgian Bay and Lake Huron<BR><br>&nbsp;</div>]]></description>
+    <styleUrl>#style44</styleUrl>
+    <Point>
+      <coordinates>-81.664642,45.256088,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>King&#39;s Bay</name>
+    <description><![CDATA[<DIV>Crystal River, FL <BR><IMG style="width:239px" src="http://www.birdsunderwater.com/images/content/manatee_info/manatee01.jpg"></DIV>]]></description>
+    <styleUrl>#style6</styleUrl>
+    <Point>
+      <coordinates>-82.602509,28.893080,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Grand Turk</name>
+    <description><![CDATA[Grand Turk, Turks &amp; Caicos
+<br>]]></description>
+    <styleUrl>#style4</styleUrl>
+    <Point>
+      <coordinates>-71.518250,21.619133,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Phuket</name>
+    <description><![CDATA[Phuket, Thailand<BR><BR>]]></description>
+    <styleUrl>#style22</styleUrl>
+    <Point>
+      <coordinates>98.351501,7.975007,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Heron Island</name>
+    <description><![CDATA[Queensland, Australia<BR><BR>]]></description>
+    <styleUrl>#style47</styleUrl>
+    <Point>
+      <coordinates>151.915588,-23.442173,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Bora Bora</name>
+    <description><![CDATA[Bora Bora, French Polynesia<BR><BR>]]></description>
+    <styleUrl>#style31</styleUrl>
+    <Point>
+      <coordinates>-151.743362,-16.504574,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Carmel &amp; Monterey Bay </name>
+    <description><![CDATA[Carmel &amp;amp; Monterey Bay, California, USA]]></description>
+    <styleUrl>#style42</styleUrl>
+    <Polygon>
+      <outerBoundaryIs>
+        <LinearRing>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -121.834946,36.662357,0.000000
+            -121.868591,36.610565,0.000000
+            -121.926270,36.643078,0.000000
+            -121.983261,36.581348,0.000000
+            -121.953735,36.557636,0.000000
+            -121.946526,36.564804,0.000000
+            -121.936569,36.552673,0.000000
+            -121.929016,36.526192,0.000000
+            -121.939659,36.523708,0.000000
+            -121.955795,36.530605,0.000000
+            -121.960258,36.522327,0.000000
+            -121.943436,36.508533,0.000000
+            -121.964722,36.495285,0.000000
+            -121.991501,36.481483,0.000000
+            -122.047119,36.537224,0.000000
+            -121.950989,36.612221,0.000000
+            -121.893311,36.697052,0.000000
+            -121.834946,36.662357,0.000000
+          </coordinates>
+        </LinearRing>
+      </outerBoundaryIs>
+    </Polygon>
+  </Placemark>
+  <Placemark>
+    <name>Lake Baikal</name>
+    <description><![CDATA[<DIV>Lake Baikal, Russia</DIV>
+
+<DIV><IMG src="http://www.wonderclub.com/WorldWonders/images/Baikal.jpg"></DIV>]]></description>
+    <styleUrl>#style45</styleUrl>
+    <Point>
+      <coordinates>107.662498,53.173599,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Vancouver Island</name>
+    <description><![CDATA[British Columbia, Canada<BR><BR>]]></description>
+    <styleUrl>#style5</styleUrl>
+    <Point>
+      <coordinates>-125.847557,49.593285,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Red Sea</name>
+    <description><![CDATA[<DIV>Red Sea</DIV>
+
+<DIV><IMG height="849" src="http://veimages.gsfc.nasa.gov/5447/RedSea.A2003151.1040.250m.jpg" width="667"></DIV>]]></description>
+    <styleUrl>#style48</styleUrl>
+    <Polygon>
+      <outerBoundaryIs>
+        <LinearRing>
+          <tessellate>1</tessellate>
+          <coordinates>
+            32.431641,28.998531,0.000000
+            39.287109,15.876808,0.000000
+            43.417969,12.640337,0.000000
+            42.539062,17.140789,0.000000
+            34.892578,28.226971,0.000000
+            33.837891,27.994400,0.000000
+            32.431641,28.998531,0.000000
+          </coordinates>
+        </LinearRing>
+      </outerBoundaryIs>
+    </Polygon>
+  </Placemark>
+  <Placemark>
+    <name>Abrolhos Islands</name>
+    <description><![CDATA[Geraldton, Western Australia ]]></description>
+    <styleUrl>#style12</styleUrl>
+    <Polygon>
+      <outerBoundaryIs>
+        <LinearRing>
+          <tessellate>1</tessellate>
+          <coordinates>
+            113.411865,-28.328560,0.000000
+            113.867798,-29.166552,0.000000
+            114.406128,-28.940861,0.000000
+            113.807373,-28.154346,0.000000
+            113.411865,-28.328560,0.000000
+          </coordinates>
+        </LinearRing>
+      </outerBoundaryIs>
+    </Polygon>
+  </Placemark>
+  <Placemark>
+    <name>Rowley Shoals</name>
+    <description><![CDATA[Broome, Western Australia ]]></description>
+    <styleUrl>#style39</styleUrl>
+    <Point>
+      <coordinates>119.295044,-17.455473,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Ningaloo Reef</name>
+    <description><![CDATA[Exmouth, Western Australia]]></description>
+    <styleUrl>#style29</styleUrl>
+    <Point>
+      <coordinates>113.961182,-21.922663,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Vanuatu</name>
+    <description><![CDATA[Vanuatu]]></description>
+    <styleUrl>#style52</styleUrl>
+    <Point>
+      <coordinates>167.036133,-15.538375,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Catalina Island</name>
+    <description><![CDATA[Los Angeles, CA, USA]]></description>
+    <styleUrl>#style27</styleUrl>
+    <Point>
+      <coordinates>-118.416138,33.382145,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Carmel &amp; Monterey Bay</name>
+    <description><![CDATA[Carmel &amp; Monterey Bay, California, USA]]></description>
+    <styleUrl>#style10</styleUrl>
+    <Point>
+      <coordinates>-121.937256,36.518463,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Anglesey</name>
+    <description><![CDATA[Anglesey, North Wales, England]]></description>
+    <styleUrl>#style37</styleUrl>
+    <Polygon>
+      <outerBoundaryIs>
+        <LinearRing>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -3.922118,53.386604,0.000000
+            -4.641720,52.975098,0.000000
+            -4.916381,53.321030,0.000000
+            -4.427489,53.618580,0.000000
+            -3.922118,53.386604,0.000000
+          </coordinates>
+        </LinearRing>
+      </outerBoundaryIs>
+    </Polygon>
+  </Placemark>
+  <Placemark>
+    <name>Secret cavern </name>
+    <description><![CDATA[Kaş, Turkey<BR><BR>]]></description>
+    <styleUrl>#style25</styleUrl>
+    <Point>
+      <coordinates>29.639997,36.200001,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Secret Bay </name>
+    <description><![CDATA[Lindos, Rhodos Island, Greece]]></description>
+    <styleUrl>#style54</styleUrl>
+    <Point>
+      <coordinates>28.092039,36.062420,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Anglesey</name>
+    <description><![CDATA[Anglesey, North Wales, England]]></description>
+    <styleUrl>#style40</styleUrl>
+    <Point>
+      <coordinates>-4.372558,53.330872,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Abrolhos Islands</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style43</styleUrl>
+    <Point>
+      <coordinates>113.906250,-28.844673,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>The Graveyard of the Atlantic</name>
+    <description><![CDATA[Morehead City, North Carolina, USA]]></description>
+    <styleUrl>#style28</styleUrl>
+    <Point>
+      <coordinates>-76.420898,33.119148,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Neptune Island</name>
+    <description><![CDATA[<DIV>Port Lincoln, Eyre Peninsula, South Australia </DIV>
+
+<DIV><IMG src="http://www.diveadventures.com.au/images/Australia/gwscage1.jpg"></DIV>]]></description>
+    <styleUrl>#style50</styleUrl>
+    <Point>
+      <coordinates>136.056747,-35.229355,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Farallon Islands</name>
+    <description><![CDATA[<DIV>California, USA</DIV>
+
+<DIV><IMG src="http://www.divediscovery.com/images/farallons-shark02s.jpg"></DIV>]]></description>
+    <styleUrl>#style20</styleUrl>
+    <Point>
+      <coordinates>-123.005676,37.697948,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Isla Guadalupe</name>
+    <description><![CDATA[<DIV>Isla Guadalupe, Mexico</DIV>
+
+<DIV>&nbsp;<IMG src="http://www.greatwhiteadventures.com/images/pic-shark-guad2big.jpg"></DIV>]]></description>
+    <styleUrl>#style14</styleUrl>
+    <Point>
+      <coordinates>-118.372192,29.008141,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Ras Mohammed National Park</name>
+    <description><![CDATA[<div dir="ltr">Ras Mohammed National Park, Red Sea, Egypt</div>]]></description>
+    <styleUrl>#style41</styleUrl>
+    <Point>
+      <coordinates>34.255371,27.702984,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Coron Island</name>
+    <description><![CDATA[<div dir="ltr">Coron Island, Philippines</div>]]></description>
+    <styleUrl>#style17</styleUrl>
+    <Point>
+      <coordinates>120.184937,12.001712,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Rarotonga</name>
+    <description><![CDATA[<IMG style="width:239px" src="http://photos.igougo.com/images/p102178-Rarotonga_Cook_Islands-Rarotonga.jpg"> 
+
+<DIV dir="ltr">Rarotonga, Cook Islands</DIV>
+
+<DIV dir="ltr">&nbsp;</DIV>]]></description>
+    <styleUrl>#style55</styleUrl>
+    <Point>
+      <coordinates>-159.771423,-21.225382,0.000000</coordinates>
+    </Point>
+  </Placemark>
+</Document>
