@@ -4,3 +4,15 @@
 [submodule "lib/smarty"]
 	path = lib/smarty
 	url = https://github.com/ericingram/smarty.git
+[submodule "lib/facebook"]
+	path = lib/facebook
+	url = https://github.com/facebook/facebook-php-sdk.git
+[submodule "lib/bootstrap"]
+	path = lib/bootstrap
+	url = https://github.com/twbs/bootstrap.git
+[submodule "lib/phpmailer"]
+	path = lib/phpmailer
+	url = https://github.com/PHPMailer/PHPMailer.git
+[submodule "lib/twitteroauth"]
+	path = lib/twitteroauth
+	url = https://github.com/abraham/twitteroauth.git

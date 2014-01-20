@@ -10,7 +10,7 @@ class Erector {
 		 * Load the code
 		 */
 		define('LIB',realpath(getcwd() . "/../lib"));
-		define('ERECTOR',LIB . "/erector"));
+		define('ERECTOR', LIB . "/erector");
 		define('WEBROOT',getcwd());
 		define('APP',realpath(getcwd() . "/../application"));
 		include_once APP.'/Config.class.php';				//Settings and configuration
@@ -22,8 +22,7 @@ class Erector {
 		include_once ERECTOR.'/Session.class.php';				//Session management
 		include_once ERECTOR.'/Paginate.class.php';				//List pagination class
 		include_once ERECTOR.'/Debugger.class.php';				//Debugging tools
-
-		include_once LIB.'/facebook/facebook.php';			//Facebook applications & pages
+		include_once LIB.'/facebook/src/facebook.php';			//Facebook applications & pages
 		
 		/**
 		 * Initialize configuration

@@ -1,15 +1,11 @@
-@gutter: 20px;
-
-
-@colorBrand:        #369;
-@colorBrandAccent:  #FF6;
+@import '_variables.less';
+@import '_mixins.less';
 
 
 /* ----------------------------------------
 RESET
 */
-html,body,div,ul,ol,dl,li,dt,dd,form,fieldset,input,textarea,label,table,tr,td,img,a,span
-    {
+html,body,div,ul,ol,dl,li,dt,dd,form,fieldset,input,textarea,label,table,tr,td,img,a,span {
     padding: 0px;
     margin: 0px;
     border: none;
@@ -17,12 +13,7 @@ html,body,div,ul,ol,dl,li,dt,dd,form,fieldset,input,textarea,label,table,tr,td,i
 @import "_type.less";
 
 
-
-
 @import '_layout.less';
-
-
-
 
 
 .home {
@@ -118,7 +109,7 @@ table.profile td {
 }
 
 table.list,ul.list,ol.list {
-    margin: 0 0 @gutter/1 0;
+    margin: 0 0 @grid-gutter-width 0;
     width: 100%;
     list-style-type: none;
 }
@@ -137,10 +128,6 @@ table.list,ul.list,ol.list {
     color: #29C;
 }
 
-fieldset h3,.module h3,.block h3 {
-    color: #069;
-    text-shadow: 0 0 0;
-}
 
 .list td,.list li {
     padding: 0.75em 1em;
@@ -184,11 +171,11 @@ dt {
     float: left;
     width: 150px;
     font-weight: bold;
-    padding: @gutter/2;
+    padding: @grid-gutter-width;
 }
 
 dd {
-    padding: @gutter/2;
+    padding: @grid-gutter-width;
 }
 
 button,.button,input.submit,a.button,.navigation.segmented>li>a,.tabs>li>a {
@@ -261,99 +248,11 @@ color: #FFF;
 
 
 
-@import '_navigation.less'
+@import '_navigation.less';
 
 
 
-/* @group FORMS */
-fieldset,.module,.block {
-    clear:both;
-    margin: 0px 0px 20px 0px;
-    border: 5px solid #EEE;
-    border: 0;
-    background: #F0F9FF;
-    padding: @gutter/2;
-    border-radius: 1em;
-    -moz-border-radius: 1em;
-    -webkit-border-radius: 1em;
-
-    border-top-left-radius: 0;
-    -moz-border-radius-topleft: 0;
-    -webkit-border-top-left-radius: 0;
-}
-
-legend {
-    color: #369;
-    font-weight: bold;
-    background-color: #F0F9FF;
-    margin: 0 0 0 -5px;
-    padding: 0.5em 1em;
-    border-top-left-radius: 1em;
-    border-top-right-radius: 1em;
-    -moz-border-radius-topleft: 1em;
-    -moz-border-radius-topright: 1em;
-    -webkit-border-top-left-radius: 1em;
-    -webkit-border-top-right-radius: 1em;
-}
-
-fieldset div {
-    margin: 0px 0px @gutter 0px;
-}
-
-fieldset label {
-    text-align: left;
-    width: 200px;
-    display: block;
-    float: none;
-    margin: 2px 5px 2px 5px;
-}
-
-input.text,input.date-pick {
-    font: bold 16px arial;
-    color: #09F;
-    border: solid 1px #CCC;
-    padding: 5px;
-    border-radius: 1em;
-    -moz-border-radius: 1em;
-    -webkit-border-radius: 1em;
-}
-input.text.naked {
-background: transparent;
-border: 0;
-color: #369;
-font-weight: normal;
-padding: 0;
-width: 32px;
-display: inline;
-text-align:right;
-}
-.text.long {
-width: 400px;
-}
-
-textarea {
-width: 320px;
-height: 160px;
-padding: 0.5em;
-display:block;
-background: #fff;
-border: inset 2px #CCC;
-}
-span.status span.error {
-    clear: both;
-    overflow: visible;
-    margin: 0px;
-    color: #369;
-}
-
-span.status span.checked {
-    display: none;
-}
-label.error {
-    display: inline;
-    color: #FF0;
-}
-/* @end */
+@import '_forms.less';
 
 
 
@@ -489,80 +388,7 @@ a.facebook,a.facebook:hover {
     background: url(/images/connect_facebook.gif) no-repeat;
 }
 
-
-.sprite {
-background:url(/images/sprites.gif) no-repeat 0px 0px;
-width:25px;
-height:100px;
-display: block;
-clear: none;
-float: none;
-text-indent: -999em;
-}
-.sprite.tank_full {
-background-position: 0px -250px;
-width: 13px;
-height: 50px;
-float: left;
-}
-.sprite.tank_empty {
-background-position: -15px -250px;
-width: 13px;
-height: 50px;
-float: left;
-}
-.sprite.shorty {
-background-position: 0px -325px;
-width: 40px;
-height: 100px;
-float:left;
-margin-right: 1em;
-}
-.sprite.wetsuit {
-background-position: -40px -325px;
-width: 50px;
-height: 100px;
-float:left;
-margin-right: 1em;
-}
-.sprite.drysuit {
-background-position: -90px -325px;
-width: 50px;
-height: 100px;
-margin-right: 1em;
-float:left;
-}
-.sprite.gloves {
-background-position: -147px -325px;
-width: 50px;
-height: 100px;
-margin-right: 1em;
-float:left;
-}
-.sprite.hood {
-background-position: -209px -325px;
-width: 35px;
-height: 100px;
-margin-right: 1em;
-float:left;
-}
-
-.sprite.skin {
-background-position: -280px -325px;
-width: 40px;
-height: 100px;
-margin-right: 1em;
-float:left;
-}
-
-.sprite.farmer {
-background-position: -247px -325px;
-width: 30px;
-height: 100px;
-margin-right: 1em;
-float:left;
-}
-
+@import '_sprites.less';
 
 #modal {
     display: none;
