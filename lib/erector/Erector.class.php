@@ -22,7 +22,9 @@ class Erector {
 		include_once ERECTOR.'/Session.class.php';				//Session management
 		include_once ERECTOR.'/Paginate.class.php';				//List pagination class
 		include_once ERECTOR.'/Debugger.class.php';				//Debugging tools
-		include_once LIB.'/facebook/src/facebook.php';			//Facebook applications & pages
+
+		define('FACEBOOK_PATH', LIB.'/facebook/src/facebook.php');
+		include_once FACEBOOK_PATH;			//Facebook applications & pages
 		
 		/**
 		 * Initialize configuration

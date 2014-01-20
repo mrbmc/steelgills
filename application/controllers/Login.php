@@ -63,7 +63,7 @@ class Login extends Controller {
 	}
 
 	public function twitter() {
-		include_once LIB.'/twitteroauth/twitteroauth.php';
+		include_once LIB.'/twitteroauth/twitteroauth/twitteroauth.php';
 		// The TwitterOAuth instance  
 		$this->twitter = new TwitterOAuth(Config::TWITTER_APIKEY, Config::TWITTER_APISECRET);  
 		// Requesting authentication tokens, the parameter is the URL we will be redirected to
@@ -80,7 +80,7 @@ class Login extends Controller {
 			header('Location: '. $url); 
 		} else { 
 			// It's a bad idea to kill the script, but we've got to know when there's an error.  
-			die('Something wrong happened.');  
+			die('TwitterOAuth Failed.');  
 		}
 	}
 
@@ -157,7 +157,7 @@ class Login extends Controller {
 
 	public function facebook () {
 		# We require the library  
-		require_once(LIB."/facebook/facebook.php");  
+		require_once(FACEBOOK_PATH);
 
 		# Creating the facebook object  
 		$this->facebook = new Facebook(array(  
