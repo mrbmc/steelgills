@@ -314,16 +314,19 @@ ul.navigation > li > a {
   padding: 30px;
 }
 .navigation.segmented,
-.tabs {
+.tabs,
+.tabs-dummy {
   height: 2em;
   margin: 1em 0;
 }
-.navigation.segmented > li,
-.tabs > li {
+.navigation.segmented li,
+.tabs li,
+.tabs-dummy li {
   margin: 0;
 }
-.navigation.segmented > li > a,
-.tabs > li > a {
+.navigation.segmented li a,
+.tabs li a,
+.tabs-dummy li a {
   text-transform: uppercase;
   margin: 0 0 0 1px;
   padding: .25em .5em;
@@ -338,21 +341,24 @@ ul.navigation > li > a {
   -moz-border-radius: 0;
   border-radius: 0;
 }
-.navigation.segmented > li:first-child > a,
-.tabs > li:first-child > a {
+.navigation.segmented li:first-child a,
+.tabs li:first-child a,
+.tabs-dummy li:first-child a {
   margin: 0;
   -webkit-border-radius: 1em 0 0 1em;
   -moz-border-radius: 1em 0 0 1em;
   border-radius: 1em 0 0 1em;
 }
-.navigation.segmented > li:last-child > a,
-.tabs > li:last-child > a {
+.navigation.segmented li:last-child a,
+.tabs li:last-child a,
+.tabs-dummy li:last-child a {
   -webkit-border-radius: 0 1em 1em 0;
   -moz-border-radius: 0 1em 1em 0;
   border-radius: 0 1em 1em 0;
 }
-.navigation.segmented > li.selected a,
-.tabs > li.selected a {
+.navigation.segmented li.selected a,
+.tabs li.selected a,
+.tabs-dummy li.selected a {
   background: #EEE;
   background-image: -webkit-linear-gradient(top, #ffffff 0%, #eeeeee 100%);
   background-image: linear-gradient(to bottom, #ffffff 0%, #eeeeee 100%);
@@ -360,16 +366,39 @@ ul.navigation > li > a {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffeeeeee', GradientType=0);
   color: #666;
 }
-ul.tabs {
+.tabs,
+.tabs-dummy {
   display: block;
   clear: none;
+  margin-bottom: 0;
+}
+.tabs li a,
+.tabs-dummy li a,
+.tabs li:first-child a,
+.tabs-dummy li:first-child a,
+.tabs li:last-child a,
+.tabs-dummy li:last-child a {
+  -webkit-border-radius: 4px 4px 0 0;
+  -moz-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
+}
+.tabs li.selected a,
+.tabs-dummy li.selected a,
+.tabs li:first-child.selected a,
+.tabs-dummy li:first-child.selected a,
+.tabs li:last-child.selected a,
+.tabs-dummy li:last-child.selected a {
+  background: #f9f9f9;
 }
 .breadcrumb {
   list-style-type: none;
-  margin: 1em 0;
+  margin: 0;
 }
 .breadcrumb li {
   list-style-type: none;
+}
+.breadcrumb h1 {
+  margin: 0;
 }
 /* @end */
 /* @group FORMS */
@@ -1044,5 +1073,10 @@ a.facebook:hover {
     float: none;
     margin-left: 0%;
     width: auto;
+  }
+  .pull-left,
+  .pull-right {
+    float: none;
+    clear: both;
   }
 }

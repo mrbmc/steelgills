@@ -140,7 +140,8 @@ SGMap = {
 		if(_callbackName==undefined) _callbackName = "map_init";
 		var script = document.createElement("script");
 		script.type = "text/javascript";
-		script.src = "http://maps.google.com/maps/api/js?sensor=false&callback="+_callbackName;
+		script.src = "http://maps.google.com/maps/api/js?sensor=false";
+		// script.src += "&callback="+_callbackName;
 		document.body.appendChild(script);
 	},
 

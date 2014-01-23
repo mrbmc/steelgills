@@ -25,7 +25,7 @@ function init_tabs() {
 			mom = me.closest('.tabs'),
 			tab = me.attr("href");
 		$(".selected",mom).removeClass("selected");
-		$(".tab-pane").slideUp();
+		$(".tab-pane").slideUp(250);
 		$(this).closest('li').addClass("selected");
 		$(tab).slideDown(250,function(){
 			// if(typeof SGMap != "undefined" && !SGMap.map) {

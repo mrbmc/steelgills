@@ -1,5 +1,5 @@
 {include file='header.tpl' title='Dive Sites'}
-<script src="/js/maps{if $smarty.server.HTTP_HOST=="steelgills.com"}.min{/if}.js" type="text/javascript"></script>
+<script src="/js/SGMap{if $smarty.server.HTTP_HOST=="steelgills.com"}.min{/if}.js" type="text/javascript"></script>
 <script type="text/javascript">/*<![CDATA[*/
 {literal}
 var marker;
