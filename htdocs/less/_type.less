@@ -2,30 +2,47 @@
 /* ----------------------------------------
 Typography
 */
-@font-face { 
-	font-family: "_title";
-	font-weight: normal;
-	font-style:normal;
-	src: url("/css/fonts/gothamRoundedBold.ttf") format("truetype"); 
+@font-face {
+    font-family:"Gotham Rounded";
+    font-weight: 300;
+    src:url('/css/fonts/GothamRounded-Light.eot');
+    src:url('/css/fonts/GothamRounded-Light.eot?#iefix') format('embedded-opentype'),
+        url('/css/fonts/GothamRounded-Light.ttf') format('truetype');
+    src:url('/css/fonts/GothamRounded-Light.woff') format('woff');
 }
-@font-face { 
-	font-family: "_header";
-	font-style:normal;
-	font-weight:normal; 
-	src: url("/css/fonts/gothamRoundedBold.ttf") format("truetype");
+@font-face {
+    font-family:"Gotham Rounded";
+    font-weight: 400;
+    src:url('/css/fonts/GothamRounded-Book.eot');
+    src:url('/css/fonts/GothamRounded-Book.eot?#iefix') format('embedded-opentype'),
+        url('/css/fonts/GothamRounded-Book.ttf') format('truetype');
+    src:url('/css/fonts/GothamRounded-Book.woff') format('woff');
+}
+@font-face {
+    font-family:"Gotham Rounded";
+    font-weight: 600;
+    src:url('/css/fonts/GothamRounded-Bold.eot');
+    src:url('/css/fonts/GothamRounded-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/css/fonts/GothamRounded-Bold.ttf') format('truetype');
+    src:url('/css/fonts/GothamRounded-Bold.woff') format('woff');
 }
 
+
 @bodyFontFamily: "Helvetica Neue","HelveticaNeue",Helvetica, san-serif;
-@headingsFontFamily: "_header",@bodyFontFamily;
-@displayFontFamily: "_title";
+@headingsFontFamily: "Gotham Rounded",@bodyFontFamily;
+@headingsFontWeight: 600;
+@displayFontFamily: "Gotham Rounded",@bodyFontFamily;
+@displayFontWeight: 300;
 
 
 body,div,span,p,dd,dt,dl,li,td,h1,h2,h3 {
 	font-family: @bodyFontFamily;
-	letter-spacing: 0.05em;
-	color: @brand-primary;
 	margin: 0;
 	padding: 0;
+}
+html, body {
+	color: @gray-dark;
+	font-size: 16px;
 }
 
 th,tr,td {
@@ -33,13 +50,12 @@ th,tr,td {
 }
 
 a,a:visited {
-	color: lighten(@brand-primary,10%);
-	text-decoration: underline;
+	color: @brand-primary;
+	text-decoration: none;
 }
 
 a:hover,a:visited:hover {
-	background: @brand-warning;
-	color: @brand-primary;
+	color: lighten(@brand-primary, -10%);
 }
 
 h1,h2,h3 {
@@ -52,8 +68,9 @@ h1,h2,h3 {
 
 h1 {
 	font-size: 1.9em;
-	text-shadow: #FFF 0px -1px 0px;
 	color: #0099cc;
+	font-family: @displayFontFamily;
+	font-weight: @displayFontWeight;
 }
 
 h2 {
@@ -80,9 +97,8 @@ p {
 	margin: 0.5em 0;
 }
 
-small,.small,.button.small {
-	font-size: 0.7em;
-	letter-spacing: .15em;
+small,.small {
+	font-size: 0.75em;
 	border-radius: 0;
 }
 

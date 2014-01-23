@@ -1,12 +1,9 @@
-		<div class="clear"></div>
-	</div><!-- /body -->
 
-	<div class="push"></div>
+	</div><!-- /body -->
 </div><!-- /wrapper -->
 
 <div id="footer-wrapper">
-	<div id="footer">
-		<div class="column-wide">
+	<div id="footer" class="container">
 		<ul class="navigation" id="footernav">
 			<li id="nav_about"{if $DISPATCHER.controller eq "about"} class="current"{/if}><a href="/about">About</a></li>
 			<li id="nav_contact"{if $DISPATCHER.controller eq "contact"} class="current"{/if}><a href="/contact">Contact</a></li>
@@ -19,9 +16,8 @@
 			<li id="nav_signup"{if $DISPATCHER.controller eq "signup"} class="current"{/if}><a href="/signup">Sign Up</a></li>
 		{/if}
 		</ul>
-	
+
 		<span class="right">&copy;{$smarty.now|date_format:"%Y"} Steel Gills</span>
-		<div class="clear"></div>
 	
 		{if $smarty.server.HTTP_HOST=="steelgills.com" && $smarty.server.REQUEST_URI!="/"}
 		{*
@@ -37,9 +33,12 @@
 		*}
 		{/if}
 
-		</div>
 	</div><!-- /footer -->
 </div><!-- /footer-wrapper -->
+
+
+<div class="wallpaper"><span class="caption"></span></div>
+
 
 {if $smarty.server.HTTP_HOST=="steelgills.com"}
 {literal}<script type="text/javascript">
@@ -53,6 +52,11 @@ pageTracker._trackPageview();
 } catch(err) {}
 </script>{/literal}
 {/if}
+
+<script type="text/javascript" src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/common{if $smarty.server.HTTP_HOST=="steelgills.com"}.min{/if}.js" type="text/javascript"></script>
+
+
 
 </body>
 </html>

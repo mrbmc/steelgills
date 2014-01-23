@@ -59,13 +59,13 @@ SGModal = {
 	},
 	openModal: function (url) {
 		if($('#modal').length <= 0) {
-			$('body').append('<div id="modal"></div>');
+			$('body').append('<div id="modal" class="fade"></div>');
 			$('body').append('<div id="modal_bg"></div>');
 		}
 		$('#modal').load(url,function () {
-			$('#modal_bg').fadeIn(300,function () {
-				$('#modal').show();
-				$('#modal').append('<div id="modal_close"><a href="#" onclick="SGModal.closeModal();return false;">x</a></div>');
+			$('#modal_bg').fadeIn(250,function () {
+				$('#modal').show().toggleClass("in");
+				$('#modal').append('<div id="modal_close"><a href="#" onclick="SGModal.closeModal();return false;">&times;</a></div>');
 			});
 	    $(window).keydown(function(event){
 	    	if(event.keyCode==27) { SGModal.closeModal(); }
@@ -73,7 +73,7 @@ SGModal = {
 		});
 	},
 	closeModal: function () {
-		$('#modal').hide();
+		$('#modal').toggleClass("in");
 		$('#modal_bg').fadeOut(500);
 	}
 }

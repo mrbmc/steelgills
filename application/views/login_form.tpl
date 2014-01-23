@@ -10,40 +10,51 @@
 	<input type="hidden" name="referer" value="{if isset($smarty.server.HTTP_REFERER)}{$smarty.server.HTTP_REFERER}{else}{$smarty.server.REQUEST_URI}{/if}" />
 	{if $USER.confirmation}<input type="hidden" name="confirm_code" value="{$USER.confirmation}" />{/if}
 	
-	<fieldset style="float:left;">
-		<legend>SteelGills Account</legend>
-		<div>
-			<label for="username">Username or email</label>
-			<input type="text" id="username" name="username" class="text" tabindex="1" />
+	<div class="row">
+		<div class="span6">
+			<fieldset>
+				<h3>Use Your SteelGills Account</h3>
+				<div class="control-group">
+					<div class="control-label">
+						<label for="username">Email Or Username</label>
+						
+					</div>
+					<div class="controls">
+						<input type="text" id="username" name="username" class="input-block-level" tabindex="1" />
+					</div>
+				</div>
+				<div class="control-group">
+					<div class="control-label">
+						<label for="password">Password</label>
+						
+					</div>
+					<div class="controls">
+						<input type="password" id="password" name="password" class="input-block-level" tabindex="1" />
+					</div>
+				</div>
+				<p><a href="/profile/pw_reminder">forgot your password?</a></p>
+				<p>
+					<button class="btn btn-large btn-primary input-block-level" name="btnSubmit" value="Sign In" tabindex="1">Sign In</button>
+				</p>
+			</fieldset>
 		</div>
-		<div>
-			<label for="password">Password</label>
-			<input type="password" id="password" name="password" class="text" tabindex="1" />
+
+		<div class="span6">
+			<fieldset>
+				<h3>Use Your Social Account</h3>
+				<p><a href="/login/twitter"><img src="/images/connect_twitter.png" /></a></p>
+				<p><a href="/login/facebook"><img src="/images/connect_facebook.gif" /></a></p>
+			</fieldset>
 		</div>
-		<small><a href="/profile/pw_reminder">forgot your password?</a></small><br />
-		<input type="submit" class="submit button" name="btnSubmit" value="Sign In" tabindex="1" />
-	</fieldset>
-
-	<div class="left" style="padding: 20px;">-or-</div>
-
-	<fieldset>
-	<legend>Connect Social Accounts</legend>
-	<small style="display:block;width:230px;">Connecting your twitter or facebook account allows you to sign in with those services and publish updates to them</small>
-	<p><a href="/login/twitter"><img src="/images/connect_twitter.png" /></a></p>
-	<p><a href="/login/facebook"><img src="/images/connect_facebook.gif" /></a></p>
-	</fieldset>
-
-	<div class="clear"></div>
-
-	<fieldset>
-	<legend>Not a Member?</legend>
-	<div>
-		<a href="{$DOCROOT}/signup"><input type="button" class="button" name="btnSignup" value="Sign Up" /></a>
 	</div>
-	</fieldset>
+
+	<div>
+		<fieldset>
+			Not a Member? <a href="{$DOCROOT}/signup">Sign up here.</a>
+		</fieldset>
+	</div>
 
 
 	</form>
 
 </div>
-<br clear="all" />

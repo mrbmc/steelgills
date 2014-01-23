@@ -7,17 +7,23 @@
 //
 //## Gray and brand colors for use across Bootstrap.
 
-@gray-darker:            lighten(#000, 13.5%); // #222
-@gray-dark:              lighten(#000, 20%);   // #333
-@gray:                   lighten(#000, 33.5%); // #555
-@gray-light:             lighten(#000, 60%);   // #999
-@gray-lighter:           lighten(#000, 93.5%); // #eee
-
-@brand-primary:         #336699;
+@brand-primary:         hsl(200, 100%, 46%);
 @brand-success:         #5cb85c;
 @brand-info:            #5bc0de;
 @brand-warning:         #f0ad4e;
-@brand-danger:          #d9534f;
+@brand-danger:          #ec008c;
+
+
+@gray-darker:            hsl(hue(@brand-primary), 50%, 13.5%);
+@gray-dark:              hsl(hue(@brand-primary), 30%, 20%);
+@gray:                   hsl(hue(@brand-primary), 20%, 50%);
+@gray-light:             hsl(hue(@brand-primary), 10%, 80%);
+@gray-lighter:           hsl(hue(@brand-primary), 5%, 93.5%);
+
+@blue-surface: 			hsl(195, 50%, 93%);
+@blue-shallow: 			hsl(205, 66%, 77%);
+@blue-deep: 			hsl(210, 80%, 25%);
+@blue-abyss: 			hsl(220, 100%, 13%);
 
 
 //== Scaffolding
@@ -45,7 +51,7 @@
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
 
-@font-size-base:          14px;
+@font-size-base:          16px;
 @font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
 @font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
 

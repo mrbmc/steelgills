@@ -9,10 +9,13 @@
 	url = https://github.com/facebook/facebook-php-sdk.git
 [submodule "lib/bootstrap"]
 	path = lib/bootstrap
-	url = https://github.com/twbs/bootstrap.git
+url=https://github.com/mrbmc/bootstrap.git
 [submodule "lib/phpmailer"]
 	path = lib/phpmailer
 	url = https://github.com/PHPMailer/PHPMailer.git
 [submodule "lib/twitteroauth"]
 	path = lib/twitteroauth
 	url = https://github.com/abraham/twitteroauth.git
+[submodule "lib/recess"]
+	path = lib/recess
+	url = https://github.com/twitter/recess.git

@@ -6,77 +6,58 @@ fieldset h3,.module h3,.block h3 {
 }
 fieldset,.module,.block {
     clear:both;
-    margin: 0px 0px 20px 0px;
-    border: 5px solid #EEE;
-    border: 0;
-    background: #F0F9FF;
-    padding: @grid-gutter-width ;
-    border-radius: 1em;
-    -moz-border-radius: 1em;
-    -webkit-border-radius: 1em;
-
-    border-top-left-radius: 0;
-    -moz-border-radius-topleft: 0;
-    -webkit-border-top-left-radius: 0;
 }
 
 legend {
-    color: #369;
+    color: @brand-primary;
     font-weight: bold;
-    background-color: #F0F9FF;
-    margin: 0 0 0 -5px;
-    padding: 0.5em 1em;
-    border-top-left-radius: 1em;
-    border-top-right-radius: 1em;
-    -moz-border-radius-topleft: 1em;
-    -moz-border-radius-topright: 1em;
-    -webkit-border-top-left-radius: 1em;
-    -webkit-border-top-right-radius: 1em;
-}
-
-fieldset div {
-    margin: 0px 0px @grid-gutter-width  0px;
-}
-
-fieldset label {
-    text-align: left;
-    width: 200px;
     display: block;
     float: none;
-    margin: 2px 5px 2px 5px;
+}
+fieldset label {
+    display: block;
+    float: none;
+    text-align: left;
 }
 
-input.text,input.date-pick {
-    font: bold 16px arial;
-    color: #09F;
-    border: solid 1px #CCC;
-    padding: 5px;
-    border-radius: 1em;
-    -moz-border-radius: 1em;
-    -webkit-border-radius: 1em;
-}
-input.text.naked {
-background: transparent;
-border: 0;
-color: #369;
-font-weight: normal;
-padding: 0;
-width: 32px;
-display: inline;
-text-align:right;
-}
-.text.long {
-width: 400px;
+
+.control-group {
+    margin: @grid-gutter-width/2 0;
+    clear: both;
+    display: block;
 }
 
-textarea {
-width: 320px;
-height: 160px;
-padding: 0.5em;
-display:block;
-background: #fff;
-border: inset 2px #CCC;
+.input-block-level {
+    display: block;
 }
+
+input,textarea,input.text,input.date-pick {
+    padding: .5em .5em;
+    font-weight: bold;
+    font-size: 16px;
+    color: @brand-primary;
+    .border-radius(1.5em);
+    .box-shadow(inset 0 1px 4px rgba(0,0,0,0.33));
+    &.naked {
+        // background: transparent;
+        // border: 0;
+        // color: #369;
+        // font-weight: normal;
+        // padding: 0;
+        // width: 32px;
+        // display: inline;
+        // text-align:right;
+    }
+}
+// textarea {
+// width: 320px;
+// height: 160px;
+// padding: 0.5em;
+// display:block;
+// background: #fff;
+// border: inset 2px #CCC;
+// }
+
 span.status span.error {
     clear: both;
     overflow: visible;

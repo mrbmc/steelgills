@@ -1,4 +1,15 @@
-{if $DATA.member.userid}<h2>{$DATA.member.username}'s Logbook </h2>{/if}
+<div class="breadcrumb">
+	{if $DATA.member.userid}<h1>{$DATA.member.username}'s Logbook </h1>{/if}
+</div>
+
+<div class="pull-right">
+	<ul class="navigation segmented pull-left">
+		<li><a href="#" id="tab1" rel="tab_log" title="tabContentList" class="tab{if $smarty.cookies.tab_log=="tabContentList" || !$smarty.cookies.tab_log || $smarty.cookies.tab_log==""} selected{/if}">Dives</a></li> 
+		<li><a href="#" id="tab2" rel="tab_log" title="tabContentCharts" class="tab{if $smarty.cookies.tab_log=="tabContentCharts"} selected{/if}">Charts</a></li>
+	</ul>
+	<a href="/logbook/add" class="btn btn-primary">&plus; Add a dive</a>
+	
+</div>
 
 <div class="content">
 	<div class="tab_area">
@@ -16,18 +27,6 @@
 			<img src="http://chart.apis.google.com/chart?chs=550x200&chf=bg,s,ffffff|c,s,ffffff&chxt=x,y&chxl=0:||1:|0|50|100|150&cht=lc&chdl=current|visibility&chco=ff00ff,00ffff&chls=1,1,0&chd=t:{foreach from=$DATA.dives key=k item=row}{$row->current/0.1},{/foreach}{$row->current/0.1}|{foreach from=$DATA.dives key=k item=row}{$row->visibility/3},{/foreach}{$row->visibility/3}" />
 		</div>
 	</div>
-</div>
-
-<div class="sidebar">
-	<ul class="navigation segmented">
-		<li><a href="/logbook/add"><b>+</b> Add a dive</a></li>
-	</ul>
-
-	<ul class="navigation tabs"> 
-		<li><a href="#" id="tab1" rel="tab_log" title="tabContentList" class="tab{if $smarty.cookies.tab_log=="tabContentList" || !$smarty.cookies.tab_log || $smarty.cookies.tab_log==""} selected{/if}">Dives</a></li> 
-		<li><a href="#" id="tab2" rel="tab_log" title="tabContentCharts" class="tab{if $smarty.cookies.tab_log=="tabContentCharts"} selected{/if}">Charts</a></li>
-	</ul> 
-
 </div>
 
 

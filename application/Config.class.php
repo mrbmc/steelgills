@@ -74,6 +74,13 @@ class Config
 	const AWS_SECRET = "";
 
 
+	/**
+	* FLICKR
+	*/
+	const FLICKR_KEY = "41392a7d72d8ac7bd82ae6b2006dc61a";
+	const FLICKR_SECRET = "57bd6c9b8bd55ad6";
+
+
 /**
  * ----------------------------------------------------------------------
  * NO NEED TO EDIT BELOW HERE
