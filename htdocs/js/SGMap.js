@@ -156,7 +156,6 @@ SGMap = {
 	 * */
 	refreshBounds: function (args) {
 		if(this.ajaxLoading) return;
-		console.log(this);
 		var bounds = this.map.getBounds();
 		var sw = bounds.getSouthWest();
 		var ne = bounds.getNorthEast();
@@ -167,6 +166,8 @@ SGMap = {
 			  dataType: 'json',
 			  data: {},
 			  success: function(data) {
+					// SGMap.markers = _.uniq($.merge(SGMap.markers,data));
+					// console.log(SGMap.markers.length);
 					SGMap.markers = data;
 					SGMap.refreshMarkers();
 					SGMap.ajaxLoading=false;
@@ -174,11 +175,10 @@ SGMap = {
 			});
 	},
 
-	refreshMarkers: function () 
-	{
+	refreshMarkers: function () {
+		console.log()
 		if(this.markers.length>0) {
-			for(idx in this.markers) 
-			{
+			for(idx in this.markers) {
 				var m = this.markers[idx];
 				if(m.title=="") m.title = m.city+', '+m.country;
 				m.info = '<a href="/divesites/show/'+m.divesiteid+'">'+m.title+'</a>';
@@ -197,10 +197,10 @@ SGMap = {
 					this.getGeocode({point:m.street,description:m.street,id:m.divesiteid});
 				}
 			}
-  		var m = this.markers[0];
-    } else {
-    	console.log('no markers');
-    }
+  			var m = this.markers[0];
+	    } else {
+	    	console.log('no markers');
+	    }
 	},
 
 	updateLatLon: function (point) {

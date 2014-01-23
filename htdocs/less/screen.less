@@ -94,6 +94,10 @@ HOMEPAGE
     }
 }
 
+img.thumbnail {
+    max-width: 100%;
+    width: auto;
+}
 
 
 
@@ -170,7 +174,32 @@ table.list a {
     color: #369;
 }
 
-dt {
+table {
+    border-collapse: collapse;
+    padding: 0;
+    border: none;
+    .border-radius(@border-radius-base);
+    td {
+        background: #FFF;
+        padding: @grid-gutter-width/2;
+        color: @gray;
+        border-collapse: collapse;
+    }
+    th {
+        background: #FFF;
+        margin: 0 1px 0 0;
+        padding: @grid-gutter-width/2;
+        border-bottom: 1px solid @blue-surface;
+        font-size: 12px;
+        font-weight: bold;
+        color: @gray;
+    }
+}
+.thumbnail {
+    margin-bottom: @grid-gutter-width;
+}
+
+/*dt {
     clear: both;
     float: left;
     width: 150px;
@@ -180,7 +209,7 @@ dt {
 
 dd {
     padding: @grid-gutter-width;
-}
+}*/
 
 
 

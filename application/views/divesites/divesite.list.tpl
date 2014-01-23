@@ -1,13 +1,42 @@
-<h2>Divesites</h2>
+
+<div class="row-fluid">
+	<div class="span6">
+		<ul class="breadcrumb">
+			<li><h1>Divesites</h1></li>
+		</ul>
+	</div>
+	<div class="span6">
+		{if $USER.userid > 0}
+		<ul class="navigation segmented">
+			<li><a href="/divesites/edit"><b>+</b> add a dive site</a></li>
+		</ul>
+		<ul class="navigation segmented">
+			<li>{if $DISPATCHER.action=='all' || ($DISPATCHER.action=='index' && $USER.userid<=0)}<a class="selected">everyone's sites</a>{else}<a href="/divesites/all">everyone's sites</a>{/if}</li>
+			<li>{if $DISPATCHER.action=='me' || ($DISPATCHER.action=='index' && $USER.userid>0)}<a class="selected">my sites</a>{else}<a href="/divesites/me">my sites</a>{/if}</li>
+			<!--li><a href="/divesites/search">search dive sites</a></li>-->
+		</ul>
+		{/if}
+		
+		<ul class="navigation tabs pull-right"> 
+			<li class="{if $smarty.cookies.tab_map=="tabContentMap" || !$smarty.cookies.tab_map || $smarty.cookies.tab_map==""} selected{/if}">
+				<a href="#tab-map" id="tab-link-map" title="View As Map">Map</a>
+			</li> 
+			<li class="{if $smarty.cookies.tab_map=="tabContentList"} selected{/if}">
+				<a href="#tab-list" id="tab-link-list" title="View As List">List</a>
+			</li> 
+		</ul> 
+		
+	</div>
+</div>
 
 <div class="content">
 	
-	<div class="tab_area">
-		<div class="tabContent" id="tabContentMap"{if $smarty.cookies.tab_map!="tabContentMap" && $smarty.cookies.tab_map!=""} style="display:none;"{/if}>
+	<div class="tab-content">
+		<div class="tab-pane" id="tab-map"{if $smarty.cookies.tab_map!="tabContentMap" && $smarty.cookies.tab_map!=""} style="display:none;"{/if}>
 			<div id="map_canvas" class="map"></div>
 			<div id="consolediv"></div>
 		</div>
-		<div class="tabContent" id="tabContentList"{if $smarty.cookies.tab_map!="tabContentList"} style="display:none;"{/if}>
+		<div class="tab-pane" id="tab-list"{if $smarty.cookies.tab_map!="tabContentList"} style="display:none;"{/if}>
 				{include file="divesites/divesite.list.mini.tpl" divesites=$DATA.divesites}
 		</div>
 		<div class="clear"></div>
@@ -16,23 +45,6 @@
 	{include file='pagenav.tpl' PAGENAV=$DATA.pagenav}
 </div><!--/content -->
 
-<div class="sidebar">
-	{if $USER.userid > 0}
-	<ul class="navigation segmented">
-		<li><a href="/divesites/edit"><b>+</b> add a dive site</a></li>
-	</ul>
-	<ul class="navigation segmented">
-		<li>{if $DISPATCHER.action=='all' || ($DISPATCHER.action=='index' && $USER.userid<=0)}<a class="selected">everyone's sites</a>{else}<a href="/divesites/all">everyone's sites</a>{/if}</li>
-		<li>{if $DISPATCHER.action=='me' || ($DISPATCHER.action=='index' && $USER.userid>0)}<a class="selected">my sites</a>{else}<a href="/divesites/me">my sites</a>{/if}</li>
-		<!--li><a href="/divesites/search">search dive sites</a></li>-->
-	</ul>
-	{/if}
-	
-	<ul class="navigation tabs"> 
-		<li><a href="#map" id="tab1" rel="tab_map" title="tabContentMap" class="tab{if $smarty.cookies.tab_map=="tabContentMap" || !$smarty.cookies.tab_map || $smarty.cookies.tab_map==""} selected{/if}">Map</a></li> 
-		<li><a href="#list" id="tab2" rel="tab_map" title="tabContentList" class="tab{if $smarty.cookies.tab_map=="tabContentList"} selected{/if}">List</a></li> 
-	</ul> 
-</div>
 
 <script src="/js/SGMap{if $smarty.server.HTTP_HOST=="steelgills.com"}.min{/if}.js" type="text/javascript"></script>
 

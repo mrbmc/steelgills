@@ -86,17 +86,15 @@ ul.navigation {
 }
 
 
-.tab_area {
+.tab-content {
     clear: both;
-    border: 0px solid #eee;
     width: 100%;
     height: auto;
-    /*
-    padding: 10px;*/
-}
-.tabContent {
-    background-color: #EEE;
-    /*min-width: 600px;*/
+
+    .tab-pane {
+        background-color: @white;
+        padding: @grid-gutter-width;
+    }
 }
 .navigation.segmented,.tabs {
     height: 2em;
@@ -110,6 +108,7 @@ ul.navigation {
             height: 1.5em;
             line-height: 1.5em;
             background: #FFF;
+            #gradient.vertical(#F6F6F6,#e0e0e0);
             .border-radius(0);
         }
         &:first-child > a {
@@ -133,8 +132,12 @@ ul.tabs {
 
 
 .breadcrumb {
+    list-style-type: none;
+    margin: 1em 0;
+    li {
+        list-style-type: none;
+    }
     h1 {
-        margin: 1em 0;
     }
 }
 
