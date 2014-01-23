@@ -1,5 +1,4 @@
 {include file='header.tpl' title='Dive Sites'}
-<p><br></p>
 <div class="row">
 	<div class="span6">
 		<ul class="breadcrumb">

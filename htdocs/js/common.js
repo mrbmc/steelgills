@@ -28,11 +28,11 @@ function init_tabs() {
 		$(".tab-pane").slideUp();
 		$(this).closest('li').addClass("selected");
 		$(tab).slideDown(250,function(){
-			if(typeof SGMap != "undefined" && !SGMap.map) {
-				map_init();
-			}else if(SGMap.map){
-				SGMap.redraw();
-			}
+			// if(typeof SGMap != "undefined" && !SGMap.map) {
+			// 	map_init();
+			// }else if(SGMap.map){
+			// 	SGMap.redraw();
+			// }
 		});
 		var cookie_name = $(this).attr("rel");
 		if(cookie_name=="" || cookie_name==undefined) cookie_name = "tab";
