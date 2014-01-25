@@ -19,3 +19,6 @@ url=https://github.com/mrbmc/bootstrap.git
 [submodule "lib/recess"]
 	path = lib/recess
 	url = https://github.com/twitter/recess.git
+[submodule "htdocs/js/lib/underscore"]
+	path = htdocs/js/lib/underscore
+	url = https://github.com/jashkenas/underscore.git

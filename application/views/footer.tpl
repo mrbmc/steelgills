@@ -54,7 +54,7 @@ pageTracker._trackPageview();
 {/if}
 
 <script type="text/javascript" src="/js/jquery-2.0.3.min.js"></script>
-<script type="text/javascript" src="/js/underscore-1.5.2.min.js"></script>
+<script type="text/javascript" src="/js/lib/underscore/underscore-min.js"></script>
 <script src="/js/common{if $smarty.server.HTTP_HOST=="steelgills.com"}.min{/if}.js" type="text/javascript"></script>
 
 
