@@ -1,5 +1,5 @@
-@import '_variables.less';
-@import '_mixins.less';
+@import 'shared/_variables.less';
+@import 'shared/_mixins.less';
 /* ----------------------------------------
 RESET
 */
@@ -8,15 +8,15 @@ html,body,div,ul,ol,dl,li,dt,dd,form,fieldset,input,textarea,label,table,tr,td,i
     margin: 0px;
     border: none;
 }
-@import "_type.less";
-@import '_button.less';
-@import '_navigation.less';
-@import '_forms.less';
-@import '_modal.less';
-@import '_sprites.less';
+@import "components/_type.less";
+@import 'components/_button.less';
+@import 'components/_navigation.less';
+@import 'components/_forms.less';
+@import 'components/_modal.less';
+@import 'components/_sprites.less';
 
-@import '_layout.less';
-@import '_authentication.less';
+@import 'shared/_layout.less';
+@import 'shared/_authentication.less';
 
 
 /** --------------------------------------------------
@@ -43,61 +43,18 @@ html,body,div,ul,ol,dl,li,dt,dd,form,fieldset,input,textarea,label,table,tr,td,i
 }
 
 
-
-
-/**
-HOMEPAGE
-*/
-.Index {
-    background: #000;
-    color: @gray-lighter;
-    position: relative;
-    z-index: -2;
-
-    #header {
-        // background: rgba(255,255,255,0.2);
-        // .box-shadow(none);
-    }
-    h1.logo {
-        // display: none;
-    }
-    #body {
-        .container {
-            text-align:center;
-
-            h1 {
-                color: #FFF;
-                text-shadow: 0 0 16px rgba(0,0,0,0.8);
-                font-size: 4em;
-                line-height: 1.5em;
-                margin: 1.5em 0;
-            }
-        }
-    }
-}
-.wallpaper {
-    display: block;
-    content:"";
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-size: cover;
-    opacity: .9;
-    z-index: -1;
-    // filter: blur(2px);
-    .caption {
-        right: 5px;
-        bottom: 5px;
-        position: absolute;
-    }
-}
-
 img.thumbnail {
     max-width: 100%;
     width: auto;
 }
+
+
+
+@import '_homepage.less';
+
+
+
+
 
 
 
@@ -324,4 +281,4 @@ a.facebook,a.facebook:hover {
     width: 100%;
 }
 
-@import '_responsive.less';
+@import 'shared/_responsive.less';

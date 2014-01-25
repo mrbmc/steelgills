@@ -60,23 +60,22 @@ SGModal = {
 		return $('#'+SGModal.targetDiv);
 	},
 	openModal: function (url) {
-		if($('#modal').length <= 0) {
-			$('body').append('<div id="modal" class="fade"></div>');
-			$('body').append('<div id="modal_bg"></div>');
-		}
-		$('#modal').load(url,function () {
-			$('#modal_bg').fadeIn(250,function () {
-				$('#modal').show().toggleClass("in");
-				$('#modal').append('<div id="modal_close"><a href="#" onclick="SGModal.closeModal();return false;">&times;</a></div>');
-			});
-	    $(window).keydown(function(event){
-	    	if(event.keyCode==27) { SGModal.closeModal(); }
-	    });
+		var _modal = $('<div class="modal fade"></div>');
+			_modal.append('<a href="#" class="close">&times;</a>');
+			_modal.append('<div class="modal-body"></div>');
+		$('body').append(_modal);
+		$('.modal-body',_modal).load(url,function () {
+			$(this).closest(".modal").toggleClass('in');
+		    $(window).keydown(function(event){
+		    	if(event.keyCode==27) { SGModal.closeModal(); }
+		    });
 		});
+		$('.close','.modal').bind('click',function(e){
+			$(this).closest('.modal').toggleClass("in",false);
+		})
 	},
 	closeModal: function () {
-		$('#modal').toggleClass("in");
-		$('#modal_bg').fadeOut(500);
+		$('.modal').toggleClass("in",false);
 	}
 }
 

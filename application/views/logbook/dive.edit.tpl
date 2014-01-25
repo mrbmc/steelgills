@@ -210,9 +210,6 @@
 
 </form>
 {literal}
-<link type="text/css" href="/css/redmond/jquery-ui-1.7.3.custom.css" rel="stylesheet" />	
-<script type="text/javascript" src="/js/jquery-ui.js"></script>
-<script type="text/javascript" src="/js/jquery.autocomplete.js"></script>
 <style type="text/css">
 #demo-frame > div.demo { padding: 10px !important; }
 input.text {
@@ -221,7 +218,7 @@ width: 80px;
 </style>
 <script type="text/javascript">/*<![CDATA[*/
 divesites=[{/literal}{foreach from=$DATA.divesites key=k item=row}"{$row->title}|{$row->divesiteid}",{/foreach}{literal}"dummy"];
-$(function(){
+var init = function () {
 	$("#location").autocompleteArray(divesites,{
 		maxItems:10,
 		onItemSelect:function(li){
@@ -259,7 +256,7 @@ $(function(){
 	updateTime();
 	$('#time_start').change(updateTime);
 	$('#time_end').change(updateTime);
-});
+};
 
 function updateTime () {
 		begin = $('#time_start').val().split(":");
@@ -285,5 +282,25 @@ function exposureSelect(obj) {
 	$('#exposure').val(exposure);
 }
 
+
+var jqready = function () {
+    if (typeof jQuery == 'undefined') {
+        setTimeout(jqready, 50);
+        return false;
+    }
+
+	$.when(
+	    $.getScript( "/js/jquery-ui.js" ),
+	    $.getScript( "/js/jquery.autocomplete.js" ),
+	    $.Deferred(function( deferred ){
+	        $( deferred.resolve );
+	    })
+	).done(function(){
+		init();
+	});
+}
+jqready();
+
 /*]]>*/</script>
 {/literal}
+<link type="text/css" href="/css/redmond/jquery-ui-1.7.3.custom.css" rel="stylesheet" />	

@@ -29,7 +29,7 @@ class Config
 		'host' => "localhost",
 		'db' => "steelgills_stage",
 		'user' => "steelgills",
-		'pass' => ""
+		'pass' => "deepdive"
 	);
 	//DEVELOPMENT
 	private $dsn_dev = array(
