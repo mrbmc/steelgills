@@ -78,8 +78,8 @@ function displayImages(data) {
 	    $('.divesite-images').append($('<div class="span2"></div>').append($('<img class="thumbnail" />').attr('src',url)));
 	}
 }
-var FLICKR_KEY = "41392a7d72d8ac7bd82ae6b2006dc61a";
-var FLICKR_SECRET = "57bd6c9b8bd55ad6";
+var FLICKR_KEY = "{/literal}{$CONFIG.FLICKR_KEY}{literal}";
+var FLICKR_SECRET = "{/literal}{$CONFIG.FLICKR_SECRET}{literal}";
 var call = "http://api.flickr.com/services/rest/?";
     call += "&api_key="+FLICKR_KEY;
     call += "&method=flickr.photos.search";

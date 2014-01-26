@@ -1,3 +1,17 @@
+Array.prototype.size = function () {
+	var l = 0;
+	for (var k in this) {
+		l++;
+	}
+	return l;
+}
+Array.prototype.contains = function (s) {
+	for(var i in this) {
+		if(this[i]==s)
+			return i;
+	}
+	return false;
+} 
 function setCookie(c_name,value,expiredays) {
 	var exdate=new Date();
 	exdate.setDate(exdate.getDate()+expiredays);
@@ -23,37 +37,18 @@ function init_tabs() {
 		e.preventDefault();
 		var me = $(this),
 			mom = me.closest('.tabs'),
-			tab = me.attr("href");
-		$(".selected",mom).removeClass("selected");
+			tab = me.attr("href"),
+			cookie_key = me.attr('rel'),
+			cookie_val = tab.substr(1);
+		$(".active",mom).removeClass("active");
 		$(".tab-pane").slideUp(250);
-		$(this).closest('li').addClass("selected");
-		$(tab).slideDown(250,function(){
-			// if(typeof SGMap != "undefined" && !SGMap.map) {
-			// 	map_init();
-			// }else if(SGMap.map){
-			// 	SGMap.redraw();
-			// }
-		});
-		var cookie_name = $(this).attr("rel");
-		if(cookie_name=="" || cookie_name==undefined) cookie_name = "tab";
-		setCookie(cookie_name,tab,99);
+		$(this).closest('li').addClass("active");
+		$(tab).slideDown(250);
+		console.log('set cookie '+cookie_key+": ",cookie_val);
+		if(cookie_key=="" || cookie_key==undefined) cookie_key = "tab";
+		setCookie(cookie_key,cookie_val,99);
 	});
 }
-
-Array.prototype.size = function () {
-	var l = 0;
-	for (var k in this) {
-		l++;
-	}
-	return l;
-}
-Array.prototype.contains = function (s) {
-	for(var i in this) {
-		if(this[i]==s)
-			return i;
-	}
-	return false;
-} 
 SGModal = {
 	url: "",
 	selector: function () {
@@ -81,4 +76,7 @@ SGModal = {
 
 $(document).ready(function () {
 	init_tabs();
+	if(typeof page_init != undefined) {
+		page_init();
+	}
 });

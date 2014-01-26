@@ -10,6 +10,7 @@ SGMap = {
 	icon: {},
 	iconImage: "/images/map_icon.png",
 	infoWindow : "0",
+	key: "",
 	map : false,
 	mapType : "state",
 	markerLibrary : new Array(),
@@ -109,23 +110,23 @@ SGMap = {
 	},
 
 	init: function (params) {
-		if(params && ('target' in params))
-			this.targetDiv = params.target;
-		if(params && ('point' in params) && ((params.point.latitude + params.point.latitude)!=0))
-			this.center = params.point;
-		if(params && ('scope' in params))
-			this.scope = params.scope;
-    var latlng = new google.maps.LatLng(this.center.latitude,this.center.longitude);
-    var mapOptions = {
-      zoom: this.zoom,
-      center: latlng,
-      mapTypeId: google.maps.MapTypeId.SATELLITE,
+		if(typeof params != "undefined")
+			_.extend(this,params);
+
+		if(typeof google == "undefined" || typeof google.maps == "undefined"){
+			return SGMap.load(SGMap.init);
+		}
+
+	    var mapOptions = {
+			zoom: this.zoom,
+			center: new google.maps.LatLng(SGMap.center.latitude,SGMap.center.longitude),
+			mapTypeId: google.maps.MapTypeId.SATELLITE,
 			mapTypeControl: true,
-      mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
-      navigationControl: true,
-      navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
-    };
-    this.map = new google.maps.Map(document.getElementById("map_canvas"),mapOptions);
+			mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
+			navigationControl: true,
+			navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
+	    };
+	    this.map = new google.maps.Map(document.getElementById("map_canvas"),mapOptions);
 		this.geocoder = new google.maps.Geocoder();
 		this.bounds = new google.maps.LatLngBounds();
 		if(this.markers.length != undefined) {
@@ -134,15 +135,19 @@ SGMap = {
 			this.center = this.bounds.getCenter();
 		}
 
+		google.maps.event.addListener(SGMap.map, "dragend", function(){SGMap.refreshBounds();});
+		google.maps.event.addListener(SGMap.map, "zoom_changed", function(){SGMap.refreshBounds();});
 	},
 
-	loadScript: function (_callbackName) {
-		if(_callbackName==undefined) _callbackName = "map_init";
-		var script = document.createElement("script");
-		script.type = "text/javascript";
-		script.src = "http://maps.google.com/maps/api/js?sensor=false";
-		// script.src += "&callback="+_callbackName;
-		document.body.appendChild(script);
+	load: function (_callback) {
+		if(typeof google != "undefined" && typeof google.maps != "undefined"){
+			return _callback();
+		}
+
+		$.getScript('https://maps.googleapis.com/maps/api/js?sensor=false&key='+SGMap.key,function(){
+			console.log('gmaps loaded');
+			return _callback();
+		});
 	},
 
 	redraw: function () {
@@ -223,5 +228,3 @@ SGMap = {
 	},
 
 }
-
-

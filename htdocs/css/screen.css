@@ -356,14 +356,10 @@ ul.navigation > li > a {
   -moz-border-radius: 0 1em 1em 0;
   border-radius: 0 1em 1em 0;
 }
-.navigation.segmented li.selected a,
-.tabs li.selected a,
-.tabs-dummy li.selected a {
-  background: #EEE;
-  background-image: -webkit-linear-gradient(top, #ffffff 0%, #eeeeee 100%);
-  background-image: linear-gradient(to bottom, #ffffff 0%, #eeeeee 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffeeeeee', GradientType=0);
+.navigation.segmented li.active a,
+.tabs li.active a,
+.tabs-dummy li.active a {
+  background: #f9f9f9;
   color: #666;
 }
 .tabs,

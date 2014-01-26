@@ -48,7 +48,7 @@ class Config
 	const PERPAGE = 20;
 
 
-	const GOOGLE_MAPS_KEY = "ABQIAAAAneA_PMgS1PxdizDrcOaoERRpAWDUQRkjx_Tnyvrdqwt4JvaA8xRrCSqEhKmRnktZKGaTTHEUCGLkXg";
+	const GOOGLE_API_KEY = "AIzaSyD_nX0rcdIIMqH4VVXe4-x1-hOo7hDZJ1E";
 
 	/**
 	 * FACEBOOK
