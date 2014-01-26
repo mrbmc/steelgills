@@ -1,4 +1,5 @@
-SGMap = {
+if(typeof SG == 'undefined') var SG = {};
+SG.Map = {
 	ajaxLoading: false,
 	baseIcon : {},
 	bounds: {},
@@ -36,11 +37,11 @@ SGMap = {
 			var marker = new google.maps.Marker(markerOptions);
 
 			google.maps.event.addListener(marker, 'click', function (event) {
-				for (var i in SGMap.markerLibrary) {
-					if(SGMap.markerLibrary[i] instanceof google.maps.Marker)
-						SGMap.markerLibrary[i].infowindow.close();
+				for (var i in SG.Map.markerLibrary) {
+					if(SG.Map.markerLibrary[i] instanceof google.maps.Marker)
+						SG.Map.markerLibrary[i].infowindow.close();
 				}
-				this.infowindow.open(SGMap.map);
+				this.infowindow.open(SG.Map.map);
 	 		});
 			if("draggable" in m) {
 				google.maps.event.addListener(marker, "dragend", function() {
@@ -61,8 +62,9 @@ SGMap = {
 	centerMap: function (_point) {
 		var point = (_point!=undefined) ? new google.maps.LatLng(_point.latitude,_point.longitude) : this.bounds.getCenter();
 		var zoom = (_point!=undefined) ? _point.zoom : Math.min(this.map.getBoundsZoomLevel(this.bounds),13);
-		console.log(point);
+		this.center = point;
 		this.map.setCenter(point, zoom); 
+		//console.log(point);
 	},
 
 	clearMap: function () {
@@ -97,7 +99,7 @@ SGMap = {
 				if (status == google.maps.GeocoderStatus.OK) {
 					m.point = results[0].geometry.location;
 					//console.log('geocode.complete');
-					marker = SGMap.addMarker(m);
+					marker = SG.Map.addMarker(m);
 					if(geocodeCallback != undefined) {
 						geocodeCallback(marker);
 					}
@@ -114,12 +116,12 @@ SGMap = {
 			_.extend(this,params);
 
 		if(typeof google == "undefined" || typeof google.maps == "undefined"){
-			return SGMap.load(SGMap.init);
+			return SG.Map.load(SG.Map.init);
 		}
 
 	    var mapOptions = {
 			zoom: this.zoom,
-			center: new google.maps.LatLng(SGMap.center.latitude,SGMap.center.longitude),
+			center: new google.maps.LatLng(SG.Map.center.latitude,SG.Map.center.longitude),
 			mapTypeId: google.maps.MapTypeId.SATELLITE,
 			mapTypeControl: true,
 			mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
@@ -135,8 +137,8 @@ SGMap = {
 			this.center = this.bounds.getCenter();
 		}
 
-		google.maps.event.addListener(SGMap.map, "dragend", function(){SGMap.refreshBounds();});
-		google.maps.event.addListener(SGMap.map, "zoom_changed", function(){SGMap.refreshBounds();});
+		google.maps.event.addListener(SG.Map.map, "dragend", function(){SG.Map.refreshBounds();});
+		google.maps.event.addListener(SG.Map.map, "zoom_changed", function(){SG.Map.refreshBounds();});
 	},
 
 	load: function (_callback) {
@@ -144,7 +146,7 @@ SGMap = {
 			return _callback();
 		}
 
-		$.getScript('https://maps.googleapis.com/maps/api/js?sensor=false&key='+SGMap.key,function(){
+		$.getScript('https://maps.googleapis.com/maps/api/js?sensor=false&key='+SG.Map.key,function(){
 			console.log('gmaps loaded');
 			return _callback();
 		});
@@ -172,11 +174,11 @@ SGMap = {
 			  dataType: 'json',
 			  data: {},
 			  success: function(data) {
-					// SGMap.markers = _.uniq($.merge(SGMap.markers,data));
-					// console.log(SGMap.markers.length);
-					SGMap.markers = data;
-					SGMap.refreshMarkers();
-					SGMap.ajaxLoading=false;
+					// SG.Map.markers = _.uniq($.merge(SG.Map.markers,data));
+					// console.log(SG.Map.markers.length);
+					SG.Map.markers = data;
+					SG.Map.refreshMarkers();
+					SG.Map.ajaxLoading=false;
 				}
 			});
 	},
@@ -218,7 +220,7 @@ SGMap = {
 	validatePoint: function (m) {
 			if(m instanceof String) {
 				return this.getGeocode(m);
-			}else if((m instanceof Object) && typeof m.point == 'string') {
+			} else if((m instanceof Object) && typeof m.point == 'string') {
 				return this.getGeocode(m);
 			} else if(!(m.point instanceof google.maps.LatLng)) {
 				m.point = new google.maps.LatLng(m.point.latitude, m.point.longitude);

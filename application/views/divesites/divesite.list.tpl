@@ -59,19 +59,21 @@
 	</div>
 </div>
 
+{include file='footer.tpl'}
+
 
 {if $MEDIA!="mobile"}<script type="text/javascript">//<![CDATA[
 {literal}
-var page_init = function(){
-    if (typeof jQuery == 'undefined' || typeof SGMap == 'undefined' || typeof google.maps == 'undefined') {
-        setTimeout(page_init, 50);
+SG.init_page = function() {
+    if (typeof jQuery == 'undefined' || typeof SG.Map == 'undefined' || typeof google.maps == 'undefined') {
+        setTimeout(SG.init_page, 50);
         return false;
     }
-	SGMap.markers = {/literal}{$DATA.json}{literal};
-	SGMap.scope = {/literal}"{$DISPATCHER.action}"{literal};
-	SGMap.key = "{/literal}{$CONFIG.GOOGLE_API_KEY}{literal}";
+	SG.Map.markers = {/literal}{$DATA.json}{literal};
+	SG.Map.scope = {/literal}"{$DISPATCHER.action}"{literal};
+	SG.Map.key = "{/literal}{$CONFIG.GOOGLE_API_KEY}{literal}";
 	if(getCookie('tab-map')!="tab-list") {
-		SGMap.init();
+		SG.Map.init();
 	}
 }
 {/literal}

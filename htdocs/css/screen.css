@@ -473,9 +473,9 @@ label.error {
 }
 .modal a.close {
   display: block;
-  position: fixed;
-  top: 1em;
-  right: 5%;
+  position: absolute;
+  top: .5em;
+  right: .5em;
   z-index: 2002;
   margin-left: 0;
   cursor: pointer;
@@ -492,8 +492,6 @@ label.error {
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
-  -webkit-box-shadow: 2px -2px 4px rgba(0, 0, 0, 0.5);
-  box-shadow: 2px -2px 4px rgba(0, 0, 0, 0.5);
 }
 #modal_bg {
   display: none;

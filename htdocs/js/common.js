@@ -49,20 +49,27 @@ function init_tabs() {
 		setCookie(cookie_key,cookie_val,99);
 	});
 }
-SGModal = {
+
+if(typeof SG == 'undefined') var SG = {};
+
+SG.Modal = {
 	url: "",
 	selector: function () {
-		return $('#'+SGModal.targetDiv);
+		return $('#'+SG.Modal.targetDiv);
 	},
 	openModal: function (url) {
-		var _modal = $('<div class="modal fade"></div>');
+		console.log('open modal:',url);
+		var _modal = $('#sg-modal');
+		if(_modal.length<=0) {
+			_modal = $('<div id="sg-modal" class="modal fade"></div>');
 			_modal.append('<a href="#" class="close">&times;</a>');
 			_modal.append('<div class="modal-body"></div>');
-		$('body').append(_modal);
+			$('body').append(_modal);
+		}
 		$('.modal-body',_modal).load(url,function () {
 			$(this).closest(".modal").toggleClass('in');
 		    $(window).keydown(function(event){
-		    	if(event.keyCode==27) { SGModal.closeModal(); }
+		    	if(event.keyCode==27) { SG.Modal.closeModal(); }
 		    });
 		});
 		$('.close','.modal').bind('click',function(e){
@@ -76,7 +83,7 @@ SGModal = {
 
 $(document).ready(function () {
 	init_tabs();
-	if(typeof page_init != undefined) {
-		page_init();
+	if(typeof SG.init_page != undefined) {
+		SG.init_page();
 	}
 });
