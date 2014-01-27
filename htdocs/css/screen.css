@@ -417,6 +417,9 @@ ul.navigation > li > a {
     margin-left: inherit;
     right: 2%;
   }
+  #globalnav > li > a {
+    padding: .5em;
+  }
 }
 /* @end */
 /* @group FORMS */
@@ -839,10 +842,10 @@ HOMEPAGE
   position: relative;
   z-index: -2;
 }
-.Index #body .container {
+.Index #body {
   text-align: center;
 }
-.Index #body .container h1 {
+.Index #body h1 {
   color: #FFF;
   text-shadow: 0 0 16px rgba(0, 0, 0, 0.8);
   font-size: 4em;
@@ -865,6 +868,11 @@ HOMEPAGE
   right: 5px;
   bottom: 5px;
   position: absolute;
+}
+@media (max-width: 768px) {
+  .Index #body h1 {
+    font-size: 2em;
+  }
 }
 #feedback {
   width: 50%;

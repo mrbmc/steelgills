@@ -52,7 +52,10 @@ function init_tabs() {
 	});
 }
 
+
 if(typeof SG == 'undefined') var SG = {};
+var pageInitialized = false;
+
 
 SG.Modal = {
 	url: "",
@@ -82,8 +85,10 @@ SG.Modal = {
 		$('.modal').toggleClass("in",false);
 	}
 }
-
 $(document).ready(function () {
+    if(pageInitialized) return;
+    pageInitialized = true;
+
 	init_tabs();
 	if(typeof SG.init_page != undefined) {
 		SG.init_page();

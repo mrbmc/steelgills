@@ -40,10 +40,6 @@
 <div class="wallpaper"><span class="caption"></span></div>
 
 
-<script type="text/javascript" src="/js/jquery-2.0.3.min.js"></script>
-<script type="text/javascript" src="/js/lib/underscore/underscore-min.js"></script>
-<script src="/js/common{if $smarty.server.HTTP_HOST=="steelgills.com"}.min{/if}.js" type="text/javascript"></script>
-
 {if $smarty.server.HTTP_HOST=="steelgills.com"}
 {literal}<script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
@@ -56,6 +52,10 @@ pageTracker._trackPageview();
 } catch(err) {}
 </script>{/literal}
 {/if}
+
+<script type="text/javascript" src="/js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="/js/lib/underscore/underscore-min.js"></script>
+<script src="/js/common{if $smarty.server.HTTP_HOST=="steelgills.com"}.min{/if}.js" type="text/javascript"></script>
 
 
 

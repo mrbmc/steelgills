@@ -66,9 +66,14 @@
 {literal}
 SG.init_page = function() {
     if (typeof jQuery == 'undefined' || typeof SG.map == 'undefined' || typeof google.maps == 'undefined') {
-        setTimeout(SG.init_page, 50);
-        return false;
+	    console.log('init_page dependencies not ready');
+        return setTimeout(SG.init_page, 50);
     }
+
+    if(SG.map.map!==false) {
+    	return;
+    }
+
 	SG.map.markers = {/literal}{$DATA.json}{literal};
 	SG.map.scope = {/literal}"{$DISPATCHER.action}"{literal};
 	SG.map.key = "{/literal}{$CONFIG.GOOGLE_API_KEY}{literal}";

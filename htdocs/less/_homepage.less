@@ -15,16 +15,14 @@ HOMEPAGE
         // display: none;
     }
     #body {
-        .container {
-            text-align:center;
+        text-align:center;
 
-            h1 {
-                color: #FFF;
-                text-shadow: 0 0 16px rgba(0,0,0,0.8);
-                font-size: 4em;
-                line-height: 1.5em;
-                margin: 1.5em 0;
-            }
+        h1 {
+            color: #FFF;
+            text-shadow: 0 0 16px rgba(0,0,0,0.8);
+            font-size: 4em;
+            line-height: 1.5em;
+            margin: 1.5em 0;
         }
     }
 }
@@ -47,3 +45,12 @@ HOMEPAGE
     }
 }
 
+@media (max-width:768px) {
+    .Index {
+        #body {
+            h1 {
+                font-size: 2em;
+            }
+        }
+    }
+}

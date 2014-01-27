@@ -21,6 +21,7 @@ SG.map = {
 	zoom : 2,
 
 	addMarker: function (m) {
+		// console.log('Add Marker',m);
 		if((m instanceof Object) && this.markerLibrary[m.id]!=undefined) {
 			marker = this.markerLibrary[m.id];
 			m = this.validatePoint(m);
@@ -92,7 +93,7 @@ SG.map = {
 	},
 
 	getGeocode : function(m) {
-		//console.log('geocode');
+		// console.log('geocode');
 		this.geocoder.geocode(
 			{ 'address': m.point},
 			function(results,status) {
@@ -111,10 +112,12 @@ SG.map = {
 		return "geocoding";
 	},
 
-	init: function (params) {
-		if(typeof params != "undefined")
-			_.extend(this,params);
+	init: function () {
+		// console.log("SG.map.init");
 
+		if(typeof arguments != "undefined" && arguments.length>0) {
+			_.extend(this,arguments);
+		}
 		if(typeof google == "undefined" || typeof google.maps == "undefined"){
 			return SG.map.load(SG.map.init);
 		}
@@ -132,12 +135,12 @@ SG.map = {
 		this.geocoder = new google.maps.Geocoder();
 		this.bounds = new google.maps.LatLngBounds();
 		if(this.markers.length>0) {
-			// this.refreshMarkers();
-			// this.map.fitBounds(this.bounds);
+			this.refreshMarkers();
+			//this.map.fitBounds(this.bounds);
 			// this.center = this.bounds.getCenter();
 		} else {
+			//this.refreshBounds();
 		}
-
 		google.maps.event.addListener(SG.map.map, "dragend", function(){SG.map.refreshBounds();});
 		google.maps.event.addListener(SG.map.map, "zoom_changed", function(){SG.map.refreshBounds();});
 	},
@@ -148,14 +151,16 @@ SG.map = {
 		}
 
 		$.getScript('https://maps.googleapis.com/maps/api/js?sensor=false&key='+SG.map.key,function(){
-			console.log('gmaps loaded');
+			// console.log('gmaps loaded');
 			return _callback();
 		});
 	},
 
 	redraw: function () {
-		if(!this.map)
+		// console.log('redraw');
+		if(!this.map) {
 			return this.init();
+		}
 		this.refreshMarkers();
 		this.map.fitBounds(this.bounds);
 	},
@@ -164,6 +169,7 @@ SG.map = {
 	 * Loads markers based on the bounds of the map
 	 * */
 	refreshBounds: function (args) {
+		// console.log('refreshBounds');
 		if(this.ajaxLoading) return;
 		var bounds = this.map.getBounds(),
 			sw = bounds.getSouthWest(),
@@ -185,15 +191,16 @@ SG.map = {
 	},
 
 	refreshMarkers: function () {
+		// console.log('refreshMarkers:'+this.markers.length);
 		if(this.markers.length>0) {
 			for(idx in this.markers) {
 				var m = this.markers[idx];
-				if(m.title=="") m.title = m.city+', '+m.country;
-				m.info = '<a href="/divesites/show/'+m.divesiteid+'">'+m.title+'</a>';
-				m.info += '<br />';
-				if(m.city!=null) m.info += m.city+', '
-				m.info += m.country;
-				//m.info += '<br /><small>'+m.latitude+' x '+m.longitude+'</small>';				
+					m.title = (m.title=="") ? (m.city+', ' + m.country) : m.title;
+					m.info = '<a href="/divesites/show/'+m.divesiteid+'">'+m.title+'</a>';
+					m.info += '<br />';
+					m.info += (m.city!=null) ? m.city+', ' : '';
+					m.info += m.country;
+					//m.info += '<br /><small>'+m.latitude+' x '+m.longitude+'</small>';				
 				if(m.latitude!=undefined && m.longitude!=undefined) {
 					params = {
 						point:{latitude:m.latitude, longitude:m.longitude}, 
@@ -201,13 +208,13 @@ SG.map = {
 						id:m.divesiteid 
 					}
 					this.addMarker(params);
-				}else if(m.street!=undefined) {
+				} else if(m.street!=undefined) {
 					this.getGeocode({point:m.street,description:m.street,id:m.divesiteid});
 				}
 			}
-  			var m = this.markers[0];
+  			// var m = this.markers[0];
 	    } else {
-	    	console.log('no markers');
+	    	console.log('no new markers');
 	    }
 	    return this.markers;
 	},
