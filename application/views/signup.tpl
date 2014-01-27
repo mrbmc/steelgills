@@ -1,7 +1,6 @@
 {include file='header.tpl' title='Sign Up'}
 
-
-	<script type="text/javascript" src="/js/jquery.validation.min.js"></script> 
+<script type="text/javascript" src="/js/lib/jquery-validation/jquery.validate.js"></script> 
 
 {literal}<script type="text/javascript">/*<![CDATA[*/
 

@@ -2,7 +2,7 @@
 
 <h1>Password Reminder</h1>
 
-<script type="text/javascript" src="/js/jquery.validation.js"></script> 
+<script type="text/javascript" src="/js/lib/jquery-validation/dist/jquery.validate.js"></script> 
 
 {literal}<script type="text/javascript">/*<![CDATA[*/
 $(document).ready(function() {
