@@ -40,11 +40,13 @@ function init_tabs() {
 			tab = me.attr("href"),
 			cookie_key = me.attr('rel'),
 			cookie_val = tab.substr(1);
-		$(".active",mom).removeClass("active");
-		$(".tab-pane").slideUp(250);
-		$(this).closest('li').addClass("active");
-		$(tab).slideDown(250);
-		console.log('set cookie '+cookie_key+": ",cookie_val);
+
+		$(".active",".tabs").removeClass("active");
+		me.closest('li').addClass("active");
+
+		$(".active",".tab-content").removeClass("active");
+		$(tab).addClass("active");
+
 		if(cookie_key=="" || cookie_key==undefined) cookie_key = "tab";
 		setCookie(cookie_key,cookie_val,99);
 	});

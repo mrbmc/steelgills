@@ -92,8 +92,12 @@ ul.navigation {
     height: auto;
 
     .tab-pane {
+        display: none;
         background-color: @white;
         padding: @grid-gutter-width;
+        &.active {
+            display: block;
+        }
     }
 }
 .navigation.segmented,.tabs,.tabs-dummy {

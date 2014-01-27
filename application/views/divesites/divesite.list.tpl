@@ -45,11 +45,11 @@
 	<div class="span12">
 		
 		<div class="tab-content">
-			<div class="tab-pane" id="tab-map"{if $smarty.cookies.tab_map=="tab-list"} style="display:none;"{/if}>
+			<div class="tab-pane{if $smarty.cookies.tab_map!="tab-list"} active{/if}" id="tab-map">
 				<div id="map_canvas" class="map"></div>
 				<div id="consolediv"></div>
 			</div>
-			<div class="tab-pane" id="tab-list"{if $smarty.cookies.tab_map!="tab-list"} style="display:none;"{/if}>
+			<div class="tab-pane{if $smarty.cookies.tab_map=="tab-list"} active{/if}" id="tab-list">
 				{include file="divesites/divesite.list.mini.tpl" divesites=$DATA.divesites}
 				{include file='pagenav.tpl' PAGENAV=$DATA.pagenav}
 			</div>
