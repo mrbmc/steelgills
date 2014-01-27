@@ -57,11 +57,11 @@ SG.Modal = {
 	selector: function () {
 		return $('#'+SG.Modal.targetDiv);
 	},
-	openModal: function (url) {
+	openModal: function (url,_class) {
 		console.log('open modal:',url);
 		var _modal = $('#sg-modal');
 		if(_modal.length<=0) {
-			_modal = $('<div id="sg-modal" class="modal fade"></div>');
+			_modal = $('<div id="sg-modal" class="modal ' + ((typeof _class != 'undefined')?_class:"") + ' fade"></div>');
 			_modal.append('<a href="#" class="close">&times;</a>');
 			_modal.append('<div class="modal-body"></div>');
 			$('body').append(_modal);

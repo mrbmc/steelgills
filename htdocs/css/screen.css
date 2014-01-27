@@ -396,6 +396,24 @@ ul.navigation > li > a {
 .breadcrumb h1 {
   margin: 0;
 }
+.modal.login {
+  width: 25%;
+  min-width: 260px;
+  margin-left: 19%;
+  padding: 30px 2%;
+}
+.modal.login .row .span6 {
+  float: none;
+  width: 100%;
+  margin-left: 0;
+}
+@media (max-width: 768px) {
+  .modal.login {
+    left: inherit;
+    margin-left: inherit;
+    right: 2%;
+  }
+}
 /* @end */
 /* @group FORMS */
 fieldset h3,

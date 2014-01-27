@@ -151,4 +151,27 @@ ul.navigation {
     }
 }
 
+
+.modal.login {
+    width: 25%;
+    min-width: 260px;
+    margin-left: 19%;
+    padding: @grid-gutter-width 2%;
+
+    .row {
+        .span6 {
+            float: none;
+            width: 100%;
+            margin-left: 0;
+        }
+    }
+}
+@media (max-width:768px) {
+    .modal.login {
+        left: inherit;
+        margin-left: inherit;
+        right: 2%;
+    }
+}
+
 /* @end */
