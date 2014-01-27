@@ -1,5 +1,5 @@
 if(typeof SG == 'undefined') var SG = {};
-SG.Map = {
+SG.map = {
 	ajaxLoading: false,
 	baseIcon : {},
 	bounds: {},
@@ -37,11 +37,11 @@ SG.Map = {
 			var marker = new google.maps.Marker(markerOptions);
 
 			google.maps.event.addListener(marker, 'click', function (event) {
-				for (var i in SG.Map.markerLibrary) {
-					if(SG.Map.markerLibrary[i] instanceof google.maps.Marker)
-						SG.Map.markerLibrary[i].infowindow.close();
+				for (var i in SG.map.markerLibrary) {
+					if(SG.map.markerLibrary[i] instanceof google.maps.Marker)
+						SG.map.markerLibrary[i].infowindow.close();
 				}
-				this.infowindow.open(SG.Map.map);
+				this.infowindow.open(SG.map.map);
 	 		});
 			if("draggable" in m) {
 				google.maps.event.addListener(marker, "dragend", function() {
@@ -99,7 +99,7 @@ SG.Map = {
 				if (status == google.maps.GeocoderStatus.OK) {
 					m.point = results[0].geometry.location;
 					//console.log('geocode.complete');
-					marker = SG.Map.addMarker(m);
+					marker = SG.map.addMarker(m);
 					if(geocodeCallback != undefined) {
 						geocodeCallback(marker);
 					}
@@ -116,12 +116,12 @@ SG.Map = {
 			_.extend(this,params);
 
 		if(typeof google == "undefined" || typeof google.maps == "undefined"){
-			return SG.Map.load(SG.Map.init);
+			return SG.map.load(SG.map.init);
 		}
 
 	    var mapOptions = {
 			zoom: this.zoom,
-			center: new google.maps.LatLng(SG.Map.center.latitude,SG.Map.center.longitude),
+			center: new google.maps.LatLng(SG.map.center.latitude,SG.map.center.longitude),
 			mapTypeId: google.maps.MapTypeId.SATELLITE,
 			mapTypeControl: true,
 			mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
@@ -131,14 +131,15 @@ SG.Map = {
 	    this.map = new google.maps.Map(document.getElementById("map_canvas"),mapOptions);
 		this.geocoder = new google.maps.Geocoder();
 		this.bounds = new google.maps.LatLngBounds();
-		if(this.markers.length != undefined) {
-			this.refreshMarkers();
-			this.map.fitBounds(this.bounds);
-			this.center = this.bounds.getCenter();
+		if(this.markers.length>0) {
+			// this.refreshMarkers();
+			// this.map.fitBounds(this.bounds);
+			// this.center = this.bounds.getCenter();
+		} else {
 		}
 
-		google.maps.event.addListener(SG.Map.map, "dragend", function(){SG.Map.refreshBounds();});
-		google.maps.event.addListener(SG.Map.map, "zoom_changed", function(){SG.Map.refreshBounds();});
+		google.maps.event.addListener(SG.map.map, "dragend", function(){SG.map.refreshBounds();});
+		google.maps.event.addListener(SG.map.map, "zoom_changed", function(){SG.map.refreshBounds();});
 	},
 
 	load: function (_callback) {
@@ -146,7 +147,7 @@ SG.Map = {
 			return _callback();
 		}
 
-		$.getScript('https://maps.googleapis.com/maps/api/js?sensor=false&key='+SG.Map.key,function(){
+		$.getScript('https://maps.googleapis.com/maps/api/js?sensor=false&key='+SG.map.key,function(){
 			console.log('gmaps loaded');
 			return _callback();
 		});
@@ -154,7 +155,7 @@ SG.Map = {
 
 	redraw: function () {
 		if(!this.map)
-			return map_init();
+			return this.init();
 		this.refreshMarkers();
 		this.map.fitBounds(this.bounds);
 	},
@@ -164,9 +165,9 @@ SG.Map = {
 	 * */
 	refreshBounds: function (args) {
 		if(this.ajaxLoading) return;
-		var bounds = this.map.getBounds();
-		var sw = bounds.getSouthWest();
-		var ne = bounds.getNorthEast();
+		var bounds = this.map.getBounds(),
+			sw = bounds.getSouthWest(),
+			ne = bounds.getNorthEast();
 		url = '/divesites/'+this.scope+'.json?q='+sw.lng() + "," + sw.lat() + "," +ne.lng() + "," + ne.lat();
 		this.ajaxLoading=true;
 		$.ajax({
@@ -174,17 +175,16 @@ SG.Map = {
 			  dataType: 'json',
 			  data: {},
 			  success: function(data) {
-					// SG.Map.markers = _.uniq($.merge(SG.Map.markers,data));
-					// console.log(SG.Map.markers.length);
-					SG.Map.markers = data;
-					SG.Map.refreshMarkers();
-					SG.Map.ajaxLoading=false;
+					// SG.map.markers = _.uniq($.merge(SG.map.markers,data));
+					// console.log(SG.map.markers.length);
+					SG.map.markers = data;
+					SG.map.refreshMarkers();
+					SG.map.ajaxLoading=false;
 				}
 			});
 	},
 
 	refreshMarkers: function () {
-		console.log()
 		if(this.markers.length>0) {
 			for(idx in this.markers) {
 				var m = this.markers[idx];
@@ -193,7 +193,7 @@ SG.Map = {
 				m.info += '<br />';
 				if(m.city!=null) m.info += m.city+', '
 				m.info += m.country;
-				m.info += '<br /><small>'+m.latitude+' x '+m.longitude+'</small>';				
+				//m.info += '<br /><small>'+m.latitude+' x '+m.longitude+'</small>';				
 				if(m.latitude!=undefined && m.longitude!=undefined) {
 					params = {
 						point:{latitude:m.latitude, longitude:m.longitude}, 
@@ -209,6 +209,7 @@ SG.Map = {
 	    } else {
 	    	console.log('no markers');
 	    }
+	    return this.markers;
 	},
 
 	updateLatLon: function (point) {

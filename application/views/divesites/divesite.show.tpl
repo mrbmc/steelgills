@@ -70,11 +70,11 @@ SG.init_map = function() {
 			},
 		description:'{/literal}{$DATA.divesite.title}{literal}<br />{/literal}{if $DATA.divesite.city}{$DATA.divesite.city}, {/if}{literal}{/literal}{$DATA.divesite.country}{literal}<br /><small>{/literal}{$DATA.divesite.latitude}{literal} x {/literal}{$DATA.divesite.longitude}{literal}</small>'
 	};
-	SG.Map.key = "{/literal}{$CONFIG.GOOGLE_API_KEY}{literal}";
-	SG.Map.center = marker.point;
-	SG.Map.init();
-	SG.Map.addMarker(SG.Map.marker);
-	SG.Map.map.setZoom(13);
+	SG.map.key = "{/literal}{$CONFIG.GOOGLE_API_KEY}{literal}";
+	SG.map.center = marker.point;
+	SG.map.init();
+	SG.map.addMarker(SG.map.marker);
+	SG.map.map.setZoom(13);
 }
 SG.init_images = function() {
 	var FLICKR_KEY = "{/literal}{$CONFIG.FLICKR_KEY}{literal}",

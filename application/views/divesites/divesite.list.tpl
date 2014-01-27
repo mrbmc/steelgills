@@ -65,15 +65,15 @@
 {if $MEDIA!="mobile"}<script type="text/javascript">//<![CDATA[
 {literal}
 SG.init_page = function() {
-    if (typeof jQuery == 'undefined' || typeof SG.Map == 'undefined' || typeof google.maps == 'undefined') {
+    if (typeof jQuery == 'undefined' || typeof SG.map == 'undefined' || typeof google.maps == 'undefined') {
         setTimeout(SG.init_page, 50);
         return false;
     }
-	SG.Map.markers = {/literal}{$DATA.json}{literal};
-	SG.Map.scope = {/literal}"{$DISPATCHER.action}"{literal};
-	SG.Map.key = "{/literal}{$CONFIG.GOOGLE_API_KEY}{literal}";
+	SG.map.markers = {/literal}{$DATA.json}{literal};
+	SG.map.scope = {/literal}"{$DISPATCHER.action}"{literal};
+	SG.map.key = "{/literal}{$CONFIG.GOOGLE_API_KEY}{literal}";
 	if(getCookie('tab-map')!="tab-list") {
-		SG.Map.init();
+		SG.map.init();
 	}
 }
 {/literal}
