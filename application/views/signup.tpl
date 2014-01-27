@@ -1,30 +1,119 @@
 {include file='header.tpl' title='Sign Up'}
+<div class="row">
+	<div class="span12">
+		
+		<form id="userForm" method="post" action="/profile/create/" class="form form-horizontal"> 
 
-<script type="text/javascript" src="/js/lib/jquery-validation/jquery.validate.js"></script> 
+		<fieldset>
+			<h3>Use your social account</h3>
+			<p>Connecting your twitter or facebook account allows you to sign in with those services and publish updates to them.</p>
+			<p><a href="/login/twitter"><img src="/images/connect_twitter.png" /></a> &nbsp; <a href="/login/facebook"><img src="/images/connect_facebook.gif" /></a></p>
+		</fieldset>
+
+		<h4>-or-</h4>
+
+		<fieldset>
+			<h3>Create a SteelGills.com Account</h3>
+			{*<div class="control-group">
+				<div class="control-label">
+					<label>Username</label>
+				</div>
+				<div class="controls">
+					<input type="text" name="username" class="text" />
+				</div>
+			</div>*}
+			<div class="control-group">
+				<div class="control-label">
+					<label>Email</label>
+				</div>
+				<div class="controls">
+					<span><input type="text" name="email" class="text" value="{$USER.email}" /></span>
+					<span class="status"></span>
+				</div>
+			</div>
+			<div class="control-group">
+				<div class="control-label">
+					<label>Password</label>
+				</div>
+				<div class="controls">
+					<span><input type="password" id="password" name="password" class="text" /></span>
+					<span class="status" id="pw_status"></span>
+				</div>
+			</div>
+			{*<div class="control-group">
+				<div class="control-label">
+					<label>Confirm Password</label>
+				</div>
+				<div class="controls">
+					<span><input type="password" id="password_confirm" name="password_confirm" class="text" /></span>
+					<span class="status"></span>
+				</div>
+			</div>*}
+			<div class="control-group">
+				<div class="controls">
+					<span id="captchaImage">{include file="captcha.tpl" captcha=$DATA.captcha}</span>
+					<span class="status" style="margin-left:200px;"></span> 
+				</div>
+			</div>
+			<div class="control-group">
+				<div class="control-label">
+					
+				</div>
+				<div class="controls">
+					
+					<label for="input-newsletter">
+						<input type="checkbox" id="input-newsletter" name="newsletter" value="true" checked="checked" />
+						Can we email you updates?
+					</label> 
+					<span class="status"></span> 
+				</div>
+			</div>
+			<div class="control-group">
+				<div class="control-label">
+					<label></label>
+				</div>
+				<div class="controls">
+					<span><input type="submit" class="btn btn-primary" id="user_create_submit" name="Submit" tabindex="7" value="Create my account" /></span>
+				</div>
+			</div>
+		</fieldset>
+
+		</form>
+	</div>
+</div>
+
+
+{include file='footer.tpl'}
+
+
+<script type="text/javascript" src="/js/lib/jquery-validation/dist/jquery.validate.js"></script> 
 
 {literal}<script type="text/javascript">/*<![CDATA[*/
 
-$(document).ready(function() {
-	$("#password").keyup(function(){
-		$("#pw_status").html(passwordStrength($("#password").val(),""));
-	});
+// $(document).ready(function() {
+if(typeof SG == 'undefined') var SG = {};
+SG.init_page = function () {
+	// $("#password").keyup(function(){
+	// 	$("#pw_status").html(passwordStrength($("#password").val(),""));
+	// });
+
 	// validate signup form on keyup and submit
 	var validator = $("#userForm").validate({
 		rules: {
-			username: {
-				required: true,
-				minlength: 5,
-				remote: "/profile/username_unique/"
-			},
+			// username: {
+			// 	required: true,
+			// 	minlength: 5,
+			// 	remote: "/profile/username_unique/"
+			// },
 			password: {
 				required: true,
 				minlength: 5
 			},
-			password_confirm: {
-				required: true,
-				minlength: 5,
-				equalTo: "#password"
-			},
+			// password_confirm: {
+			// 	required: true,
+			// 	minlength: 5,
+			// 	equalTo: "#password"
+			// },
 			email: {
 				required: true,
 				email: true,
@@ -36,25 +125,25 @@ $(document).ready(function() {
 			}
 		},
 		messages: {
-			username: {
-				required: "Required",
-				minlength: jQuery.format("Enter at least {0} characters"),
-				remote: jQuery.format("That username is already in use")
-			},
+			// username: {
+			// 	required: "Required",
+			// 	minlength: jQuery.format("Enter at least {0} characters"),
+			// 	remote: jQuery.format("That username is already in use")
+			// },
 			email: {
 				required: "Please enter a valid email address",
 				minlength: "Please enter a valid email address",
-				remote: jQuery.format("That email is already in use")
+				remote: $.validator.format("That email is already in use")
 			},
 			password: {
 				required: "Provide a password",
-				rangelength: jQuery.format("Enter at least {0} characters")
+				rangelength: $.validator.format("Enter at least {0} characters")
 			},
-			password_confirm: {
-				required: "Repeat your password",
-				minlength: jQuery.format("Enter at least {0} characters"),
-				equalTo: "Enter the same password as above"
-			},
+			// password_confirm: {
+			// 	required: "Repeat your password",
+			// 	minlength: jQuery.format("Enter at least {0} characters"),
+			// 	equalTo: "Enter the same password as above"
+			// },
 			captcha: "Please review your selection"
 		},
 		// the errorPlacement has to take the table layout into account
@@ -72,63 +161,5 @@ $(document).ready(function() {
 			label.html("&nbsp;").addClass("checked");
 		}
 	});
-});
+}
 /*]]>*/</script>{/literal}
- 
-
-<fieldset>
-<legend>Use your social account</legend>
-<small>Connecting your twitter or facebook account <br />
-allows you to sign in with those services and publish <br />
-updates to them.</small>
-<p><a href="/login/twitter"><img src="/images/connect_twitter.png" /></a> &nbsp; <a href="/login/facebook"><img src="/images/connect_facebook.gif" /></a></p>
-</fieldset>
-
-
-<h3>-or-</h3>
-
-<form id="userForm" method="post" action="/profile/create/"> 
-
-<fieldset>
-<legend>Create a SteelGills.com Account</legend>
-<div>
-	<label>Username</label>
-	<input type="text" name="username" class="text" />
-</div>
-<div>
-	<label>Email</label>
-	<span><input type="text" name="email" class="text" value="{$USER.email}" /></span>
-	<span class="status"></span>
-</div>
-
-<div>
-	<label>Password</label>
-	<span><input type="password" id="password" name="password" class="text" /></span>
-	<span class="status" id="pw_status"></span>
-</div>
-<div>
-	<label>Confirm Password</label>
-	<span><input type="password" id="password_confirm" name="password_confirm" class="text" /></span>
-	<span class="status"></span>
-</div>
-<div>
-	<span id="captchaImage">{include file="captcha.tpl" captcha=$DATA.captcha}</span>
-	<span class="status" style="margin-left:200px;"></span> 
-</div>
-<div>
-	<label>Can we email you updates?</label> 
-	<span><input type="checkbox" id="newsletter" name="newsletter" value="true" checked="checked" /></span> 
-	<span class="status"></span> 
-</div>
-<div>
-	<label></label>
-	<span><input type="submit" class="button" id="user_create_submit" name="Submit" tabindex="7" value="Create my account" /></span>
-</div>
-</fieldset>
-
-</form>
-
-
-
-
-{include file='footer.tpl'}
