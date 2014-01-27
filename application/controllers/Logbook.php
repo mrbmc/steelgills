@@ -12,6 +12,8 @@ class Logbook extends Controller
 	public $breadcrumb;
 	public $divesites = array();
 	public $last_dive;
+	public $sort;
+	public $order;
 
 	public function __construct() {
 		parent::__construct("My Logbook");
@@ -27,43 +29,42 @@ class Logbook extends Controller
 			return $this->redirect = "/login";
 
 		//List sorting
-		$sort_order = (Session::instance()->get('sort_order')!="") ? Session::instance()->get('sort_order') : "DESC";
-		$sort_col = (Session::instance()->get('sort_col')!="") ? Session::instance()->get('sort_col') : "time_start";
+		$this->order = (Session::instance()->get('order')!="") ? Session::instance()->get('order') : "DESC";
+		// if($_GET['order']!="") $this->order = $_GET['order'];
+		$this->sort = (Session::instance()->get('sort_col')!="") ? Session::instance()->get('sort_col') : "time_start";
 		if(isset($_GET['sort']) && Dispatcher::instance()->action!="chart_data") {
 			switch ($_GET['sort'])
 			{
 				case "title":
-					$sort_col = "title";
+					$this->sort = "title";
 				break;
 				case "location":
-					$sort_col = "location";
+					$this->sort = "location";
 				break;
 				case "depth":
-					$sort_col = "max_depth";
+					$this->sort = "max_depth";
 				break;
 				case "time":
-					$sort_col = "bottom_time";
+					$this->sort = "bottom_time";
 				break;
 				case "date":
 				default:
-					$sort_col = "time_start";
+					$this->sort = "time_start";
 				break;
 			}
-			if(($sort_col == Session::instance()->get('sort_col')))
-				$sort_order = ($sort_order == "ASC") ? "DESC" : "ASC";
-			else
-				$sort_order = "DESC";
+			if(($this->sort == Session::instance()->get('sort_col')))
+				$this->order = ($this->order == "ASC") ? "DESC" : "ASC";
 		}
 		
-		Session::instance()->set("sort_col",$sort_col);
-		Session::instance()->set("sort_order",$sort_order);
+		Session::instance()->set("sort_col",$this->sort);
+		Session::instance()->set("sort_order",$this->order);
 
 		$this->pagenav->urlTemplate = "/logbook/index/p/|#|";
 		$this->pagenav->totalItems = $this->divecount;
 		//$this->pagenav->perpage = 3;
 
 		$where = "AND fk_userid = '".$this->user->userid."'";
-		$order = "$sort_col $sort_order";
+		$order = $this->sort . " " . $this->order;
 		$limit = $this->pagenav->getSQLLimit();
 
 		$params = array("where"=>$where,"order"=>$order,"limit"=>$limit);

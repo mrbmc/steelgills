@@ -1093,6 +1093,16 @@ a.facebook:hover {
   max-width: 100%;
   width: 100%;
 }
+.ASC:after {
+  content: " \25B4";
+  display: inline-block;
+  margin-left: 5px;
+}
+.DESC:after {
+  content: " \25BE";
+  display: inline-block;
+  margin-left: 5px;
+}
 @media (max-width: 768px) {
   .container {
     width: 96%;

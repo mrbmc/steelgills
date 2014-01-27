@@ -18,16 +18,16 @@
 
 <div class="content">
 	<ul class="navigation tabs">
-		<li class="tab{if $smarty.cookies.tab_log=="#log-list" || !$smarty.cookies.tab_log || $smarty.cookies.tab_log==""} selected{/if}"><a href="#log-list" id="tab1" rel="tab_log" title="tabContentList">Dives</a></li> 
-		<li class="tab{if $smarty.cookies.tab_log=="#log-charts"} selected{/if}"><a href="#log-charts" id="tab2" rel="tab_log" title="tabContentCharts">Charts</a></li>
+		<li class="tab{if $smarty.cookies.tab_log!="log-charts"} active{/if}"><a href="#log-list" id="tab1" rel="tab_log" title="log-list">Dives</a></li> 
+		<li class="tab{if $smarty.cookies.tab_log=="log-charts"} active{/if}"><a href="#log-charts" id="tab2" rel="tab_log" title="log-charts">Charts</a></li>
 	</ul>
 	<div class="tab-content">
 		<a name="dives"></a>
-		<div class="tab-pane" id="log-list"{if $smarty.cookies.tab_log!="#log-list" && $smarty.cookies.tab_log!=""} style="display:none;"{/if}>
+		<div class="tab-pane {if $smarty.cookies.tab_log!="log-charts"}active{/if}" id="log-list">
 			{include file='logbook/dive.list.mini.tpl' dives=$DATA.dives}
 		</div>
 		<a name="charts"></a>
-		<div class="tab-pane" id="log-charts"{if $smarty.cookies.tab_log!="#log-charts"} style="display:none;"{/if}>
+		<div class="tab-pane{if $smarty.cookies.tab_log=="log-charts"} active{/if}" id="log-charts">
 			<h3>Air consumption vs. depth</h3>
 			<img src="http://chart.apis.google.com/chart?chs=842x320&chf=bg,s,ffffff|c,s,ffffff&chxt=x,y&chxl=0:||1:|0|1000|3800|3000&cht=lc&chd=t:{foreach from=$DATA.dives key=k item=row}{$row->air_used/30},{/foreach}0&chdl=PSI&chco=ff00ff&chls=1,1,0" />
 			<h3>Bottom time vs. Depth</h3>
