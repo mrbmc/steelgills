@@ -15,6 +15,14 @@ class Divesite extends Model {
 	public $coord;
 	public $distance;
 
+	public $entry_type;//{shore, boat, dock}
+	public $features = [];
+	public $rating;
+	public $dangers;
+	// Travel time
+	// Special Features: {wall, wreck, drift, swim-through}
+	// Bottom Type
+
 	public static function getDistanceSQL($lat,$lon) {
 				$d2m = "0.017453292519943";
 				return "(SQRT((pow((latitude-(".$lat.")), 2))+(pow((longitude-(".$lon.")),2)))/$d2m)";
