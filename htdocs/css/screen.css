@@ -49,24 +49,10 @@ Typography
   src: url('/css/fonts/GothamRounded-Bold.eot?#iefix') format('embedded-opentype'), url('/css/fonts/GothamRounded-Bold.ttf') format('truetype');
   src: url('/css/fonts/GothamRounded-Bold.woff') format('woff');
 }
-body,
-div,
-span,
-p,
-dd,
-dt,
-dl,
-li,
-td,
-h1,
-h2,
-h3 {
-  font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, san-serif;
-  margin: 0;
-  padding: 0;
-}
 html,
 body {
+  font-family: "Gotham Rounded", "Helvetica Neue", "HelveticaNeue", Helvetica, san-serif;
+  font-weight: 300;
   color: #243842;
   font-size: 16px;
 }
@@ -86,25 +72,23 @@ a:visited:hover {
 }
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5 {
   padding: 0px;
   margin: 0 0 15px 0;
-  font-family: inherit;
-  font-weight: normal;
+  font-family: "Gotham Rounded", "Gotham Rounded", "Helvetica Neue", "HelveticaNeue", Helvetica, san-serif;
+  font-weight: 300;
   letter-spacing: -0.05em;
 }
 h1 {
   font-size: 1.9em;
-  color: #0099cc;
-  font-family: "Gotham Rounded", "Helvetica Neue", "HelveticaNeue", Helvetica, san-serif;
-  font-weight: 300;
 }
 h2 {
   font-size: 1.5em;
   clear: both;
 }
 h3 {
-  font-weight: bold;
   font-size: 1.15em;
 }
 #footer {
@@ -122,6 +106,10 @@ small,
 img {
   border: 0px;
 }
+strong,
+b {
+  font-weight: 600;
+}
 .btn,
 .button,
 input[type="submit"],
@@ -137,8 +125,8 @@ input[type="submit"],
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
-  font-family: "Gotham Rounded", "Helvetica Neue", "HelveticaNeue", Helvetica, san-serif;
-  font-weight: 600;
+  font-family: "Gotham Rounded", "Gotham Rounded", "Helvetica Neue", "HelveticaNeue", Helvetica, san-serif;
+  font-weight: 300;
   text-decoration: none;
   /*text icon on a button*/
 
@@ -277,8 +265,8 @@ ul.navigation > li > a {
   -webkit-box-shadow: none;
   box-shadow: none;
   font-size: 14px;
-  font-family: "Gotham Rounded", "Helvetica Neue", "HelveticaNeue", Helvetica, san-serif;
-  font-weight: 600;
+  font-family: "Gotham Rounded", "Gotham Rounded", "Helvetica Neue", "HelveticaNeue", Helvetica, san-serif;
+  font-weight: 300;
   text-decoration: none;
   text-transform: capitalize;
 }
@@ -311,8 +299,10 @@ ul.navigation > li > a {
 }
 .tab-content .tab-pane {
   display: none;
-  background-color: #f9f9f9;
+  background: #ffffff;
   padding: 30px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
 .tab-content .tab-pane.active {
   display: block;
@@ -336,11 +326,7 @@ ul.navigation > li > a {
   padding: .25em .5em;
   height: 1.5em;
   line-height: 1.5em;
-  background: #FFF;
-  background-image: -webkit-linear-gradient(top, #f6f6f6 0%, #e0e0e0 100%);
-  background-image: linear-gradient(to bottom, #f6f6f6 0%, #e0e0e0 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff6f6f6', endColorstr='#ffe0e0e0', GradientType=0);
+  background: transparent;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
@@ -363,7 +349,7 @@ ul.navigation > li > a {
 .navigation.segmented li.active a,
 .tabs li.active a,
 .tabs-dummy li.active a {
-  background: #f9f9f9;
+  background: #ffffff;
   color: #666;
 }
 .tabs,
@@ -388,7 +374,7 @@ ul.navigation > li > a {
 .tabs-dummy li:first-child.selected a,
 .tabs li:last-child.selected a,
 .tabs-dummy li:last-child.selected a {
-  background: #f9f9f9;
+  background: #ffffff;
 }
 .breadcrumb {
   list-style-type: none;
@@ -423,19 +409,18 @@ ul.navigation > li > a {
 }
 /* @end */
 /* @group FORMS */
-fieldset h3,
-.module h3,
-.block h3 {
-  color: #0f578a;
-}
-fieldset,
-.module,
-.block {
+fieldset {
   clear: both;
+  background: #ffffff;
+  padding: 30px;
+  margin: 0 0 30px;
 }
-legend {
+fieldset legend,
+fieldset > h3 {
   color: #009ceb;
-  font-weight: bold;
+  font-family: "Gotham Rounded", "Gotham Rounded", "Helvetica Neue", "HelveticaNeue", Helvetica, san-serif;
+  font-weight: 300;
+  font-size: 21px;
   display: block;
   float: none;
 }
@@ -466,6 +451,13 @@ input.date-pick {
   -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.33);
   box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.33);
 }
+input.input-block-level,
+textarea.input-block-level {
+  width: 92%;
+  padding-left: 4%;
+  padding-right: 4%;
+  display: block;
+}
 span.status span.error {
   clear: both;
   overflow: visible;
@@ -480,7 +472,7 @@ label.error {
   color: #f0ad4e;
 }
 .modal {
-  background: #f9f9f9;
+  background: #ffffff;
   position: fixed;
   padding: 2%;
   width: 80%;
@@ -492,8 +484,8 @@ label.error {
   -webkit-border-radius: 1em;
   -moz-border-radius: 1em;
   border-radius: 1em;
-  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
   color: #668899;
 }
 .modal a.close {
@@ -715,8 +707,8 @@ body {
   padding: 15px 0;
   margin: 0;
   background: #FFFFFF;
-  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
 #header:after {
   clear: both;
@@ -849,6 +841,7 @@ HOMEPAGE
   color: #FFF;
   text-shadow: 0 0 16px rgba(0, 0, 0, 0.8);
   font-size: 4em;
+  font-weight: 100;
   line-height: 1.5em;
   margin: 1.5em 0;
 }
@@ -903,30 +896,23 @@ ol.list {
 .list th,
 .list > li.head,
 .tabContent h3 {
-  /*  border-top: solid 1px #EEE;
-    border-bottom: solid 1px #DDD;
-    */
-
   margin: 0;
-  padding: 1em;
+  padding: 15px 30px;
   width: auto;
   font-size: 0.8em;
-  background-color: #F0F9FF;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, from(#f9f9f9), to(#eeeeee));
-  text-shadow: 0 0 0;
-  color: #29C;
+  background: #e4f2f6;
+  text-shadow: none;
+  color: #0f578a;
 }
 .list td,
 .list li {
-  padding: 0.75em 1em;
-  font-size: 0.8em;
+  padding: 30px 30px;
   margin: 0;
-  color: #369;
   list-style-position: inside;
-  background-color: #f0f0f0;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, from(#ffffff), to(#f9f9f9));
+  background: #FFFFFF;
   border-top: solid 1px #fff;
-  border-bottom: solid 1px #CCC;
+  border-bottom: solid 1px #e4f2f6;
+  color: #369;
 }
 .list li span {
   display: inline-block;

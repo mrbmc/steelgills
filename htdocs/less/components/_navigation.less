@@ -93,8 +93,9 @@ ul.navigation {
 
     .tab-pane {
         display: none;
-        background-color: @white;
+        background: @white;
         padding: @grid-gutter-width;
+        .box-shadow(@global-shadow);
         &.active {
             display: block;
         }
@@ -111,8 +112,8 @@ ul.navigation {
             padding: .25em .5em;
             height: 1.5em;
             line-height: 1.5em;
-            background: #FFF;
-            #gradient.vertical(#F6F6F6,#e0e0e0);
+            background: transparent;
+            // #gradient.vertical(#f0f0f0,#f0f0f0);
             .border-radius(0);
         }
         &:first-child a {

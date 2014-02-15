@@ -1,23 +1,25 @@
 /* @group FORMS */
 
-fieldset h3,.module h3,.block h3 {
-    color: @blue-deep;
-}
-fieldset,.module,.block {
+fieldset {
     clear:both;
+    background: @white;
+    padding: @grid-gutter-width;
+    margin: 0 0 @grid-gutter-width;
+    legend,&>h3 {
+        color: @brand-primary;
+        font-family: @headingsFontFamily;
+        font-weight: @headingsFontWeight;
+        font-size: 21px;
+        display: block;
+        float: none;
+    }
+    label {
+        display: block;
+        float: none;
+        text-align: left;
+    }
 }
 
-legend {
-    color: @brand-primary;
-    font-weight: bold;
-    display: block;
-    float: none;
-}
-fieldset label {
-    display: block;
-    float: none;
-    text-align: left;
-}
 
 
 .control-group {
@@ -46,6 +48,14 @@ input,textarea,input.text,input.date-pick {
         // width: 32px;
         // display: inline;
         // text-align:right;
+    }
+}
+input,textarea {
+    &.input-block-level {
+        width: 92%;
+        padding-left: 4%;
+        padding-right: 4%;
+        display: block;
     }
 }
 // textarea {
