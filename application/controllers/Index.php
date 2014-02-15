@@ -19,6 +19,7 @@ class Index extends Controller {
 		if(!$this->id && $this->user->userid>0)
 			$this->id = $this->user->username;
 		$key = is_numeric($this->id) ? 'userid' : 'username';
+		Dispatcher::instance()->controller = "Profile";
 		$this->member = new User(array($key=>$this->id));
 		$this->view = "profile/profile.show.tpl";
 		if($this->member->userid<=0) {

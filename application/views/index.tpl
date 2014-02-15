@@ -1,7 +1,9 @@
 {include file='header.tpl' title='Steel Gills'}
 
 
-{if $USER.userid <= 0}
+{if $USER.userid > 0}
+{include file='profile/dashboard.tpl' title='Dashboard'}
+{else}
 <div class="container home">
     <h1>Dive logs and divesites made fun &amp; easy.</h1>
     <div class="row">
@@ -15,19 +17,6 @@
                 <!-- Or create a free account:<br /> -->
                 <a href="{$DOCROOT}/signup" class="button hot big">Dive In</a>
             </p>
-        </div>
-    </div>
-</div>
-{else}
-<div class="container">
-    <div class="row">
-        <div class="span12">
-            <h2>Welcome, {$USER.username}</h2> 
-            <div class="content">
-                <h3>Recent Dives</h3>
-                {include file="logbook/dive.list.mini.tpl" dives=$DATA.dives}
-                <a href="/logbook/" class="button">View your logbook</a>
-            </div>
         </div>
     </div>
 </div>

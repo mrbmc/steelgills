@@ -1,4 +1,4 @@
-{$smarty.session.sort_col}
+{*$smarty.session.sort_col*}
 <ul class="list">
 	<li class="head">
 		<span class="d-date {if $smarty.session.sort_col=="time_start"}{$smarty.session.sort_order}{/if}"><a href="?sort=date">Date</a></span>

@@ -10,8 +10,7 @@
 	<link rel="stylesheet" href="/css/screen{if $smarty.server.HTTP_HOST=="steelgills.com"}.min{/if}.css"/>
 {/if}
 </head>
-<body class="{$DISPATCHER.controller}">
-
+<body class="{$DISPATCHER.controller}-{$DISPATCHER.action}">
 
 <div id="header">
 	<div class="container">
