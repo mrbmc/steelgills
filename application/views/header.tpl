@@ -21,7 +21,11 @@
 		{/if}
 		<li id="nav_divesites" class="{if $DISPATCHER.controller eq "Divesites"}active{/if}"><a href="/divesites" class="tab">Dive-sites</a></li>
 		{if $USER.userid>0}
-			<li id="nav_profile" class="{if $DISPATCHER.controller eq "Profile"} active{/if}"><a href="/profile">My Profile</a></li>
+			<li id="nav_profile" class="{if $DISPATCHER.controller eq "Profile"} active{/if}">
+				<a href="/profile" class="avatar-link">
+					<img src="{$USER.image}" class="avatar" alt="{$USER.username}" />
+				</a>
+			</li>
 		{else}
 			<li id="nav_signup"{if $DISPATCHER.controller eq "Signup"} class="active"{/if}><a href="/signup">Sign Up</a></li>
 			<li id="nav_login" class="{if $DISPATCHER.controller eq "Login"} active{/if}"><a href="#" onclick="SG.Modal.openModal('/login/modal','login');return false;">Log in</a></li>

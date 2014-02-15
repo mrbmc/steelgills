@@ -54,11 +54,17 @@ ul.navigation {
             font-size: 14px;
             font-family: @headingsFontFamily;
             font-weight: @headingsFontWeight;
+            line-height: 22px;
             text-decoration: none;
             text-transform: capitalize;
 
             &:hover {
                 color: @blue-deep;
+            }
+            &.avatar-link {
+                padding-top: 0;
+                padding-bottom: 0;
+                padding-right: 0;
             }
         }
         &.active > a {

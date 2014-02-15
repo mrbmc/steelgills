@@ -66,6 +66,22 @@ table.list,ul.list,ol.list {
     list-style-type: none;
 }
 
+dl.table {
+    dt,dd {
+        float: left;
+        border-bottom: 1px solid #CCC;
+        margin: 0 0 @grid-gutter-width/2 0;
+        padding: @grid-gutter-width/4 2%;
+    }
+    dt {
+        width: 33%;
+        margin-right: 2%;
+    }
+    dd {
+        width: 57%;
+    }
+}
+
 .list th, .list>li.head, .tabContent h3 {
     margin: 0;
     padding: @grid-gutter-width/2 @grid-gutter-width;
