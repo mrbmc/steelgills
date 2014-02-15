@@ -11,7 +11,7 @@
 
 	
 	
-	<form method="POST" action="/logbook/update/" name="myForm" id="myForm" style="width: 640px;">
+	<form method="POST" action="/logbook/update/" name="myForm" id="myForm">
 	<input type="hidden" name="diveid" value="{$DATA.dive.diveid}" />
 	<input type="hidden" name="fk_userid" value="{if $DATA.dive.fk_userid}{$DATA.dive.fk_userid}{else}{$USER.userid}{/if}" />
 	
@@ -26,71 +26,60 @@
 	<div class="tab_area">
 		<div><a name="GeneralInfo"></a>
 			<fieldset>
-				<legend>Dive Info</legend>
-				<div>
+				<h3>Dive Info</h3>
+				<div class="control-group">
 					<label for="Location">Location</label>
-					<span><input type="text" id="location" class="text" class="text" name="location" value="{$DATA.dive.location}" style="width:200px;" /></span>
+					<input type="text" id="location" class="text" class="text" name="location" value="{$DATA.dive.location}" style="width:200px;" tabindex="1" />
 					<span class="status"></span>
 					<input type="hidden" name="fk_divesiteid" value="{$DATA.dive.fk_divesiteid}" id="fk_divesiteid" />
 				</div>
 	
-				<div>
+				<div class="control-group">
 					<label>Date</label>
-					<input type="text" name="date_start" id="datepicker" class="date-pick" value="{if $DATA.dive.time_start!=""}{$DATA.dive.time_start|date_format:"%D"}{else}{$smarty.now|date_format:"%D"}{/if}" />
+					<input type="text" name="date_start" id="datepicker" class="date-pick" value="{if $DATA.dive.time_start!=""}{$DATA.dive.time_start|date_format:"%D"}{else}{$smarty.now|date_format:"%D"}{/if}" tabindex="2" />
 					<span class="status"></span>
 				</div>
 			</fieldset>
 	
 			<fieldset>
-				<legend>Gear</legend>
-				<div class="left">
-					<label for="exposure">Exposure Protection</label>
-					<div id="exposureWrapper">
+				<h3>Gear</h3>
+				<div class="control-group">
+					<div class="control-label"><label for="exposure">Exposure Protection</label></div>
+					<div class="controls" id="exposureWrapper">
 						
 						{foreach from=$DATA.last_dive.exposures key=k item=row}
-							{if $DATA.dive.diveid > 0}
-							<a href="#" onclick="exposureSelect($(this));return false;" rel="{$row}" class="{if $DATA.dive.exposure|strpos:$row!==false}selected{/if}"><span class="sprite {$row}">{$row}</span></a>
-							{else}
-							<a href="#" onclick="exposureSelect($(this));return false;" rel="{$row}" class="{if $DATA.last_dive.exposure|strpos:$row!==false}selected{/if}"><span class="sprite {$row}">{$row}</span></a>
-							{/if}
+							{$dive = ($DATA.dive.diveid > 0) ? $DATA.dive : $DATA.last_dive}
+							<a href="#" data-exposure="{$row}" class="exposure-item {if $dive.exposure|strpos:$row!==false}selected{/if}"><span class="sprite {$row}">{$row}</span></a>
 						{/foreach}
-						<input type="hidden" name="exposure" value="{$DATA.dive.exposure}" id="exposure" />
+						<input type="hidden" name="exposure" value="{$DATA.dive.exposure}" id="exposure" tabindex="3" />
 					</div>
-					<span></span>
 					<span class="status"></span>
 				</div>
-				<div class="left">
+				<div class="control-group">
 					<label for="weight">Weight</label>
-					<span><input type="text" class="text" name="weight" id="weight" value="{if $DATA.dive.diveid > 0}{$DATA.dive.weight}{else}{$DATA.last_dive.weight}{/if}" style="width:25px;" maxlength="2" />lbs</span>
+					<span><input type="text" class="text" name="weight" id="weight" value="{if $DATA.dive.diveid > 0}{$DATA.dive.weight}{else}{$DATA.last_dive.weight}{/if}" style="width:25px;" maxlength="2" tabindex="4" />lbs</span>
 					<span class="status"></span>
 				</div>
 			</fieldset>
 		</div>
 	
-		<div><a name="DiveProfile"></a>
-			<fieldset>
-			<legend>Dive Profile</legend>
+		<a name="DiveProfile"></a>
+		<fieldset>
+			<h3>Dive Profile</h3>
 	
 	
+			{$dive = ($DATA.dive.diveid > 0) ? $DATA.dive : $DATA.last_dive}
 			<table width="600" class="profile">
 			<tr>
 				<td width="15%">
-					{if $DATA.dive.diveid > 0}
-					<span><input type="text" class="text" name="time_start" id="time_start" value="{$DATA.dive.time_start|date_format:"%H:%M"}" /></span>
-					{else}
-					<span><input type="text" class="text" name="time_start" id="time_start" value="{$DATA.last_dive.time_end|date_format:"%H:%M"}" /></span>
-					{/if}
+					<span><input type="text" class="text" name="time_start" id="time_start" value="{$dive.time_start|date_format:"%H:%M"}" tabindex="10" /></span>
 					<span class="status"></span>
 					<br />Time In</td>
 				<td width="25%"></td>
 				<td width="20%"></td>
 				<td width="25%"></td>
 				<td width="15%" align="right">
-					{if $DATA.dive.diveid > 0}
-					<span><input type="text" class="text" name="time_end" id="time_end" value="{$DATA.dive.time_end|date_format:"%H:%M"}" /></span>
-					{else}
-					<span><input type="text" class="text" name="time_end" id="time_end" value="{$DATA.last_dive.time_end|date_format:"%H:%M"}" /></span>
-					{/if}
+					<span><input type="text" class="text" name="time_end" id="time_end" value="{$dive.time_end|date_format:"%H:%M"}" tabindex="14" /></span>
 					<span class="status"></span>
 					<br />Time Out</td>
 			</tr>
@@ -99,7 +88,7 @@
 				<td></td>
 				<td></td>
 				<td>
-					<span><input type="text" class="text" name="deco_time" id="deco_time" value="{$DATA.dive.deco_time}" /></span>
+					<span><input type="text" class="text" name="deco_time" id="deco_time" value="{$dive.deco_time}" tabindex="13" /></span>
 					<span class="status"></span>
 					<br />Decomp. Stop</td>
 				<td></td>
@@ -107,94 +96,113 @@
 			<tr>
 				<td></td>
 				<td>
-					<span><input type="text" class="text" name="max_depth" id="max_depth" value="{$DATA.dive.max_depth}" /></span>
+					<span><input type="text" class="text" name="max_depth" id="max_depth" value="{$dive.max_depth}" tabindex="11" /></span>
 					<span class="status"></span>
 					<br />Max Depth
 				</td>
 				<td>
-					<span><input type="text" class="text" name="bottom_time" id="bottom_time" value="{$DATA.dive.bottom_time}" /></span>
+					<span><input type="text" class="text" name="bottom_time" id="bottom_time" value="{$dive.bottom_time}" tabindex="12" /></span>
 					<span class="status"></span>
 					<br />Bottom Time</td>
 				<td></td>
 				<td><b id="totaltime"><br />Total Time</b></td>
 			</tr>
 			</table>
-			</fieldset>
-	
-	
-			<fieldset>
-			<legend>Air Consumption</legend>
-			<div class="left">
-				<span class="sprite tank_full"></span>
-				<label for="air_start">Air Start (psi)</label>
-				<span><input type="text" class="text" name="air_start" id="air_start" value="{if $DATA.dive.air_start}{$DATA.dive.air_start}{else}3000{/if}" /></span>
-				<span class="status"></span>
-			</div>
-			<div class="left">
-				<span class="sprite tank_empty"></span>
-				<label for="air_end">Air End (psi)</label>
-				<span><input type="text" class="text" name="air_end" id="air_end" value="{$DATA.dive.air_end}" /></span>
-				<span class="status"></span>
-			</div>
-			</fieldset>
-		</div>
-	
-	
-		<div><a name="Conditions"></a>
-			<fieldset>
-			<legend>Conditions</legend>
-			<div class="left">
-				<label for="visibility">Visibility: <input type="text" class="text naked" name="visibility" id="visibility" value="{if $DATA.dive.visibility}{$DATA.dive.visibility}{else}100{/if}" /> ft</label>
-				<div id="vis_slider" style="width:200px;"></div>
-				
-	
-				<label for="current">Current: <input type="text" class="text naked" name="current" id="current" value="{if $DATA.dive.current}{$DATA.dive.current}{else}0{/if}" /> kts</label>
-				<div id="cur_slider" style="width:200px;"></div>
-				<span class="status"></span>
-			</div>
-			<div class="left" style="width:30em;">
-				<div style="background:#FFF;margin:0;padding: 0 0.25em;">
-					<div class="left">
-					<label for="air_temperature">Air temperature</label>
-					<span><input type="text" class="text" name="air_temperature" id="air_temperature" value="{$DATA.dive.air_temperature}" /></span>
-					<span class="status"></span>
+
+			<p><br></p>
+
+			<div class="row-fluid">
+				<div class="span6">
+					<div class="control-group">
+						<span class="sprite tank_full"></span>
+						<div class="control-label">
+							<label for="air_start">Air Start (psi)</label>
+						</div>
+						<div class="controls">
+							<input type="text" class="text" name="air_start" id="air_start" value="{if $DATA.dive.air_start}{$DATA.dive.air_start}{else}3000{/if}" tabindex="20" />
+							<span class="status"></span>
+						</div>
 					</div>
-	
-					<div class="left">
-					<label for="wind_speed">Wind Speed</label>
-					<span><input type="text" class="text" name="wind_speed" id="wind_speed" value="{$DATA.dive.wind_speed}" /></span>
-					<span class="status"></span>
-					</div>
-					<div class="clear"></div>
 				</div>
-				<div style="background:url(/images/sprites.gif) no-repeat 0px -120px;height: 20px;"></div>
-				<div>
-					<div class="left">
+				<div class="span6">
+					<div class="control-group">
+						<span class="sprite tank_empty"></span>
+						<div class="control-label">
+							<label for="air_end">Air End (psi)</label>
+							
+						</div>
+						<div class="controls">
+							<input type="text" class="text" name="air_end" id="air_end" value="{$DATA.dive.air_end}" tabindex="20" />
+							<span class="status"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</fieldset>
+		
+	
+	
+		<a name="Conditions"></a>
+		<fieldset>
+			<h3>Conditions</h3>
+			<div class="row-fluid">
+				<div class="span4">
+					<div class="control-group">
+						<div class="control-label">
+							<label for="visibility">Visibility</label>
+						</div>
+						<div class="controls">
+							<input type="text" class="text naked" name="visibility" id="visibility" value="{if $DATA.dive.visibility}{$DATA.dive.visibility}{else}100{/if}" tabindex="30" /> ft
+							<div id="vis_slider"></div>
+						</div>
+					</div>
+					<div class="control-group">
+						<div class="control-label"><label for="current">Current</label></div>
+						<div class="controls">
+							<input type="text" class="text naked" name="current" id="current" value="{if $DATA.dive.current}{$DATA.dive.current}{else}0{/if}" tabindex="31" /> kts
+							<div id="cur_slider"></div>
+						</div>
+						<span class="status"></span>
+					</div>
+				</div>
+				<div class="span4">
+					<div class="control-group">
+						<label for="air_temperature">Air temperature</label>
+						<span><input type="text" class="text" name="air_temperature" id="air_temperature" value="{$DATA.dive.air_temperature}" tabindex="32" /></span>
+						<span class="status"></span>
+					</div>
+	
+					<div class="control-group">
+						<label for="wind_speed">Wind Speed</label>
+						<span><input type="text" class="text" name="wind_speed" id="wind_speed" value="{$DATA.dive.wind_speed}" tabindex="33" /></span>
+						<span class="status"></span>
+					</div>
+				</div>
+				<div class="span4">
+					<div class="control-group">
 						<label for="temperature">Water Temperature</label>
-						<span><input type="text" class="text" name="temperature" id="temperature" value="{$DATA.dive.temperature}" /></span>
+						<span><input type="text" class="text" name="temperature" id="temperature" value="{$DATA.dive.temperature}" tabindex="34" /></span>
 						<span class="status"></span>
 					</div>
-					<div class="left">
+					<div class="control-group">
 						<label for="wave_height">Wave Height</label>
-						<span><input type="text" class="text" name="wave_height" id="wave_height" value="{$DATA.dive.wave_height}" /></span>
+						<span><input type="text" class="text" name="wave_height" id="wave_height" value="{$DATA.dive.wave_height}" tabindex="35" /></span>
 						<span class="status"></span>
 					</div>
 				</div>
 			</div>
-			<div class="left">
-	
-			</div>
-			</fieldset>
-		</div>
+		</fieldset>
 	
 	
 		<div><a name="Observations"></a>
 			<fieldset>
-			<legend>Observations</legend>
-			<div>
-				<label for="description">Notes</label>
-				<span><textarea name="description" id="description" cols="40" rows="6">{$DATA.dive.description}</textarea></span>
-				<span class="status"></span>
+			<h3>Observations</h3>
+			<div class="control-group">
+				<!-- <div class="control-label"><label for="description">Notes</label></div> -->
+				<div class="controls">
+					<textarea name="description" class="input-block-level" id="description" cols="40" rows="6" tabindex="40">{$DATA.dive.description}</textarea>
+					<span class="status"></span>
+				</div>
 			</div>
 			</fieldset>
 		</div>
@@ -217,8 +225,14 @@ width: 80px;
 }
 </style>
 <script type="text/javascript">/*<![CDATA[*/
-divesites=[{/literal}{foreach from=$DATA.divesites key=k item=row}"{$row->title}|{$row->divesiteid}",{/foreach}{literal}"dummy"];
-var init = function () {
+var divesites=[{/literal}{foreach from=$DATA.divesites key=k item=row}"{$row->title}|{$row->divesiteid}",{/foreach}{literal}"dummy"];
+var exposure = new Array('{/literal}{$DATA.dive.exposure|replace:',':"','"}{literal}');
+
+if(typeof SG == 'undefined') var SG = {};
+SG.init_page = function () {
+	console.log('bind');
+	$('.exposure-item').on('click',exposureSelect);
+
 	$("#location").autocompleteArray(divesites,{
 		maxItems:10,
 		onItemSelect:function(li){
@@ -268,18 +282,22 @@ function updateTime () {
 		duration = hrs+":"+min;
 		$('#totaltime').html(duration);
 }
-var exposure = new Array('{/literal}{$DATA.dive.exposure|replace:',':"','"}{literal}');
-function exposureSelect(obj) {
-	var val = obj.attr('rel');
-	var idx = exposure.contains(val);
+
+function exposureSelect(e) {
+	e.preventDefault();
+	var obj = $(e.currentTarget),
+		val = obj.data('exposure'),
+		idx = exposure.contains(val);
+
+	obj.toggleClass('selected');
 	if(idx===false) {
 		exposure.push(val);
-		obj.addClass('selected');
 	} else {
 		exposure.splice(idx,1);
-		obj.removeClass('selected');
+		// obj.removeClass('selected');
 	}
 	$('#exposure').val(exposure);
+	return false;
 }
 
 
@@ -296,11 +314,10 @@ var jqready = function () {
 	        $( deferred.resolve );
 	    })
 	).done(function(){
-		init();
+		// init();
 	});
 }
 jqready();
 
 /*]]>*/</script>
 {/literal}
-<link type="text/css" href="/css/redmond/jquery-ui-1.7.3.custom.css" rel="stylesheet" />	

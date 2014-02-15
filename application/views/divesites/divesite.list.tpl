@@ -64,6 +64,7 @@
 
 {if $MEDIA!="mobile"}<script type="text/javascript">//<![CDATA[
 {literal}
+if(typeof SG == 'undefined') var SG = {};
 SG.init_page = function() {
     if (typeof jQuery == 'undefined' || typeof SG.map == 'undefined' || typeof google.maps == 'undefined') {
 	    console.log('init_page dependencies not ready');

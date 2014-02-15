@@ -414,6 +414,8 @@ fieldset {
   background: #ffffff;
   padding: 30px;
   margin: 0 0 30px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
 fieldset legend,
 fieldset > h3 {
@@ -535,13 +537,11 @@ label.error {
   background-position: 0px -250px;
   width: 13px;
   height: 50px;
-  float: left;
 }
 .sprite.tank_empty {
   background-position: -15px -250px;
   width: 13px;
   height: 50px;
-  float: left;
 }
 .sprite.shorty {
   background-position: 0px -325px;
@@ -598,7 +598,7 @@ label.error {
 .container-fluid {
   margin-left: auto;
   margin-right: auto;
-  width: 96%;
+  width: 94%;
   max-width: 1200px;
 }
 .row,
@@ -872,20 +872,6 @@ HOMEPAGE
   margin: 10px auto;
   color: #090;
 }
-table.profile {
-  background: #0088cc url(/images/profile_bg.gif) no-repeat 100px 0px;
-  width: 640px;
-  height: 260px;
-  border-radius: 1em;
-  -moz-border-radius: 1em;
-  -webkit-border-radius: 1em;
-}
-table.profile td {
-  padding: 10px 0px;
-  color: #FFF;
-  text-align: center;
-  font-size: small;
-}
 table.list,
 ul.list,
 ol.list {
@@ -971,17 +957,29 @@ table th {
 .thumbnail {
   margin-bottom: 30px;
 }
-/*dt {
-    clear: both;
-    float: left;
-    width: 150px;
-    font-weight: bold;
-    padding: @grid-gutter-width;
+table.profile {
+  background: #0088cc url(/images/profile_bg.gif) no-repeat 100px 0px;
+  height: 260px;
+  -webkit-border-radius: 7.5px;
+  -moz-border-radius: 7.5px;
+  border-radius: 7.5px;
 }
-
-dd {
-    padding: @grid-gutter-width;
-}*/
+table.profile td {
+  padding: 10px 0px;
+  color: #FFF;
+  background: transparent;
+  text-align: center;
+  font-size: small;
+}
+table.profile .input,
+table.profile input.text {
+  width: 50px;
+}
+.sprite.tank_full,
+.sprite.tank_empty {
+  float: left;
+  margin-right: 15px;
+}
 #profile_sidebar {
   background: #FFF;
   padding: 1%;
