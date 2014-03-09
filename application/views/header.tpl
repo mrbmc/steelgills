@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="/css/mobile.min.css"/>
 	<meta name="viewport" content="initial-scale=1.0; maximum-scale=2.0; minimum-scale=0.5" /> 
 {else}
-	<link rel="stylesheet" href="/css/screen{if $smarty.server.HTTP_HOST=="steelgills.com"}.min{/if}.css"/>
+	<link rel="stylesheet" href="/css/screen.css"/>
 {/if}
 </head>
 <body class="{$DISPATCHER.controller}-{$DISPATCHER.action}">
