@@ -43,15 +43,12 @@ class Cache
 	}
 
 	private function key($request) {
-		global $vbulletin;
-		if($vbulletin->config['staging'])
-			$key = "stg_";
-		$key .= is_array($request) ? serialize($request) : $request;
+		$key = is_array($request) ? serialize($request) : $request;
 		return md5($key);
 	}
 
 	private function load ($request) {
-		global $db,$vbulletin;
+		global $db;
 		$return = array();
 
 		// SQL requests
@@ -72,7 +69,6 @@ class Cache
 	}
 
 	public function get ($request) {
-		global $vbulletin;
 		$action = "get_" . $this->type;
 		return $this->$action($request);
 	}
@@ -108,14 +104,21 @@ class Cache
 	}
 
 	private function get_memcache ($request) {
-		global $db,$vbulletin;
-
 		$key = $this->key($request);
-		$cached = false;
-		$cache = array();
 
-		if($this->memcache) 
-			$cached = ($cache = $this->memcache->get($key));
+		if($this->memcache) {
+			$cache = $this->memcache->get($key);
+			$cached = (sizeof($cache) > 0);
+		} else {
+			$cached = false;
+		}
+
+		$msg = "Cache:" . $this->type . " / ";
+		$msg.= "HIT:".($cached ? "true":"false") . ' / ';
+		$msg.= 'key:'.$key . " / ";
+		$msg.= "\n" . $request;
+		// echo nl2br( $msg . "\n");
+
 
 		if(!$cached) {
 			return false;
@@ -123,15 +126,17 @@ class Cache
 //			$cache = $this->load($request);
 //			if($this->memcache)
 //				$this->set($key,$cache);
+			// Debugger::trace('cached:'.$request);
 		} else {
 			Debugger::trace('cached:'.$request);
 		}
 		return $cache;
 	}
 
-	private function set_memcache ($key,$data) {
+	private function set_memcache ($_key,$data) {
 		if(!$this->memcache)
 			return false;
+		$key = $this->key($_key);
 		return $this->memcache->set($key,$data,0,$this->lifetime);
 	}
 

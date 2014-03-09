@@ -9,6 +9,7 @@ abstract class Model {
 	public $num_rows;
 	public $xml;
 	public $json;
+	protected $caching = true;
 
 	/**
 	 * @param mixed args a sql string, ID integer, or array of parameters
@@ -73,17 +74,25 @@ abstract class Model {
 //		Debugger::trace('sql',$sql,true);
 
 		// make the query
-		$results = Erector::instance()->db->query($sql);
-		//Parse the results
 		$return = array();
-		while($row = Erector::instance()->db->fetch_array($results))
-		{
-			$classname = ucfirst(self::$table);
-			$obj = new $classname();
-			$obj->set($row);
-			array_push($return, $obj);
+		$results = Cache::instance()->get($sql);
+		if($results===false) {
+			$results = Erector::instance()->db->query($sql);
+
+			//Parse the results
+			while($row = Erector::instance()->db->fetch_array($results))
+			{
+				$classname = ucfirst(self::$table);
+				$obj = new $classname();
+				$obj->set($row);
+				array_push($return, $obj);
+			}
+			//Update the cache
+			Cache::instance()->set($sql,serialize($return));
+		} else {
+			$return = unserialize($results);
 		}
-//		Debugger::trace('results',$return,true);
+		// Debugger::trace('results',$return,true);
 		return $return;
 	}
 
