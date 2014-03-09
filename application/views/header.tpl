@@ -17,14 +17,15 @@
 		<h1 id="logo" class="logo"><a href="/">Steel Gills</a></h1>
 		<ul class="navigation" id="globalnav">
 		{if $USER.userid>0}
-			<li id="nav_logbook" class="{if $DISPATCHER.controller eq "Logbook"} active{/if}"><a href="/logbook" class="tab">Logbook</a></li>
-		{/if}
-		<li id="nav_divesites" class="{if $DISPATCHER.controller eq "Divesites"}active{/if}"><a href="/divesites" class="tab">Dive-sites</a></li>
-		{if $USER.userid>0}
-			<li id="nav_profile" class="{if $DISPATCHER.controller eq "Profile"} active{/if}">
+			<li id="nav_profile" class="{if $DISPATCHER.controller eq "Profile"} active{/if}" data-dropdown-trigger>
 				<a href="/profile" class="avatar-link">
 					<img src="{$USER.image}" class="avatar" alt="{$USER.username}" />
 				</a>
+				<ul class="dropdown-menu">
+					<li id="nav_logbook" class="{if $DISPATCHER.controller eq "Logbook"} active{/if}"><a href="/logbook" class="tab">Logbook</a></li>
+					<li id="nav_divesites" class="{if $DISPATCHER.controller eq "Divesites"}active{/if}"><a href="/divesites" class="tab">Dive-sites</a></li>
+					<li><a href="/login/logout">Logout</a></li>
+				</ul>
 			</li>
 		{else}
 			<li id="nav_signup"{if $DISPATCHER.controller eq "Signup"} class="active"{/if}><a href="/signup">Sign Up</a></li>
