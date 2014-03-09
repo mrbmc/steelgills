@@ -69,47 +69,53 @@
 	
 	
 			{$dive = ($DATA.dive.diveid > 0) ? $DATA.dive : $DATA.last_dive}
-			<table width="600" class="profile">
-			<tr>
-				<td width="15%">
-					<span><input type="text" class="text" name="time_start" id="time_start" value="{$dive.time_start|date_format:"%H:%M"}" tabindex="10" /></span>
-					<span class="status"></span>
-					<br />Time In</td>
-				<td width="25%"></td>
-				<td width="20%"></td>
-				<td width="25%"></td>
-				<td width="15%" align="right">
-					<span><input type="text" class="text" name="time_end" id="time_end" value="{$dive.time_end|date_format:"%H:%M"}" tabindex="14" /></span>
-					<span class="status"></span>
-					<br />Time Out</td>
-			</tr>
-			<tr>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td>
-					<span><input type="text" class="text" name="deco_time" id="deco_time" value="{$dive.deco_time}" tabindex="13" /></span>
-					<span class="status"></span>
-					<br />Decomp. Stop</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td>
-					<span><input type="text" class="text" name="max_depth" id="max_depth" value="{$dive.max_depth}" tabindex="11" /></span>
-					<span class="status"></span>
-					<br />Max Depth
-				</td>
-				<td>
-					<span><input type="text" class="text" name="bottom_time" id="bottom_time" value="{$dive.bottom_time}" tabindex="12" /></span>
-					<span class="status"></span>
-					<br />Bottom Time</td>
-				<td></td>
-				<td><b id="totaltime"><br />Total Time</b></td>
-			</tr>
-			</table>
+			<div id="dive-profile">
+				<div class="control-group" id="time-in-group">
+					<div class="control-label">
+						<label for="time_start">Time In</label>
+					</div>
+					<div class="controls">
+						<input type="text" class="text" name="time_start" id="time_start" value="{$dive.time_start|date_format:"%H:%M"}" tabindex="10" />
+						
+					</div>
+				</div>
+				<div class="control-group" id="time-out-group">
+					<div class="control-label">
+						<label for="time_end">Time Out</label>
+					</div>
+					<div class="controls">
+						<input type="text" class="text" name="time_end" id="time_end" value="{$dive.time_end|date_format:"%H:%M"}" tabindex="14" />
+					</div>
+				</div>
+				<div class="control-group" id="bottom-time-group">
+					<div class="control-label">
+						<label for="bottom_time">Bottom Time</label>
+					</div>
+					<div class="controls">
+						<input type="text" class="text" name="bottom_time" id="bottom_time" value="{$dive.bottom_time}" tabindex="12" />
+					</div>
+				</div>
+				<div class="control-group" id="deco-time-group">
+					<div class="control-label">
+						<label for="deco_time">Deco Time</label>
+					</div>
+					<div class="controls">
+						<input type="text" class="text" name="deco_time" id="deco_time" value="{$dive.deco_time}" tabindex="13" />
+					</div>
+				</div>
+				<div class="control-group" id="max-depth-group">
+					<div class="control-label">
+						<label for="max-depth">Max Depth</label>
+					</div>
+					<div class="controls">
+						<input type="text" class="text" name="max_depth" id="max_depth" value="{$dive.max_depth}" tabindex="11" />
+					</div>
+				</div>
+				<div class="control-group" id="total-time-group">
+					<label for="">Total Time: <span id="totaltime"></span></label>
+				</div>
+			</div>
 
-			<p><br></p>
 
 			<div class="row-fluid">
 				<div class="span6">
@@ -208,8 +214,8 @@
 		</div>
 	
 		<div align="center">
-			<input type="submit" value="save" class="button" />
-			<input type="button" value="revert" onclick="document.location.href='';" class="button"/>
+			<input type="submit" value="save" class="btn btn-primary" />
+			<a href="#" value="revert" onclick="document.location.href='';">revert</a>
 		</div>
 	
 	</div><!-- /tab-area -->
