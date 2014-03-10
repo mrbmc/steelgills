@@ -40,8 +40,20 @@
 <div class="wallpaper"><span class="caption"></span></div>
 
 
+
+<script data-main="js/{if $module_js!=""}{$module_js}{else}app{/if}" src="js/lib/require/require.js"></script>
+<script type="text/javascript">
+/*requirejs.config({
+	"baseUrl": "/js",
+	"paths": {
+		"jquery": "//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min",
+		"underscore": "lib/underscore/underscore-min",
+		"app": "app",
+    }
+});*/
+
 {if $smarty.server.HTTP_HOST=="steelgills.com"}
-{literal}<script type="text/javascript">
+{literal}
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
 </script>
@@ -50,12 +62,9 @@ try {
 var pageTracker = _gat._getTracker("UA-4173628-3");
 pageTracker._trackPageview();
 } catch(err) {}
-</script>{/literal}
+{/literal}
 {/if}
-
-<script type="text/javascript" src="/js/jquery-2.0.3.min.js"></script>
-<script type="text/javascript" src="/js/lib/underscore/underscore-min.js"></script>
-<script src="/js/common{if $smarty.server.HTTP_HOST=="steelgills.com"}.min{/if}.js" type="text/javascript"></script>
+</script>
 
 
 

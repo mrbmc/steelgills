@@ -235,8 +235,9 @@ var divesites=[{/literal}{foreach from=$DATA.divesites key=k item=row}"{$row->ti
 var exposure = new Array('{/literal}{$DATA.dive.exposure|replace:',':"','"}{literal}');
 
 if(typeof SG == 'undefined') var SG = {};
-SG.init_page = function () {
-	console.log('bind');
+var wireup = function() {
+	console.log('wireup()');
+
 	$('.exposure-item').on('click',exposureSelect);
 
 	$("#location").autocompleteArray(divesites,{
@@ -307,23 +308,17 @@ function exposureSelect(e) {
 }
 
 
-var jqready = function () {
-    if (typeof jQuery == 'undefined') {
-        setTimeout(jqready, 50);
-        return false;
-    }
-
+SG.init_page = function () {
+	console.log('init page');
 	$.when(
-	    $.getScript( "/js/jquery-ui.js" ),
-	    $.getScript( "/js/jquery.autocomplete.js" ),
-	    $.Deferred(function( deferred ){
-	        $( deferred.resolve );
-	    })
+	    $.getScript( "/js/jquery.autocomplete.js"),
+	    $.getScript( "/js/jquery-ui.js")
 	).done(function(){
-		// init();
+		console.log('loaded');
+		wireup();
 	});
+	// return false;
 }
-jqready();
 
 /*]]>*/</script>
 {/literal}

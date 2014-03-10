@@ -25,3 +25,9 @@ url=https://github.com/mrbmc/bootstrap.git
 [submodule "htdocs/js/lib/jquery-validation"]
 	path = htdocs/js/lib/jquery-validation
 	url = https://github.com/jzaefferer/jquery-validation.git
+[submodule "htdocs/js/lib/require"]
+	path = htdocs/js/lib/require
+	url = https://github.com/jrburke/requirejs.git
+[submodule "htdocs/js/lib/jquery-cookie"]
+	path = htdocs/js/lib/jquery-cookie
+	url = https://github.com/carhartl/jquery-cookie
