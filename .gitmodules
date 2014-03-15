@@ -31,3 +31,6 @@ url=https://github.com/mrbmc/bootstrap.git
 [submodule "htdocs/js/lib/jquery-cookie"]
 	path = htdocs/js/lib/jquery-cookie
 	url = https://github.com/carhartl/jquery-cookie
+[submodule "htdocs/js/lib/requirejs-plugins"]
+	path = htdocs/js/lib/requirejs-plugins
+	url = https://github.com/millermedeiros/requirejs-plugins.git

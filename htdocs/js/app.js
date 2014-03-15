@@ -8,12 +8,16 @@ requirejs.config({
 			"jquery-2.0.3.min"
 		],
 		underscore: "underscore/underscore-min",
-		"jquery.validate": "jquery-validation/dist/jquery.validate"
+		async: "requirejs-plugins/src/async",
+		validate: "jquery-validation/dist/jquery.validate"
     },
     shim: {
         'jquery': [],
         'jquery.validate': ['jquery'],
-        'jquery.autocomplete': ['jquery']
+        'jquery.autocomplete': ['jquery'],
+        'gmaps': {
+            deps: ['jquery']
+        }
     }
 });
 

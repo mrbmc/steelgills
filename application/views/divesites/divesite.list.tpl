@@ -62,15 +62,11 @@
 {if $MEDIA!="mobile"}<script type="text/javascript">//<![CDATA[
 {literal}
 if(typeof SG == 'undefined') var SG = {};
-SG.markers = {/literal}{$DATA.json}{literal};
-// SG.map.scope = {/literal}"{$DISPATCHER.action}"{literal};
+SG.map_markers = {/literal}{$DATA.json}{literal};
+SG.map_scope = "{/literal}{$DISPATCHER.action}{literal}";
 SG.map_key = "{/literal}{$CONFIG.GOOGLE_API_KEY}{literal}";
 {/literal}
 //]]></script>
 {/if}
 
-<script type="text/javascript" src="/js/SGMap{if $smarty.server.HTTP_HOST=="steelgills.com"}.min{/if}.js"></script>
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false&key={$CONFIG.GOOGLE_API_KEY}"></script>
-
 {include file='footer.tpl' module_js="app/divesites"}
-

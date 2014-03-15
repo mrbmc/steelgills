@@ -25,7 +25,7 @@
 				<ul class="dropdown-menu">
 					<li id="nav_logbook" class="{if $DISPATCHER.controller eq "Logbook"} active{/if}"><a href="/logbook" class="tab">Logbook</a></li>
 					<li id="nav_divesites" class="{if $DISPATCHER.controller eq "Divesites"}active{/if}"><a href="/divesites" class="tab">Dive-sites</a></li>
-					<li><a href="/login/logout">Logout</a></li>
+					<li><a href="/login/logout">Sign-out</a></li>
 				</ul>
 			</li>
 		{else}

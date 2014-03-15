@@ -1,5 +1,5 @@
 require(['../app'], function($) {
-    require(['jquery.validate'], function( foo ) {
+    require(['validate'], function( foo ) {
     	var $ = require('jquery');
 		var validator = $("#userForm").validate({
 			ignore: [],

@@ -7,5 +7,3 @@
 {else}
 {include file='divesites/divesite.list.tpl'}
 {/if}
-
-{include file='footer.tpl'}

@@ -50,7 +50,6 @@
 <div class="row divesite-images"></div>
 
 
-{include file='footer.tpl'}
 
 <script type="text/javascript">//<![CDATA[
 {literal}
@@ -103,3 +102,6 @@ SG.init_images = function() {
 //]]></script>
 <script type="text/javascript" src="/js/SGMap{if $smarty.server.HTTP_HOST=="steelgills.com"}.min{/if}.js"></script>
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false&key={$CONFIG.GOOGLE_API_KEY}"></script>
+
+
+{include file='footer.tpl' module_js="app/divesite"}

@@ -41,17 +41,8 @@
 
 
 
-<script data-main="js/{if $module_js!=""}{$module_js}{else}app{/if}" src="js/lib/require/require.js"></script>
+<script data-main="/js/{if $module_js!=""}{$module_js}{else}app{/if}" src="/js/lib/require/require.js"></script>
 <script type="text/javascript">
-/*requirejs.config({
-	"baseUrl": "/js",
-	"paths": {
-		"jquery": "//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min",
-		"underscore": "lib/underscore/underscore-min",
-		"app": "app",
-    }
-});*/
-
 {if $smarty.server.HTTP_HOST=="steelgills.com"}
 {literal}
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
