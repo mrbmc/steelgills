@@ -1,9 +1,19 @@
 requirejs.config({
-	"baseUrl": "/js",
+	"baseUrl": "/js/lib",
 	"paths": {
-		"jquery": "//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min",
-		"underscore": "lib/underscore/underscore-min",
-		"steelgills": "app/steelgills"
+		app: "../app",
+		components: "../components",
+		jquery: [
+			"//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min",
+			"jquery-2.0.3.min"
+		],
+		underscore: "underscore/underscore-min",
+		"jquery.validate": "jquery-validation/dist/jquery.validate"
+    },
+    shim: {
+        'jquery': [],
+        'jquery.validate': ['jquery'],
+        'jquery.autocomplete': ['jquery']
     }
 });
 
@@ -48,3 +58,7 @@ requirejs(["jquery", "underscore","components/modal","components/tabs"], functio
 	}
 
 });
+
+// define(['jquery'], function (jq) {
+// 	return jq.noConflict( true );
+// });
