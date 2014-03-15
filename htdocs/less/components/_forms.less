@@ -21,7 +21,16 @@ fieldset {
     }
 }
 
-
+.input-large {
+    font-size: 21px;
+    width: 72%;
+    padding: @grid-gutter-width/2 4%;
+}
+.input-xlarge {
+    font-size: 24px;
+    width: 90%;
+    padding: @grid-gutter-width/2 5%;
+}
 
 .control-group {
     margin: @grid-gutter-width/2 0;
@@ -32,13 +41,16 @@ fieldset {
 .input-block-level {
     display: block;
 }
+.help-inline {
+    display: block;
+}
 
 input,textarea,input.text,input.date-pick {
     padding: .5em .5em;
     font-weight: bold;
     font-size: 16px;
-    color: @brand-primary;
-    .border-radius(1.5em);
+    color: @gray-dark;
+    .border-radius(@grid-gutter-width);
     .box-shadow(inset 0 1px 4px rgba(0,0,0,0.33));
     &.naked {
         // background: transparent;
@@ -59,26 +71,11 @@ input,textarea {
         display: block;
     }
 }
-// textarea {
-// width: 320px;
-// height: 160px;
-// padding: 0.5em;
-// display:block;
-// background: #fff;
-// border: inset 2px #CCC;
-// }
-
-span.status span.error {
-    clear: both;
-    overflow: visible;
-    margin: 0px;
-    color: @blue-deep;
-}
 
 span.status span.checked {
     display: none;
 }
-label.error {
-    display: inline;
-    color: @brand-warning;
+.error {
+    display: inline-block;
+    color: @brand-error;
 }

@@ -464,12 +464,25 @@ fieldset label {
   float: none;
   text-align: left;
 }
+.input-large {
+  font-size: 21px;
+  width: 72%;
+  padding: 15px 4%;
+}
+.input-xlarge {
+  font-size: 24px;
+  width: 90%;
+  padding: 15px 5%;
+}
 .control-group {
   margin: 15px 0;
   clear: both;
   display: block;
 }
 .input-block-level {
+  display: block;
+}
+.help-inline {
   display: block;
 }
 input,
@@ -479,10 +492,10 @@ input.date-pick {
   padding: .5em .5em;
   font-weight: bold;
   font-size: 16px;
-  color: #009ceb;
-  -webkit-border-radius: 1.5em;
-  -moz-border-radius: 1.5em;
-  border-radius: 1.5em;
+  color: #243842;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
   -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.33);
   box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.33);
 }
@@ -493,18 +506,12 @@ textarea.input-block-level {
   padding-right: 4%;
   display: block;
 }
-span.status span.error {
-  clear: both;
-  overflow: visible;
-  margin: 0px;
-  color: #0f578a;
-}
 span.status span.checked {
   display: none;
 }
-label.error {
-  display: inline;
-  color: #f0ad4e;
+.error {
+  display: inline-block;
+  color: #ec008c;
 }
 .modal {
   background: #ffffff;
@@ -809,22 +816,46 @@ body {
 #signup_buttons a.hot {
   color: #FFF;
 }
-#captchaImage a {
-  border: solid 0px #39C;
-  margin: 3px;
-  display: block;
+.or {
+  text-align: center;
+  margin: 30px 0;
+  position: relative;
+  font-size: 24px;
+  color: #668899;
+}
+.or:before,
+.or:after {
+  border-top: 1px solid #eeefef;
+  display: inline-block;
+  position: absolute;
+  content: "";
+  width: 42%;
+  top: 40%;
+  left: 0;
+  height: 0px;
+}
+.or:after {
+  left: 58%;
+}
+.captcha-image {
   float: left;
+  display: block;
   width: 80px;
   height: 80px;
+  border: solid 0px #39C;
+  margin: 3px 30px 3px 3px;
 }
-#captchaImage a,
-#exposureWrapper a span {
-  margin: 3px 18px;
-  border: 0;
+.captcha-image img {
+  display: block;
+  width: 100%;
 }
-#captchaImage a.selected,
+.captcha-wrapper .help-inline {
+  clear: both;
+}
+.captcha-wrapper a.selected,
 #exposureWrapper a.selected span {
-  margin: 0px 15px;
+  display: inline-block;
+  margin: 0 27px 0 0;
   border: solid 3px #CC006C;
 }
 #captchaImage img {
