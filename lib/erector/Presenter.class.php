@@ -201,7 +201,7 @@ class Presenter
     }
     
     private function email () {
-        include_once LIB.'/phpmailer/PHPMailer.class.php';
+        include_once LIB.'/phpmailer/class.phpmailer.php';
         $this->compile();
 
         $mail = new PHPMailer();
