@@ -26,7 +26,7 @@ class Logbook extends Controller
 	}
 	public function index() {
 		if($this->user->userid<=0)
-			return $this->redirect = "/login";
+			return $this->redirect = "/login?referrer=/logbook";
 
 		//List sorting
 		$this->order = (Session::instance()->get('order')!="") ? Session::instance()->get('order') : "DESC";

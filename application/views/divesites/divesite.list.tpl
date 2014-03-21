@@ -10,13 +10,12 @@
 {if $USER.userid > 0}
 <div class="row">
 	<div class="span12">
-		<a href="/divesites/edit" class="btn btn-primary pull-right">&plus; add a dive site</a>
 	</div>
 </div>
 {/if}
 <div class="row">
 	<div class="span6">
-		<ul class="navigation tabs"> 
+		<ul class="navigation tabs pull-left"> 
 			<li class="{if $smarty.cookies.tab_map!="tab-list"}active{/if}">
 				<a href="#tab-map" id="tab-link-map" rel="tab_map" title="View As Map">Map</a>
 			</li> 
@@ -24,10 +23,8 @@
 				<a href="#tab-list" id="tab-link-list" rel="tab_map" title="View As List">List</a>
 			</li> 
 		</ul> 
-	</div>
-	<div class="span6">
 		{if $USER.userid > 0}
-		<ul class="navigation tabs-dummy pull-right">
+		<ul class="navigation tabs-dummy pull-left">
 			<li class="{if $DISPATCHER.action=='all' || ($DISPATCHER.action=='index' && $USER.userid<=0)}active{/if}">
 				<a href="/divesites/all">everyone's sites</a>
 			</li>
@@ -36,9 +33,10 @@
 			</li>
 			<!--li><a href="/divesites/search">search dive sites</a></li>-->
 		</ul>
-		{else}
-		<br />
 		{/if}
+	</div>
+	<div class="span6">
+		<a href="/divesites/edit" class="btn btn-primary pull-right">&plus; add a dive site</a>
 	</div>
 </div>
 <div class="row">
