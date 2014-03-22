@@ -1,4 +1,4 @@
-require(['../app'], function($) {
+require(['../steelgills'], function($) {
     require(['validate'], function( foo ) {
     	var $ = require('jquery');
 		var validator = $("#userForm").validate({

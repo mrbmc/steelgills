@@ -1,4 +1,4 @@
-define(["../app"], function($) {
+define(["../steelgills"], function($) {
     require(["components/background-loader"],function(){
     });
 });

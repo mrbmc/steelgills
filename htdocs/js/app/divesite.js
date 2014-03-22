@@ -1,4 +1,4 @@
-define(['../app'], function($,_) {
+define(['../steelgills'], function($,_) {
     require(['components/DivesiteMap'],function(){
 		SG.map = arguments[0];
 		var Divesite = {

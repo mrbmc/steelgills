@@ -1,5 +1,5 @@
 define(["jquery"], function($) {
-	Tabs = {
+	return {
 		init:function(){
 			$("a",'.tabs').click(function (e) {
 				e.preventDefault();
@@ -20,5 +20,4 @@ define(["jquery"], function($) {
 			});
 		}
 	}
-	return Tabs.init();
 });
