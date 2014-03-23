@@ -1,9 +1,8 @@
 
-	</div><!-- /body -->
-</div><!-- /wrapper -->
+</div><!-- /body -->
 
-<div id="footer-wrapper">
-	<div id="footer" class="container">
+<div id="footer">
+	<div class="container">
 		<ul class="navigation" id="footernav">
 			<li id="nav_about"{if $DISPATCHER.controller eq "about"} class="current"{/if}><a href="/about">About</a></li>
 			<li id="nav_contact"{if $DISPATCHER.controller eq "contact"} class="current"{/if}><a href="/contact">Contact</a></li>
@@ -33,8 +32,8 @@
 		*}
 		{/if}
 
-	</div><!-- /footer -->
-</div><!-- /footer-wrapper -->
+	</div><!-- /.container -->
+</div><!-- /#footer -->
 
 
 <div class="wallpaper"><span class="caption"></span></div>

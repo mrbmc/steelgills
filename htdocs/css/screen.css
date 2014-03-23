@@ -1048,58 +1048,6 @@ table th {
 .thumbnail {
   margin-bottom: 30px;
 }
-#dive-profile {
-  position: relative;
-  background: #0f578a url(/images/profile_bg.gif) no-repeat 50% 0;
-  background-size: 75%;
-  height: 0px;
-  padding: 40% 0 0 0;
-  -webkit-border-radius: 7.5px;
-  -moz-border-radius: 7.5px;
-  border-radius: 7.5px;
-}
-#dive-profile .control-group {
-  margin: 0;
-  position: absolute;
-  text-align: center;
-}
-#dive-profile .control-group label {
-  font-size: 14px;
-  color: #ffffff;
-}
-#dive-profile #time-in-group {
-  left: 2%;
-  top: 5%;
-}
-#dive-profile #time-out-group {
-  right: 2%;
-  top: 5%;
-}
-#dive-profile #bottom-time-group {
-  left: 20%;
-  bottom: 5%;
-}
-#dive-profile #max-depth-group {
-  left: 45%;
-  bottom: 5%;
-}
-#dive-profile #deco-time-group {
-  left: 65%;
-  top: 40%;
-}
-#dive-profile #total-time-group {
-  right: 2%;
-  bottom: 5%;
-}
-#dive-profile .input,
-#dive-profile input.text {
-  width: 50px;
-}
-.sprite.tank_full,
-.sprite.tank_empty {
-  float: left;
-  margin-right: 15px;
-}
 #profile_sidebar {
   background: #FFF;
   padding: 1%;
@@ -1206,6 +1154,61 @@ a.facebook:hover {
   content: " \25BE";
   display: inline-block;
   margin-left: 5px;
+}
+.dive-detail {
+  clear: both;
+}
+.dive-profile {
+  position: relative;
+  background: #0f578a url(/images/profile_bg.gif) no-repeat 50% 0;
+  background-size: 75%;
+  height: 0px;
+  padding: 40% 0 0 0;
+  -webkit-border-radius: 7.5px;
+  -moz-border-radius: 7.5px;
+  border-radius: 7.5px;
+}
+.dive-profile .control-group {
+  margin: 0;
+  position: absolute;
+  text-align: center;
+}
+.dive-profile .control-group label {
+  font-size: 14px;
+  color: #ffffff;
+}
+.dive-profile #time-in-group {
+  left: 2%;
+  top: 5%;
+}
+.dive-profile #time-out-group {
+  right: 2%;
+  top: 5%;
+}
+.dive-profile #bottom-time-group {
+  left: 20%;
+  bottom: 5%;
+}
+.dive-profile #max-depth-group {
+  left: 45%;
+  bottom: 5%;
+}
+.dive-profile #deco-time-group {
+  left: 65%;
+  top: 40%;
+}
+.dive-profile #total-time-group {
+  right: 2%;
+  bottom: 5%;
+}
+.dive-profile .input,
+.dive-profile input.text {
+  width: 50px;
+}
+.sprite.tank_full,
+.sprite.tank_empty {
+  float: left;
+  margin-right: 15px;
 }
 @media (max-width: 768px) {
   .container {

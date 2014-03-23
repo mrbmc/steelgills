@@ -22,17 +22,5 @@
 </div>
 {/if}
 
-{*
-{if $USER.userid>0}
-<div id="profile_sidebar" class="sidebar">
-    <h3>Welcome {$USER.first_name}</h3>
-    <dl>
-        <dt>Dives logged</dt>
-        <dd>{$USER.diveslogged}</dd>
-    </dl>
-</div>
-{/if}
-*}
-
 
 {include file='footer.tpl' module_js='app/profile'}

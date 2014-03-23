@@ -40,3 +40,5 @@
 
 
 {include file='pagenav.tpl' PAGENAV=$DATA.pagenav}
+
+{include file='footer.tpl' module_js="app/logbook"}

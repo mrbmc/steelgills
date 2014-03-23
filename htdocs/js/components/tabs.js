@@ -1,4 +1,4 @@
-define(["jquery"], function($) {
+define(["jquery","cookie"], function($) {
 	return {
 		init:function(){
 			$("a",'.tabs').click(function (e) {
@@ -16,7 +16,7 @@ define(["jquery"], function($) {
 				$(tab).addClass("active");
 
 				if(cookie_key=="" || cookie_key==undefined) cookie_key = "tab";
-				$.setCookie(cookie_key,cookie_val,99);
+				$.cookie(cookie_key,cookie_val,99);
 			});
 		}
 	}
