@@ -712,7 +712,7 @@ body {
 #header {
   padding: 0;
   margin: 0;
-  background: #FFFFFF;
+  background: #0d2135;
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
@@ -760,8 +760,8 @@ body {
   position: relative;
 }
 #header #globalnav > li > a {
-  margin: 0px;
-  padding: 15px 15px;
+  margin: 7.5px 0;
+  padding: 7.5px 15px;
   -webkit-box-shadow: none;
   box-shadow: none;
   font-size: 14px;
@@ -770,9 +770,13 @@ body {
   line-height: 22px;
   text-decoration: none;
   text-transform: capitalize;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  color: #9ed1eb;
 }
 #header #globalnav > li > a:hover {
-  color: #0f578a;
+  color: #ffffff;
 }
 #header #globalnav > li > a.avatar-link {
   width: 36px;

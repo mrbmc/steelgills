@@ -10,7 +10,7 @@ class Divesites extends Controller
 		parent::__construct("Dive Sites");
 	}
 	public function index() {
-		$this->divesites = $this->loadSites($this->user->userid);
+		$this->divesites = $this->loadSites();//$this->user->userid
 		$this->data = $this->divesites;
 		$this->json = json_encode($this->data);
 		$this->view = "divesites/index";
@@ -53,12 +53,6 @@ class Divesites extends Controller
 	}
 	public function all() {
 		$this->divesites = $this->loadSites(0);
-		$this->data =& $this->divesites;
-		$this->json = json_encode($this->data);
-		$this->view = "divesites/index";
-	}
-	public function me() {
-		$this->divesites = $this->loadSites($this->user->userid);
 		$this->data =& $this->divesites;
 		$this->json = json_encode($this->data);
 		$this->view = "divesites/index";

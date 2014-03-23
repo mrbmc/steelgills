@@ -25,11 +25,11 @@
 		</ul> 
 		{if $USER.userid > 0}
 		<ul class="navigation tabs-dummy pull-left">
-			<li class="{if $DISPATCHER.action=='all' || ($DISPATCHER.action=='index' && $USER.userid<=0)}active{/if}">
-				<a href="/divesites/all">everyone's sites</a>
+			<li class="{if $DISPATCHER.controller=='Divesites'}active{/if}">
+				<a href="/divesites">everyone's sites</a>
 			</li>
-			<li class="{if $DISPATCHER.action=='me' || ($DISPATCHER.action=='index' && $USER.userid>0)}active{/if}">
-				<a href="/divesites/me">my sites</a>
+			<li class="{if $DISPATCHER.action=='divesites'}active{/if}">
+				<a href="/{$USER.username}/divesites">my sites</a>
 			</li>
 			<!--li><a href="/divesites/search">search dive sites</a></li>-->
 		</ul>

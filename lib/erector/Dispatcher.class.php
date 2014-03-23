@@ -55,6 +55,17 @@ class Dispatcher
 		$this->controller = $this->validateController($args[0]);
 		$this->action = $this->validateAction($args[1]);
 
+		// invalid controller specified
+		// if(strtolower($this->controller)!=strtolower($args[0]) && 
+		// 	strtolower($this->action)!=strtolower($args[1]) ) {
+		// 	//is the specified controller a static page?
+		// 	$this->view = $this->params['id'] = $args[0];
+		// 	if(!file_exists(APP . "/views/" . $args[0] . ".tpl")) {
+		// 		$this->action = "index";
+		// 	}
+		// }
+
+		//invalid action specified
 		if($this->action==$args[1]) {
 			$params = array_slice($args,2);
 		} else {
@@ -63,19 +74,9 @@ class Dispatcher
 		if(count($params)>1)
 			for($i=0,$m=count($params);$i<$m;$i+=2)
 				$this->params[$params[$i]] = $params[$i+1];
-//			foreach($params as $k=>$v)
-//				$this->params[$k] = $v;
 		else
 			$this->params['id'] = $params[0];
 
-		// invalid controller specified
-		if(strtolower($this->controller)!=strtolower($args[0])) {
-			//is the specified controller a static page?
-			$this->view = $this->params['id'] = $args[0];
-			if(!file_exists(APP . "/views/" . $args[0] . ".tpl")) {
-				$this->action = "index";
-			}
-		}
 
 		// Override the neat URL structure with key=val pairs
 		if(isset($_GET['controller']))
@@ -93,22 +94,29 @@ class Dispatcher
 	private function validateController ($_class=null) {
 		$class = ($_class!=null) ? $_class : $this->controller;
 		$class = ucfirst(strtolower($class));
-		if(file_exists(APP."/controllers/" . ucfirst(strtolower($class)) . ".php"))
+		if(file_exists(APP."/controllers/" . ucfirst(strtolower($class)) . ".php")) {
 			require_once (APP."/controllers/" . ucfirst(strtolower($class)) . ".php");
-				if(class_exists($class) && get_parent_class($class)!="Model")
-					return $class;
-//		require_once LIB."/Controller.class.php";
-		return $this->controller;
+			if(class_exists($class) && get_parent_class($class)!="Model") {
+				return $class;
+			}
+		} else {
+			require_once (APP."/controllers/" . $this->controller . ".php");
+			if(class_exists($this->controller) && get_parent_class($this->controller)!="Model") {
+				return $this->controller;
+			}
+		}
+		return false;
 	}
 
 	private function validateAction($_action=null) {
 		$action = ($_action!=null)?$_action:$this->action;
-		if(method_exists($this->controller,$action))
+		if(method_exists($this->controller,$action)) {
 			return $action;
-//		else if(method_exists($this->controller,"index"))
-//			return "index";
-		else
+		// } else if(method_exists($this->controller,"index")) {
+		// 	return "index";
+		} else {
 			return false;
+		}
 	}
 
 	private function executeController ($_controller=null) {
@@ -133,7 +141,6 @@ class Dispatcher
 		if($this->format)
 			$this->controllerInstance->format = $this->format;
 
-//		echo $this->controllerInstance->format;
 		//Debugger::trace('dispatcher',Dispatcher::instance(),true);
 	}
 }

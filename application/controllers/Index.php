@@ -49,6 +49,20 @@ class Index extends Controller {
 //		$this->divesites = Divesite::load($params);
 	}
 	
+	public function divesites () {
+		$sql_params = array(
+			"where"=>"AND fk_userid = '".$this->user->userid."'",
+			"order"=>"created_at DESC ",
+			"limit"=>$this->pagenav->getSQLLimit(),
+			);
+		$this->divesites = Divesite::load($sql_params);
+		$this->pagenav->totalItems = Divesite::getCount($sql_params);
+		$this->data =& $this->divesites;
+		$this->json = json_encode($this->data);
+		$this->view = "divesites/index";
+		return;
+	}
+
 
 }
 ?>

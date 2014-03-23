@@ -26,7 +26,7 @@
 				</a>
 				<ul class="dropdown-menu">
 					{*<li id="nav_logbook" class="{if $DISPATCHER.controller eq "Logbook"} active{/if}"><a href="/logbook" class="tab">Logbook</a></li>
-					<li id="nav_divesites" class="{if $DISPATCHER.controller eq "Divesites"}active{/if}"><a href="/divesites/me" class="tab">Dive-sites</a></li>*}
+					<li id="nav_divesites" class="{if $DISPATCHER.controller eq "Divesites" OR $DISPATCHER.action eq "divesites"}active{/if}"><a href="/divesites/me" class="tab">Dive-sites</a></li>*}
 					<li id="nav_logbook" class="{if $DISPATCHER.controller eq "Profile"} active{/if}"><a href="/{$USER.username}" class="tab">Profile</a></li>
 					<li id="nav_settings" class="{if $DISPATCHER.controller eq "Profile"} active{/if}"><a href="/profile/edit" class="tab">Settings</a></li>
 					<li><a href="/login/logout">Sign-out</a></li>

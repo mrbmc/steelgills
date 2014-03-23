@@ -10,7 +10,11 @@
 			<div class="span4">
 				<dl>
 					<dt>Location</dt>
-					<dd><a href="/divesites/show/{$DATA.dive.fk_divesiteid}">{$DATA.dive.location}</a></dd>
+					<dd>
+						{if $DATA.dive.fk_divesiteid>0}<a href="/divesites/show/{$DATA.dive.fk_divesiteid}">{/if}
+						{$DATA.dive.location}
+						{if $DATA.dive.fk_divesiteid>0}</a>{/if}
+					</dd>
 				</dl>
 			</div>
 		</div>
