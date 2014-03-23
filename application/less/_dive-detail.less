@@ -1,12 +1,10 @@
-.dive-detail {
-	clear:both;
-}
 .dive-profile {
     position: relative;
     background: @blue-deep url(/images/profile_bg.gif) no-repeat 50% 0;
     background-size: 75%;
     height: 0px;
     padding: 40% 0 0 0;
+    color: @white;
     .border-radius(@grid-gutter-width/4);
 
     .control-group {
@@ -52,3 +50,12 @@
     margin-right: @grid-gutter-width/2;
 }
 
+.dive-detail {
+    clear:both;
+    .dive-profile {
+        .controls {
+            font-weight: bold;
+        }
+
+    }
+}

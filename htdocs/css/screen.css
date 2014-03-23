@@ -250,6 +250,7 @@ ul.navigation > li {
 }
 ul.navigation > li > a {
   display: block;
+  padding: 7.5px 15px;
 }
 #globalnav {
   -webkit-border-radius: 0.5em;
@@ -770,21 +771,17 @@ body {
 
   height: 0;
 }
-#footer-wrapper {
+#footer {
   clear: both;
-  margin: -272px 0 0 0;
-  padding: 212px 0 0 0;
-  width: 100%;
-  height: 60px;
-  display: none;
+  background: rgba(255, 255, 255, 0.8);
 }
-#footer-wrapper #footer {
-  padding: 20px 0;
-  height: 20px;
+#footer .container {
+  padding: 15px 0;
 }
-#footer-wrapper #footer a {
-  color: #FFF;
-  font-weight: bold;
+#footer .container:after {
+  clear: both;
+  content: "";
+  display: block;
 }
 /* @end */
 #signup_buttons {
@@ -921,6 +918,11 @@ HOMEPAGE
 }
 .Index-index #body p {
   text-align: center;
+}
+.Index-index #footer {
+  position: absolute;
+  top: 100%;
+  width: 100%;
 }
 .wallpaper {
   display: block;
@@ -1155,15 +1157,13 @@ a.facebook:hover {
   display: inline-block;
   margin-left: 5px;
 }
-.dive-detail {
-  clear: both;
-}
 .dive-profile {
   position: relative;
   background: #0f578a url(/images/profile_bg.gif) no-repeat 50% 0;
   background-size: 75%;
   height: 0px;
   padding: 40% 0 0 0;
+  color: #ffffff;
   -webkit-border-radius: 7.5px;
   -moz-border-radius: 7.5px;
   border-radius: 7.5px;
@@ -1209,6 +1209,12 @@ a.facebook:hover {
 .sprite.tank_empty {
   float: left;
   margin-right: 15px;
+}
+.dive-detail {
+  clear: both;
+}
+.dive-detail .dive-profile .controls {
+  font-weight: bold;
 }
 @media (max-width: 768px) {
   .container {

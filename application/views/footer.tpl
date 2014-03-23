@@ -3,12 +3,12 @@
 
 <div id="footer">
 	<div class="container">
+		<span class="pull-right">&copy;{$smarty.now|date_format:"%Y"} Steel Gills</span>
+	
 		<ul class="navigation" id="footernav">
 			<li id="nav_about"{if $DISPATCHER.controller eq "about"} class="current"{/if}><a href="/about">About</a></li>
 			<li id="nav_contact"{if $DISPATCHER.controller eq "contact"} class="current"{/if}><a href="/contact">Contact</a></li>
-			<li id="nav_help"{if $DISPATCHER.controller eq "help"} class="current"{/if}><a href="/help">Help</a></li>
 		{if $USER.userid}
-			<li id="nav_profile"{if $DISPATCHER.controller eq "profile"} class="current"{/if}><a href="/profile">My Profile</a></li>
 			<li id="nav_logout"><a href="/login/logout">Log out</a></li>
 		{else}
 			<li id="nav_login"><a href="/login">Log in</a></li>
@@ -16,8 +16,6 @@
 		{/if}
 		</ul>
 
-		<span class="right">&copy;{$smarty.now|date_format:"%Y"} Steel Gills</span>
-	
 		{if $smarty.server.HTTP_HOST=="steelgills.com" && $smarty.server.REQUEST_URI!="/"}
 		{*
 		<script type="text/javascript"><!--
