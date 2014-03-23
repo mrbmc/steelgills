@@ -1,23 +1,80 @@
-<h2>{if $DATA.dive.title!=''}{$DATA.dive.title}{else}{$DATA.dive.location}{/if}</h2>
-<ul class="navigation segmented left" style="margin: 10px 0;">
-	{if $DATA.user.id eq $DATA.dive.fk_userid || $DATA.user.status eq 'admin'}
-	<li><a href="/logbook/edit/{$DATA.dive.diveid}">Edit This dive</a></li>
-	{/if}
-	{*<li><a href="/logbook/print/{$DATA.dive.diveid}">Print</a></li>
-	<li><a href="/logbook/send/{$DATA.dive.diveid}">Email</a></li>
-	<li><a href="/logbook/share/{$DATA.dive.diveid}">Share</a></li>*}
-	<li><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2F{$smarty.server.HTTP_HOST|urlencode}%2Flogbook%2F{$DATA.dive.diveid}&amp;layout=standard&amp;show_faces=false&amp;width=450&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:visible; width:300px;height:50px;padding:0;margin:0;" allowTransparency="true"></iframe></li>
-</ul>
 <div class="dive-detail">
-	<dl class="table">
-		<dt>Date</dt>
-		<dd><a href="/divesites/show/{$DATA.dive.fk_divesiteid}">{$DATA.dive.location}</a></dd>
-		<dt>Location</dt>
-		<dd>{$DATA.dive.time_start|date_format:"%B %e, %Y"}</dd>
-		<dt>Description</dt>
-		<dd>{if $DATA.dive.description!=""}{$DATA.dive.description|nl2br}{/if}</dd>
-	</dl>
+	<div class="card">
+		<div class="row">
+			<div class="span4">
+				<dl>
+					<dt>Date</dt>
+					<dd>{$DATA.dive.time_start|date_format:"%B %e, %Y"}</dd>
+				</dl>
+			</div>
+			<div class="span4">
+				<dl>
+					<dt>Location</dt>
+					<dd><a href="/divesites/show/{$DATA.dive.fk_divesiteid}">{$DATA.dive.location}</a></dd>
+				</dl>
+			</div>
+		</div>
+		<div class="row">
+			<div class="span12">
+				{if $DATA.dive.description!=""}{$DATA.dive.description|nl2br}{/if}
+			</div>
+<!-- 			<div class="span4">
+				{if $DATA.user.id eq $DATA.dive.fk_userid || $DATA.user.status eq 'admin'}
+					<a href="/logbook/edit/{$DATA.dive.diveid}">Edit This dive</a>
+					{/if}
+			</div> -->
+		</div>
+		
+	</div>
 
+
+	<div class="row">
+		<div class="span6">
+			
+			<h3>Kit</h3>
+			<dl>
+				<dt>Weight</dt>
+				<dd>{$DATA.dive.weight} lbs</dd>
+				
+				<dt>Exposure Protection</dt>
+				<dd>
+				{assign var="exposureArray" value=","|explode:$DATA.dive.exposure}
+				{foreach from=$exposureArray key=k item=row}
+					{if $row!=""}
+					<div class=""><span class="sprite {$row}" style="float:none;">{$row}</span>{$row}</div>
+					{/if}
+				{/foreach}
+				</dd>
+
+				<dt>Air Start /  Finish</dt>
+				<dd>{$DATA.dive.air_start} / {$DATA.dive.air_end} psi</dd>
+
+			</dl>
+		</div>
+		<div class="span6">
+			
+			<h3>Water Conditions</h3>
+			<dl class="table">
+				<dt>Temperature</dt>
+					<dd>{$DATA.dive.temperature}</dd>
+				<dt>Visibility</dt>
+					<dd>{$DATA.dive.visibility}</dd>
+				<dt>Current</dt>
+					<dd>{$DATA.dive.current}</dd>
+			</dl>
+
+			<h3>Surface Conditions</h3>
+			<dl class="table">
+				<dt>Air Temperature</dt>
+					<dd>{$DATA.dive.air_temperature}</dd>
+				<dt>Water Conditions</dt>
+					<dd>{$DATA.dive.wave_height}</dd>
+				<dt>Wind Speed</dt>
+					<dd>{$DATA.dive.wind_speed}</dd>
+			</dl>
+		</div>
+
+	</div>
 
 
 
@@ -66,47 +123,6 @@
 			<label for="">Total Time: <span id="totaltime"></span></label>
 		</div>
 	</div>
-
-
-
-
-	<div class="block">
-		<h3>Weight</h3>
-		<p>{$DATA.dive.weight} lbs</p>
-		
-		<h3>Exposure Protection</h3>
-		<p>
-		{assign var="exposureArray" value=","|explode:$DATA.dive.exposure}
-		{foreach from=$exposureArray key=k item=row}
-			{if $row!=""}<div class="left"><span class="sprite {$row}" style="float:none;">{$row}</span>{$row}</div>{/if}
-		{/foreach}
-			<div class="clear"></div>
-		</p>
-
-		<h3>Air Start /  Finish</h3>
-		<p>{$DATA.dive.air_start} / {$DATA.dive.air_end} psi</p>
-
-		<h3>Water Conditions</h3>
-		<dl>
-			<dt>Temperature</dt>
-				<dd>{$DATA.dive.temperature}</dd>
-			<dt>Visibility</dt>
-				<dd>{$DATA.dive.visibility}</dd>
-			<dt>Current</dt>
-				<dd>{$DATA.dive.current}</dd>
-		</dl>
-
-		<h3>Surface Conditions</h3>
-		<dl>
-			<dt>Air Temperature</dt>
-				<dd>{$DATA.dive.air_temperature}</dd>
-			<dt>Water Conditions</dt>
-				<dd>{$DATA.dive.wave_height}</dd>
-			<dt>Wind Speed</dt>
-				<dd>{$DATA.dive.wind_speed}</dd>
-		</dl>
-	</div>
-
 
 </div>
 

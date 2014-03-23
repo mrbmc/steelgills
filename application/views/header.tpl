@@ -18,7 +18,7 @@
 		<h1 id="logo" class="logo"><a href="/">Steel Gills</a></h1>
 		<ul class="navigation" id="globalnav">
 			<li id="nav_divesites" class="{if $DISPATCHER.controller eq "Divesites"}active{/if}"><a href="/divesites">Dive-sites</a></li>
-			<li id="nav_logbook" class="{if $DISPATCHER.controller eq "Divesites"}active{/if}"><a href="/logbook">Logbook</a></li>
+			<li id="nav_logbook" class="{if $DISPATCHER.controller eq "Logbook"}active{/if}"><a href="/logbook">Logbook</a></li>
 		{if $USER.userid>0}
 			<li id="nav_profile" class="{if $DISPATCHER.controller eq "Profile"} active{/if}" data-dropdown-trigger>
 				<a href="/profile" class="avatar-link">

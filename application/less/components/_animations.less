@@ -1,0 +1,22 @@
+/** --------------------------------------------------
+// ANIMATIONS
+*/
+
+.fade {
+    opacity: 0;
+    .transition(opacity .25s);
+}
+.fade.in {
+    opacity: 1;
+}
+.collapse {
+    height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    overflow: hidden;
+    &.in {
+        height: 100%;
+        padding-top: inherit;
+        padding-bottom: inherit;
+    }
+}

@@ -14,33 +14,11 @@ html,body,div,ul,ol,dl,li,dt,dd,form,fieldset,input,textarea,label,table,tr,td,i
 @import 'components/_forms.less';
 @import 'components/_modal.less';
 @import 'components/_sprites.less';
+@import 'components/_animations.less';
 
 @import 'shared/_layout.less';
+@import 'shared/_header.less';
 @import 'shared/_authentication.less';
-
-
-/** --------------------------------------------------
-// ANIMATIONS
-*/
-
-.fade {
-    opacity: 0;
-    .transition(opacity .25s);
-}
-.fade.in {
-    opacity: 1;
-}
-.collapse {
-    height: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-    overflow: hidden;
-    &.in {
-        height: 100%;
-        padding-top: inherit;
-        padding-bottom: inherit;
-    }
-}
 
 
 img.thumbnail {
@@ -52,7 +30,12 @@ img.thumbnail {
 
 @import '_homepage.less';
 
-
+.card {
+    background: @white;
+    padding: @grid-gutter-width;
+    .box-shadow(0 1px 2px rgba(0,0,0,0.2));
+    margin-bottom: @grid-gutter-width;
+}
 
 #feedback {
     width: 50%;
@@ -80,6 +63,11 @@ dl.table {
     dd {
         width: 57%;
     }
+    &:after {
+        clear: both;
+        content: "";
+        display: block;
+    }
 }
 
 .list th, .list>li.head, .tabContent h3 {
@@ -106,7 +94,7 @@ dl.table {
     color: #369;
 }
 .list li span {
-display:inline-block;
+    display:inline-block;
 }
 .list li span.ds-title {width: 27%;}
 .list li span.ds-location {width: 40%;}
@@ -151,9 +139,6 @@ table {
 
 
 @import '_dive-edit.less';
-
-
-
 
 
 

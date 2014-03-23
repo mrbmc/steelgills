@@ -215,33 +215,6 @@ input[type="submit"] > b,
   color: #FFF;
 }
 /* @group NAVIGATION */
-.logo {
-  text-indent: -999em;
-  width: 80px;
-  height: 30px;
-  margin: 0 0 -20px 0;
-  padding: 0;
-  float: left;
-  display: inline-block;
-  background: url(/images/fish_150x69.png) no-repeat 0px 0px;
-  background-size: 66px;
-}
-.logo.big {
-  background: url(/images/fish_big.png) no-repeat 0 0;
-  width: 320px;
-  height: 145px;
-}
-.logo a {
-  width: 150px;
-  height: 50px;
-  display: block;
-}
-.logo a:hover {
-  background: none;
-}
-#header a {
-  text-decoration: none;
-}
 ul.navigation > li {
   list-style-type: none;
   display: block;
@@ -251,64 +224,6 @@ ul.navigation > li {
 ul.navigation > li > a {
   display: block;
   padding: 7.5px 15px;
-}
-#globalnav {
-  -webkit-border-radius: 0.5em;
-  -moz-border-radius: 0.5em;
-  border-radius: 0.5em;
-  float: right;
-  height: auto;
-  margin: 0;
-}
-#globalnav > li {
-  position: relative;
-}
-#globalnav > li > a {
-  margin: 0px;
-  padding: 0.5em 1em;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  font-size: 14px;
-  font-family: "Gotham Rounded", "Gotham Rounded", "Helvetica Neue", "HelveticaNeue", Helvetica, san-serif;
-  font-weight: 300;
-  line-height: 22px;
-  text-decoration: none;
-  text-transform: capitalize;
-}
-#globalnav > li > a:hover {
-  color: #0f578a;
-}
-#globalnav > li > a.avatar-link {
-  width: 36px;
-  height: 36px;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-right: 0;
-}
-#globalnav > li > a.avatar-link img {
-  width: 100%;
-  height: 100%;
-}
-#globalnav > li.active > a {
-  color: #002142;
-}
-#globalnav > li .dropdown-menu {
-  display: none;
-  position: absolute;
-  z-index: 100;
-  right: -15px;
-  background: #FFF;
-  padding: 15px;
-  white-space: nowrap;
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-}
-#globalnav > li .dropdown-menu li {
-  display: block;
-  line-height: 1.5;
-}
-#globalnav > li[data-dropdown-trigger]:hover > .dropdown-menu {
-  display: block;
 }
 .pagenav {
   height: 20px;
@@ -633,6 +548,28 @@ span.status span.checked {
   margin-right: 1em;
   float: left;
 }
+/** --------------------------------------------------
+// ANIMATIONS
+*/
+.fade {
+  opacity: 0;
+  -webkit-transition: opacity 0.25s;
+  transition: opacity 0.25s;
+}
+.fade.in {
+  opacity: 1;
+}
+.collapse {
+  height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  overflow: hidden;
+}
+.collapse.in {
+  height: 100%;
+  padding-top: inherit;
+  padding-bottom: inherit;
+}
 /* GRID SYSTEM
 ----------------------------------------------------------------------------------------------------*/
 .container,
@@ -744,18 +681,6 @@ body {
   height: 100%;
   background: #e4f2f6;
 }
-#header {
-  padding: 15px 0;
-  margin: 0;
-  background: #FFFFFF;
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-}
-#header:after {
-  clear: both;
-  content: "";
-  display: block;
-}
 #body {
   margin: 1em auto;
 }
@@ -784,6 +709,105 @@ body {
   display: block;
 }
 /* @end */
+#header {
+  padding: 0;
+  margin: 0;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+#header:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+#header .logo {
+  text-indent: -999em;
+  width: 80px;
+  height: 30px;
+  margin: 10px 0 0 0;
+  padding: 0;
+  float: left;
+  display: inline-block;
+  background: url(/images/fish_150x69.png) no-repeat 0px 0px;
+  background-size: 66px;
+}
+#header .logo.big {
+  background: url(/images/fish_big.png) no-repeat 0 0;
+  width: 320px;
+  height: 145px;
+}
+#header .logo a {
+  width: 150px;
+  height: 50px;
+  display: block;
+}
+#header .logo a:hover {
+  background: none;
+}
+#header a {
+  text-decoration: none;
+}
+#header #globalnav {
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em;
+  float: right;
+  height: auto;
+  margin: 0;
+}
+#header #globalnav > li {
+  position: relative;
+}
+#header #globalnav > li > a {
+  margin: 0px;
+  padding: 15px 15px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  font-size: 14px;
+  font-family: "Gotham Rounded", "Gotham Rounded", "Helvetica Neue", "HelveticaNeue", Helvetica, san-serif;
+  font-weight: 300;
+  line-height: 22px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+#header #globalnav > li > a:hover {
+  color: #0f578a;
+}
+#header #globalnav > li > a.avatar-link {
+  width: 36px;
+  height: 36px;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 0;
+}
+#header #globalnav > li > a.avatar-link img {
+  width: 100%;
+  height: 100%;
+}
+#header #globalnav > li.active > a {
+  background: #e4f2f6;
+  color: #002142;
+  font-weight: bold;
+}
+#header #globalnav > li .dropdown-menu {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  right: -15px;
+  background: #FFF;
+  padding: 15px;
+  white-space: nowrap;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+#header #globalnav > li .dropdown-menu li {
+  display: block;
+  line-height: 1.5;
+}
+#header #globalnav > li[data-dropdown-trigger]:hover > .dropdown-menu {
+  display: block;
+}
 #signup_buttons {
   width: 40%;
   float: left;
@@ -860,28 +884,6 @@ body {
   width: 80px;
   height: 80px;
 }
-/** --------------------------------------------------
-// ANIMATIONS
-*/
-.fade {
-  opacity: 0;
-  -webkit-transition: opacity 0.25s;
-  transition: opacity 0.25s;
-}
-.fade.in {
-  opacity: 1;
-}
-.collapse {
-  height: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  overflow: hidden;
-}
-.collapse.in {
-  height: 100%;
-  padding-top: inherit;
-  padding-bottom: inherit;
-}
 img.thumbnail {
   max-width: 100%;
   width: auto;
@@ -946,6 +948,13 @@ HOMEPAGE
     font-size: 2em;
   }
 }
+.card {
+  background: #ffffff;
+  padding: 30px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+}
 #feedback {
   width: 50%;
   margin: 10px auto;
@@ -971,6 +980,11 @@ dl.table dt {
 }
 dl.table dd {
   width: 57%;
+}
+dl.table:after {
+  clear: both;
+  content: "";
+  display: block;
 }
 .list th,
 .list > li.head,
@@ -1215,6 +1229,12 @@ a.facebook:hover {
 }
 .dive-detail .dive-profile .controls {
   font-weight: bold;
+}
+.dive-detail dl dt {
+  font-weight: bold;
+}
+.dive-detail dl dd {
+  margin-bottom: 15px;
 }
 @media (max-width: 768px) {
   .container {
