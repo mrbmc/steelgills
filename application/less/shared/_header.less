@@ -110,5 +110,33 @@
             }
         }
     }
+
+    #signin_form {
+        position: absolute;
+        width: 300px;
+        right: @grid-gutter-width;
+        top: 52px;
+        z-index: 100;
+        fieldset{
+            .box-shadow(0 2px 8px rgba(0,0,0,0.5));
+            .border-radius(0 0 @border-radius-large @border-radius-large);
+        }
+        h3 {
+            font-size: 14px;
+        }
+        a.twitter, a.facebook {
+            padding: 10px 5px;
+        }
+        hr {
+            margin: 10px 0;
+        }
+        label {
+        }
+            color: @blue-shallow;
+        .btn.btn-large {
+            font-size: 16px;
+            padding: 5px 10px;
+        }
+    }
 }
 

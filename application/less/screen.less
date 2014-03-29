@@ -37,6 +37,10 @@ img.thumbnail {
     .box-shadow(0 1px 2px rgba(0,0,0,0.2));
     margin-bottom: @grid-gutter-width;
 }
+.well {
+    background: @body-bg;
+    .box-shadow(inset 1px 4px rgba(0,0,0,0.3));
+}
 
 #feedback {
     width: 50%;
@@ -69,6 +73,13 @@ dl.table {
         content: "";
         display: block;
     }
+}
+
+hr {
+    margin: @grid-gutter-width 0;
+    height: 1px;
+    border: none;
+    background: @blue-shallow;
 }
 
 .list th, .list>li.head, .tabContent h3 {
@@ -227,21 +238,30 @@ table {
     margin: 0 0 1em 0px;
 }
 
+a.twitter {
+    background: @twitter;
+    color: @white;
+}
+a.facebook {
+    background: @facebook;
+    color: @white;
+}
+
 a.twitter,a.facebook {
-    clear: both;
-    margin: 0 auto;
-    width: 151px;
-    height: 36px;
-    background: url(/images/connect_twitter.png) no-repeat;
-    text-indent: -999em;
+//     clear: both;
+//     margin: 0 auto;
+//     width: 151px;
+//     height: 36px;
+//     background: url(/images/connect_twitter.png) no-repeat;
+//     text-indent: -999em;
     display: inline-block;
 }
-a.twitter,a.twitter:hover {
-    background: url(/images/connect_twitter.png) no-repeat;
-}
-a.facebook,a.facebook:hover {
-    background: url(/images/connect_facebook.gif) no-repeat;
-}
+// a.twitter,a.twitter:hover {
+//     background: url(/images/connect_twitter.png) no-repeat;
+// }
+// a.facebook,a.facebook:hover {
+//     background: url(/images/connect_facebook.gif) no-repeat;
+// }
 
 
 .Logbook {

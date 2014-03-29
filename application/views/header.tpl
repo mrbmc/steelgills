@@ -33,10 +33,14 @@
 				</ul>
 			</li>
 		{else}
-			<li id="nav_login" class="{if $DISPATCHER.controller eq "Login"} active{/if}"><a href="/login" data-modal-src="/login/modal">Log in</a></li>
+			<li id="nav_login" class="{if $DISPATCHER.controller eq "Login"} active{/if}"><a href="/login" data-modal-src="/login/modal" onclick="$('#signin_form').toggleClass('in');return false;">Log in</a></li>
 			<li id="nav_signup"{if $DISPATCHER.controller eq "Signup"} class="active"{/if}><a href="/signup">Sign Up</a></li>
 		{/if}
 		</ul>
+
+{if $USER.userid<=0}
+	{include file='login_form.tpl'}
+{/if}
 	</div>
 </div>
 
