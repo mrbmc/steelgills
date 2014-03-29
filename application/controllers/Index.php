@@ -7,6 +7,7 @@ class Index extends Controller {
 	}
 
 	public function index() {
+		$params = Dispatcher::instance()->params;
 		$this->view = Dispatcher::instance()->view!="" ? strtolower(Dispatcher::instance()->view) : $this->view;
 		if($this->view!='index')
 			return $this->profile();

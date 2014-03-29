@@ -56,17 +56,18 @@ class Dispatcher
 		$this->action = $this->validateAction($args[1]);
 
 		// invalid controller specified
-		// if(strtolower($this->controller)!=strtolower($args[0]) && 
-		// 	strtolower($this->action)!=strtolower($args[1]) ) {
-		// 	//is the specified controller a static page?
-		// 	$this->view = $this->params['id'] = $args[0];
-		// 	if(!file_exists(APP . "/views/" . $args[0] . ".tpl")) {
-		// 		$this->action = "index";
-		// 	}
-		// }
+		if(strtolower($this->controller)!=strtolower($args[0]) && 
+			strtolower($this->action)!=strtolower($args[1]) ) {
+			//is the specified controller a static page?
+			$this->view = $this->params['id'] = $args[0];
+			if(!file_exists(APP . "/views/" . $args[0] . ".tpl")) {
+				$this->action = "index";
+			}
+		}
 
+		// print_r($this->params);
 		//invalid action specified
-		if($this->action==$args[1]) {
+		/*if($this->action==$args[1]) {
 			$params = array_slice($args,2);
 		} else {
 			$params = array_slice($args,1);
@@ -76,7 +77,7 @@ class Dispatcher
 				$this->params[$params[$i]] = $params[$i+1];
 		else
 			$this->params['id'] = $params[0];
-
+		*/
 
 		// Override the neat URL structure with key=val pairs
 		if(isset($_GET['controller']))

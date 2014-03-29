@@ -33,8 +33,8 @@
 				</ul>
 			</li>
 		{else}
-			<li id="nav_signup"{if $DISPATCHER.controller eq "Signup"} class="active"{/if}><a href="/signup">Sign Up</a></li>
 			<li id="nav_login" class="{if $DISPATCHER.controller eq "Login"} active{/if}"><a href="/login" data-modal-src="/login/modal">Log in</a></li>
+			<li id="nav_signup"{if $DISPATCHER.controller eq "Signup"} class="active"{/if}><a href="/signup">Sign Up</a></li>
 		{/if}
 		</ul>
 	</div>
