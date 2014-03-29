@@ -26,7 +26,7 @@ class Login extends Controller {
 			if($this->setUser($user))
 				$this->redirect = $_REQUEST['referrer'] ? $_REQUEST['referrer'] : "/";
 			else 
-				$this->setError("Your credentials were incorrect. Please check your email &amp; password and try again.");
+				$this->setError("Sorry, we couldn't log you in. Please check your email &amp; password and try again.");
 			return;
 		}
 //		Debugger::trace('user',$this->user,true);

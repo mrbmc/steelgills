@@ -2,4 +2,4 @@
 
 {include file='login_form.tpl'}
 
-{include file='footer.tpl'}
+{include file='footer.tpl' module_js='app/signup'}

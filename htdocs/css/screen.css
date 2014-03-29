@@ -570,6 +570,16 @@ span.status span.checked {
   padding-top: inherit;
   padding-bottom: inherit;
 }
+.alert {
+  padding: 30px;
+  margin: 0 0 30px 0;
+  background: #FF9;
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
 /* GRID SYSTEM
 ----------------------------------------------------------------------------------------------------*/
 .container,
@@ -916,11 +926,11 @@ HOMEPAGE
 .Index-index #body h1 {
   color: #FFF;
   text-shadow: 0 0 16px rgba(0, 0, 0, 0.8);
-  font-size: 4em;
+  font-size: 3em;
   font-weight: 100;
   line-height: 1.5em;
   text-align: center;
-  margin: 1.5em 0;
+  margin: 3em 0 1em;
 }
 .Index-index #body p {
   text-align: center;
