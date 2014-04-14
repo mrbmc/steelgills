@@ -1,5 +1,5 @@
 requirejs.config({
-	baseUrl: "js/lib",
+	baseUrl: "/js/lib",
 	paths: {
 		app: "../app"
 		,components: "../components"
@@ -8,6 +8,8 @@ requirejs.config({
 		,async: "requirejs-plugins/src/async"
 		,validate: "jquery-validation/dist/jquery.validate"
 		,cookie: "jquery-cookie/jquery.cookie"
+		,autocomplete: "jquery-autocomplete/src/jquery.autocomplete"
+		,typeahead: "twitter-typeahead/dist/typeahead.jquery"
     },
     shim: {
         'jquery': 				{ exports: "$" },

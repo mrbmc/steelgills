@@ -1,6 +1,6 @@
 {include file='header.tpl' title='Dive Sites'}
-<h2>{if $DATA.divesite.divesiteid>0}Edit{else}Add{/if} a divesite</h2>
 
+<h2>{if $DATA.divesite.divesiteid>0}Edit{else}Add{/if} a divesite</h2>
 <form method="POST" action="/divesites/update/" name="myForm" id="myForm">
 <input type="hidden" id="divesiteid" name="divesiteid" value="{$DATA.divesite.divesiteid}" />
 
@@ -101,10 +101,24 @@
 
 </form>
 
-{include file='footer.tpl'}
+{include file='footer.tpl' module_js="app/divesite.edit"}
 
 <script type="text/javascript">/*<![CDATA[*/
 {literal}
+if(typeof SG == 'undefined') var SG = {};
+SG.map_key = "{/literal}{$CONFIG.GOOGLE_API_KEY}{literal}";
+/*
+var DivesiteData = {
+	marker: {
+		id: {/literal}{$DATA.divesite.divesiteid}{literal},
+		point:{
+			latitude:{/literal}{$DATA.divesite.latitude}{literal}, 
+			longitude:{/literal}{$DATA.divesite.longitude}{literal}
+			},
+		zoom: 2,
+		description:'{/literal}{$DATA.divesite.title}{literal}<br />{/literal}{if $DATA.divesite.city}{$DATA.divesite.city}, {/if}{literal}{/literal}{$DATA.divesite.country}{literal}<br /><small>{/literal}{$DATA.divesite.latitude}{literal} x {/literal}{$DATA.divesite.longitude}{literal}</small>'
+	}
+}
 SG.init_page = function() {
 	try {
 		$('#map_canvas');
@@ -119,9 +133,6 @@ SG.init_page = function() {
     	return;
     }
 
-
-	SG.map.scope = {/literal}"{$DISPATCHER.action}"{literal};
-	SG.map.key = "{/literal}{$CONFIG.GOOGLE_API_KEY}{literal}";
 	if(getCookie('tab-map')!="tab-list") {
 		map_init();
 	}
@@ -179,9 +190,6 @@ function map_init() {
 		geocodeCallback();
 	});
 }
+*/
 {/literal}
 /*]]>*/</script>
-
-<script type="text/javascript" src="/js/SGMap{if $smarty.server.HTTP_HOST=="steelgills.com"}.min{/if}.js"></script>
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false&key={$CONFIG.GOOGLE_API_KEY}"></script>
-

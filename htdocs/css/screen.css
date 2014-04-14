@@ -430,6 +430,12 @@ span.status span.checked {
   display: inline-block;
   color: #ec008c;
 }
+.tt-dropdown-menu {
+  background: #fff;
+  padding: 30px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
 .modal {
   background: #ffffff;
   position: fixed;
@@ -824,6 +830,7 @@ body {
   display: block;
 }
 #header #signin_form {
+  display: none;
   position: absolute;
   width: 300px;
   right: 30px;
@@ -851,6 +858,9 @@ body {
 #header #signin_form .btn.btn-large {
   font-size: 16px;
   padding: 5px 10px;
+}
+#header #signin_form.in {
+  display: block;
 }
 #signup_buttons {
   width: 40%;

@@ -231,94 +231,16 @@ width: 80px;
 }
 </style>
 <script type="text/javascript">/*<![CDATA[*/
-var divesites=[{/literal}{foreach from=$DATA.divesites key=k item=row}"{$row->title}|{$row->divesiteid}",{/foreach}{literal}"dummy"];
-var exposure = new Array('{/literal}{$DATA.dive.exposure|replace:',':"','"}{literal}');
-
 if(typeof SG == 'undefined') var SG = {};
-var wireup = function() {
-	console.log('wireup()');
+var divesites = [{/literal}{foreach from=$DATA.divesites key=k item=row}"{$row->title}|{$row->divesiteid}",{/foreach}{literal}"dummy"];
+var divesites = {/literal}{$DATA.divesites|@json_encode}{literal};
 
-	$('.exposure-item').on('click',exposureSelect);
-
-	$("#location").autocompleteArray(divesites,{
-		maxItems:10,
-		onItemSelect:function(li){
-			$('#location').val($(li).text());
-			$('#fk_divesiteid').val(li.extra[0]);
-			console.log("selected:" + li.extra[0]);
-		}
-	});
-	$("#datepicker").datepicker({
-		showOn: 'button',
-		buttonImage: '/images/calendar.gif',
-		buttonImageOnly: true,
-	});
-	$('#vis_slider').slider({
-			value:{/literal}{if $DATA.dive.visibility}{$DATA.dive.visibility}{else}100{/if}{literal},
-			range: "max",
-			min: 0,
-			max: 500,
-			step: 5,
-			slide: function(event, ui) {
-				$('#visibility').val(ui.value);
-			}
-	});
-	$('#cur_slider').slider({
-			value:{/literal}{if $DATA.dive.current}{$DATA.dive.current}{else}0{/if}{literal},
-			range: "max",
-			min: 0,
-			max: 10,
-			step: 0.25,
-			slide: function(event, ui) {
-				$('#current').val(ui.value);
-			}
-	});
-
-	updateTime();
-	$('#time_start').change(updateTime);
-	$('#time_end').change(updateTime);
-};
-
-function updateTime () {
-		begin = $('#time_start').val().split(":");
-		end = $('#time_end').val().split(":");
-		hrs = end[0]-begin[0];
-		min = (end[1]-begin[1])+"";
-		if(min.length==1)
-			min = "0"+min;
-		duration = hrs+":"+min;
-		$('#totaltime').html(duration);
-}
-
-function exposureSelect(e) {
-	e.preventDefault();
-	var obj = $(e.currentTarget),
-		val = obj.data('exposure'),
-		idx = exposure.contains(val);
-
-	obj.toggleClass('selected');
-	if(idx===false) {
-		exposure.push(val);
-	} else {
-		exposure.splice(idx,1);
-		// obj.removeClass('selected');
-	}
-	$('#exposure').val(exposure);
-	return false;
-}
-
-
-SG.init_page = function () {
-	console.log('init page');
-	$.when(
-	    $.getScript( "/js/jquery.autocomplete.js"),
-	    $.getScript( "/js/jquery-ui.js")
-	).done(function(){
-		console.log('loaded');
-		wireup();
-	});
-	// return false;
+var exposure = new Array('{/literal}{$DATA.dive.exposure|replace:',':"','"}{literal}');
+var Dive = {
+	visibility: {/literal}{if $DATA.dive.visibility}{$DATA.dive.visibility}{else}100{/if}{literal},
+	current: {/literal}{if $DATA.dive.current}{$DATA.dive.current}{else}0{/if}{literal}
 }
 
 /*]]>*/</script>
 {/literal}
+{include file='footer.tpl' module_js="app/logbook.edit"}

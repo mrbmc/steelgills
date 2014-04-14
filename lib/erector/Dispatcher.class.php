@@ -67,7 +67,7 @@ class Dispatcher
 
 		// print_r($this->params);
 		//invalid action specified
-		/*if($this->action==$args[1]) {
+		if($this->action==$args[1]) {
 			$params = array_slice($args,2);
 		} else {
 			$params = array_slice($args,1);
@@ -77,7 +77,7 @@ class Dispatcher
 				$this->params[$params[$i]] = $params[$i+1];
 		else
 			$this->params['id'] = $params[0];
-		*/
+		
 
 		// Override the neat URL structure with key=val pairs
 		if(isset($_GET['controller']))

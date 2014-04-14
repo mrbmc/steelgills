@@ -87,7 +87,7 @@ class Login extends Controller {
 	public function twitter_oauth () {
 		if(!empty($_GET['oauth_verifier']) && !empty($_SESSION['oauth_token']) && !empty($_SESSION['oauth_token_secret'])){  
 	    // We've got everything we need  
-			include_once LIB.'/twitteroauth/twitteroauth.php';
+			include_once LIB.'/twitteroauth/twitteroauth/twitteroauth.php';
 			$this->twitter = new TwitterOAuth(Config::TWITTER_APIKEY, Config::TWITTER_APISECRET, $_SESSION['oauth_token'], $_SESSION['oauth_token_secret']);  
 			$access_token = $this->twitter->getAccessToken($_GET['oauth_verifier']); 
 			$twitter_user = $this->twitter->get('account/verify_credentials'); 

@@ -3,9 +3,14 @@ define(['../steelgills'], function($,_) {
 		SG.map = arguments[0];
 		var Divesite = {
 			drawMap: function() {
-				SG.map.center = DivesiteData.marker.point;
-				SG.map.init();
-				SG.map.addMarker(DivesiteData.marker);
+				SG.map.center = {
+					latitude: SG.map_markers[0].latitude,
+					longitude: SG.map_markers[0].longitude
+				};
+				SG.map.init({
+					markers: SG.map_markers,
+					scope: SG.map_scope
+				});
 				SG.map.map.setZoom(11);
 			},
 			loadImages: function() {
@@ -33,6 +38,7 @@ define(['../steelgills'], function($,_) {
 			}
 		}
 		Divesite.drawMap();
+		Divesite.loadImages();
 		return Divesite;
     });
 });

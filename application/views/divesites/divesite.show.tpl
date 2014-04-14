@@ -54,21 +54,24 @@
 <script type="text/javascript">//<![CDATA[
 {literal}
 if(typeof SG == 'undefined') var SG = {};
-var DivesiteData = {
-	id: {/literal}{$DATA.divesite.divesiteid}{literal},
-	title: "{/literal}{$DATA.divesite.title}{literal}",
-	marker: {
-		id: {/literal}{$DATA.divesite.divesiteid}{literal},
-		point:{
-			latitude:{/literal}{$DATA.divesite.latitude}{literal}, 
-			longitude:{/literal}{$DATA.divesite.longitude}{literal}
-			},
-		description:'{/literal}{$DATA.divesite.title}{literal}<br />{/literal}{if $DATA.divesite.city}{$DATA.divesite.city}, {/if}{literal}{/literal}{$DATA.divesite.country}{literal}<br /><small>{/literal}{$DATA.divesite.latitude}{literal} x {/literal}{$DATA.divesite.longitude}{literal}</small>'
-	}
-}
+
 SG.map_key = "{/literal}{$CONFIG.GOOGLE_API_KEY}{literal}";
+SG.map_markers = [{
+	divesiteid: {/literal}{$DATA.divesite.divesiteid}{literal},
+	title: "{/literal}{$DATA.divesite.title}{literal}",
+	latitude:{/literal}{$DATA.divesite.latitude}{literal}, 
+	longitude:{/literal}{$DATA.divesite.longitude}{literal},
+	description:'{/literal}{$DATA.divesite.title}{literal}<br />{/literal}{if $DATA.divesite.city}{$DATA.divesite.city}, {/if}{literal}{/literal}{$DATA.divesite.country}{literal}<br /><small>{/literal}{$DATA.divesite.latitude}{literal} x {/literal}{$DATA.divesite.longitude}{literal}</small>'
+	// marker: {
+	// 	id: {/literal}{$DATA.divesite.divesiteid}{literal},
+	// 	point:{
+	// 		},
+	// 	zoom: 8,
+	// }
+}];
+
 {/literal}
 //]]></script>
 
 
-{include file='footer.tpl' module_js="app/divesite"}
+{include file='footer.tpl' module_js="app/divesite.show"}

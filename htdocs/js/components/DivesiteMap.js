@@ -14,6 +14,7 @@ define(['jquery','underscore','gmaps'], function($,_,gmap) {
 		infoWindow : "0",
 		key: "",
 		map : false,
+		gmap : gmap,
 		mapType : "state",
 		markerLibrary : new Array(),
 		markers : {},
@@ -22,7 +23,7 @@ define(['jquery','underscore','gmaps'], function($,_,gmap) {
 		zoom : 2,
 
 		addMarker: function (m) {
-			// console.log('Add Marker',m);
+			console.log('Add Marker',m);
 			if((m instanceof Object) && this.markerLibrary[m.id]!=undefined) {
 				marker = this.markerLibrary[m.id];
 				m = this.validatePoint(m);
@@ -31,12 +32,13 @@ define(['jquery','underscore','gmaps'], function($,_,gmap) {
 				m = this.validatePoint(m);
 				var markerOptions = { 
 					icon:this.iconImage, 
-					draggable:(("draggable" in m)?m.draggable:false),
+					draggable:( (typeof m.draggable != undefined) ? m.draggable : false),
 					position: m.point,
 					map: this.map,
 					title: m.description,
 				}
 				var marker = new gmap.Marker(markerOptions);
+				console.log('m',markerOptions);
 
 				gmap.event.addListener(marker, 'click', function (event) {
 					for (var i in SG.map.markerLibrary) {
@@ -45,7 +47,7 @@ define(['jquery','underscore','gmaps'], function($,_,gmap) {
 					}
 					this.infowindow.open(SG.map.map);
 		 		});
-				if("draggable" in m) {
+				if(typeof m.draggable != undefined) {
 					gmap.event.addListener(marker, "dragend", function() {
 						this.updateLatLon(this.getPosition());
 						this.infowindow.setPosition(this.getPosition());
@@ -102,7 +104,7 @@ define(['jquery','underscore','gmaps'], function($,_,gmap) {
 						m.point = results[0].geometry.location;
 						//console.log('geocode.complete');
 						marker = SG.map.addMarker(m);
-						if(geocodeCallback != undefined) {
+						if(typeof geocodeCallback !== "undefined") {
 							geocodeCallback(marker);
 						}
 					} else {
@@ -131,8 +133,8 @@ define(['jquery','underscore','gmaps'], function($,_,gmap) {
 				navigationControl: true,
 				navigationControlOptions: {style: gmap.NavigationControlStyle.SMALL},
 		    };
-		    this.map = new gmap.Map(document.getElementById("map_canvas"),mapOptions);
-			this.geocoder = new gmap.Geocoder();
+		    this.map = new this.gmap.Map(document.getElementById("map_canvas"),mapOptions);
+			this.geocoder = new window.google.maps.Geocoder();
 			this.bounds = new gmap.LatLngBounds();
 			if(this.markers.length>0) {
 				this.refreshMarkers();
@@ -141,8 +143,10 @@ define(['jquery','underscore','gmaps'], function($,_,gmap) {
 			} else {
 				//this.refreshBounds();
 			}
-			gmap.event.addListener(SG.map.map, "dragend", function(){SG.map.refreshBounds();});
-			gmap.event.addListener(SG.map.map, "zoom_changed", function(){SG.map.refreshBounds();});
+			if(this.markers.length>1) {
+				gmap.event.addListener(SG.map.map, "dragend", function(){SG.map.refreshBounds();});
+				gmap.event.addListener(SG.map.map, "zoom_changed", function(){SG.map.refreshBounds();});
+			}
 		},
 
 		redraw: function () {

@@ -34,3 +34,9 @@ url=https://github.com/mrbmc/bootstrap.git
 [submodule "htdocs/js/lib/requirejs-plugins"]
 	path = htdocs/js/lib/requirejs-plugins
 	url = https://github.com/millermedeiros/requirejs-plugins.git
+[submodule "htdocs/js/lib/jquery-autocomplete"]
+	path = htdocs/js/lib/jquery-autocomplete
+	url = https://github.com/dyve/jquery-autocomplete.git
+[submodule "htdocs/js/lib/twitter-typeahead"]
+	path = htdocs/js/lib/twitter-typeahead
+	url = https://github.com/twitter/typeahead.js.git
