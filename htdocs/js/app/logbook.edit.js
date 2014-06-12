@@ -56,12 +56,18 @@ define(['../steelgills'], function() {
 		$("#location").typeahead({
 			hint: true,
 			highlight: true,
-			minLength: 1
+			minLength: 1,
+			selected: function () {
+				alert('hello');
+			}
 		},
 		{
 			name: 'divesites',
 			displayKey: 'value',
 			source: findDivesite(divesites)
+		});
+		$("#location").on('change',function(){
+			// $('#fk_divesiteid').val($(this).val);
 		});
 /*
 		$("#location").autocomplete("#",{

@@ -31,7 +31,7 @@
 					<label for="Location">Location</label>
 					<input type="text" id="location" class="text" class="text" name="location" value="{$DATA.dive.location}" style="width:200px;" tabindex="1" />
 					<span class="status"></span>
-					<input type="hidden" name="fk_divesiteid" value="{$DATA.dive.fk_divesiteid}" id="fk_divesiteid" />
+					<input type="text" name="fk_divesiteid" value="{$DATA.dive.fk_divesiteid}" id="fk_divesiteid" />
 				</div>
 	
 				<div class="control-group">
