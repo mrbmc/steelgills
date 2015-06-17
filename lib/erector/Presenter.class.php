@@ -56,9 +56,9 @@ class Presenter
         $this->smarty->template_dir = APP.'/views';
         $this->smarty->compile_dir = $this->smarty->cache_dir = LIB.'/../cache';
         $this->smarty->config_dir = LIB.'/smarty/configs';
-        $this->smarty->caching = !DEBUG;
-        $this->smarty->force_compile = DEBUG;
-        //Debugger::trace($this->smarty);
+        $this->smarty->caching = false;//!DEBUG;
+        $this->smarty->force_compile = false;//DEBUG;
+        Debugger::trace($this->smarty);
 
         $this->validateTemplate();
         $this->smarty->assign('MEDIA', $this->media);
