@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head>
+	<title>Steel Gills</title>
+
+	<link rel="stylesheet" href="/css/screen.min.css"/>
+
+</head>
+<body class="Index-index">
+
+<div id="header">
+    <div class="container">
+        <a href="index.html" class="logo">Steel Gills</a>
+        <ul class="navigation" id="globalnav">
+            <li id="nav_divesites" class=""><a href="/divesites">Dive-sites</a></li>
+            <li id="nav_logbook" class=""><a href="/logbook">Logbook</a></li>
+            <li id="nav_login" class=""><a href="/login" data-modal-src="/login/modal" onclick="$('#signin_form').toggleClass('in');return false;">Log in</a></li>
+            <li id="nav_signup"><a href="/signup">Sign Up</a></li>
+        </ul>
+        <div id="signin_form" class="fade ">
+            <form method="post" action="/login">
+                <input type="hidden" name="referer" value="/" />
+                <div class="row">
+                    <div class="span12">
+                        <fieldset>
+                            <h3>Use Your Social Account</h3>
+                            <p>
+                                <a href="/login/twitter" class="btn twitter">
+                                    <!-- <img src="/images/connect_twitter.png" /> -->Use Twitter</a>
+                                <a href="/login/facebook" class="btn facebook">
+                                    <!-- <img src="/images/connect_facebook.gif" /> -->Use Facebook</a>
+                            </p>
+                            <hr />
+                            <h3>Or Use Your Email</h3>
+                            <div class="control-group">
+                                <div class="control-label">
+                                    <label for="username">Email Or Username</label>
+                                </div>
+                                <div class="controls">
+                                    <input type="text" id="username" name="username" class="input-block-level" tabindex="1" />
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="control-label">
+                                    <label for="password">Password</label>
+                                </div>
+                                <div class="controls">
+                                    <input type="password" id="password" name="password" class="input-block-level" tabindex="1" />
+                                </div>
+                            </div>
+                            <p>
+                                <button class="btn btn-large btn-primary input-block-level" name="btnSubmit" value="Sign In" tabindex="1">Sign In</button>
+                            </p>
+                            <hr />
+                            <p><a href="/profile/pw_reminder">forgot your password?</a></p>
+                            <p>
+                                Not a Member? <a href="/signup">Sign up here.</a>
+                            </p>
+                        </fieldset>
+                    </div>
+                    <div class="span6">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<main>
+	<div class="container home">
+	    <h1>Simple dive logs.<br>Gorgeous dive sites.</h1>
+        <p>
+            <a href="/signup" class="button hot big">Dive In</a>
+        </p>
+	    <div class="row">
+	        <div class="span6 offset3">
+	        </div>
+	    </div>
+	</div>
+</main>
+<!-- /body -->
+
+<div id="footer">
+	<div class="container">
+		<span class="pull-right">&copy;2018 Steel Gills</span>
+	
+		<ul class="navigation" id="footernav">
+			<li id="nav_about"><a href="/about">About</a></li>
+			<li id="nav_contact"><a href="/contact">Contact</a></li>
+					<li id="nav_login"><a href="/login">Log in</a></li>
+			<li id="nav_signup"><a href="/signup">Sign Up</a></li>
+				</ul>
+
+		
+	</div><!-- /.container -->
+</div><!-- /#footer -->
+
+
+<div class="wallpaper"><span class="caption"></span></div>
+
+
+
+<script data-main="/js/app/profile" src="/js/lib/require/require.js"></script>
+<script type="text/javascript">
+// function jsonFlickrApi (data) {
+// 	console.log('jsonFlickrApi',data);
+// 	flickr.onload(data);
+// }
+// var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+// document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+// try {
+// var pageTracker = _gat._getTracker("UA-4173628-3");
+// pageTracker._trackPageview();
+// } catch(err) {}
+
+</script>
+
+
+
+</body>
+</html>
