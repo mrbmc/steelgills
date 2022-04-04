@@ -1,3 +1,0 @@
-define(["../steelgills"], function($,tabs) {
-	
-});
