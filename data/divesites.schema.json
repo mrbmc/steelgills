@@ -1,0 +1,48 @@
+{
+  "$id": "https://www.steelgills.com/divesite.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Divesite",
+  "required": [ "title", "slug" ],
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The divesite's common name."
+    },
+    "slug": {
+      "type": "string",
+      "description": "A URL friendly version of the title."
+    },
+    "description": {
+      "type": "string",
+      "description": "Tell us a little about the divesite."
+    },
+    "city": {
+      "type": "string",
+      "description": "The closest city or common landmark to the divesite."
+    },
+    "country": {
+      "type": "string",
+      "description": "What nation state is the divesite legally located in."
+    },
+    "latitude": {
+      "type": "number",
+      "minimum": -90,
+      "maximum": 90
+    },
+    "longitude": {
+      "type": "number",
+      "minimum": -180,
+      "maximum": 180
+    },
+    "entry": {
+      "type": "string",
+      "description": "The best way to enter the dive (shore or water)."
+    },
+    "depth": {
+      "description": "The recommended recreational limit depth of the dive in meters.",
+      "type": "integer",
+      "minimum": 0
+    }
+  }
+}
