@@ -1,0 +1,25 @@
+{
+  "name": "steelgills",
+  "version": "0.5",
+  "description": "",
+  "main": "js/steelgills.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrbmc/steelgills.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrbmc/steelgills/issues"
+  },
+  "dependencies":{
+    "requirejs": ">=2.3.0"
+  },
+  "homepage": "https://github.com/mrbmc/steelgills#readme"
+}
