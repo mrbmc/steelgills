@@ -1,0 +1,154 @@
+
+/* ----------------------------------------
+Typography
+*/
+// @font-face {
+//     font-family:"Gotham Rounded";
+//     font-weight: 300;
+//     src:url('/css/fonts/GothamRounded-Light.eot');
+//     src:url('/css/fonts/GothamRounded-Light.eot?#iefix') format('embedded-opentype'),
+//         url('/css/fonts/GothamRounded-Light.ttf') format('truetype');
+//     src:url('/css/fonts/GothamRounded-Light.woff') format('woff');
+// }
+// @font-face {
+//     font-family:"Gotham Rounded";
+//     font-weight: 400;
+//     src:url('/css/fonts/GothamRounded-Book.eot');
+//     src:url('/css/fonts/GothamRounded-Book.eot?#iefix') format('embedded-opentype'),
+//         url('/css/fonts/GothamRounded-Book.ttf') format('truetype');
+//     src:url('/css/fonts/GothamRounded-Book.woff') format('woff');
+// }
+// @font-face {
+//     font-family:"Gotham Rounded";
+//     font-weight: 600;
+//     src:url('/css/fonts/GothamRounded-Bold.eot');
+//     src:url('/css/fonts/GothamRounded-Bold.eot?#iefix') format('embedded-opentype'),
+//         url('/css/fonts/GothamRounded-Bold.ttf') format('truetype');
+//     src:url('/css/fonts/GothamRounded-Bold.woff') format('woff');
+// }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+
+@font-family-system:        -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue","HelveticaNeue", Helvetica, sans-serif;
+@font-family-sans-serif:    "Poppins",@font-family-system;
+@font-family-serif:         Georgia, "Times New Roman", Times, serif;
+@font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+
+@font-family-base:        @font-family-sans-serif;
+@font-weight-base:        400;
+@font-weight-bold:        400;
+@font-size-base:          16px;
+@font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
+@font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
+
+@font-size-h1:            floor((@font-size-base * 4.2)); // ~36px
+@font-size-h2:            floor((@font-size-base * 3.2)); // ~30px
+@font-size-h3:            ceil((@font-size-base * 2.1)); // ~24px
+@font-size-h4:            ceil((@font-size-base * 1.25)); // ~18px
+@font-size-h5:            @font-size-base;
+@font-size-h6:            ceil((@font-size-base * 0.85)); // ~12px
+
+//** Unit-less `line-height` for use in components like buttons.
+@line-height-base:        1.428571429; // 20/14
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+@line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
+
+//** By default, this inherits from the `<body>`.
+@headings-font-family:    @font-family-sans-serif;
+@headings-font-weight:    700;
+@headings-line-height:    1.2;
+@headings-color:          inherit;
+
+@display-font-family:     @font-family-sans-serif;
+@display-font-weight:     700;
+
+
+
+.typeset (@face, @weight, @size: 1em, @line: 1.2, @kerning: 0) {
+    font-size: @size;
+    font-family: @face;
+    font-weight: @weight;
+    line-height: @line;
+    letter-spacing: @kerning;
+}
+
+
+// body,div,span,p,dd,dt,dl,li,td,h1,h2,h3 {
+// 	font-family: @baseFontFamily;
+// 	font-weight: @baseFontWeight;
+// 	margin: 0;
+// 	padding: 0;
+// }
+html, body {
+	color: @gray-dark;
+    .typeset(@font-family-base, @font-weight-base, @font-size-base, @line-height-base, 0em);
+}
+
+th,tr,td {
+	color: @brand-primary;
+}
+
+a,a:visited {
+	color: @brand-primary;
+	text-decoration: none;
+}
+
+a:hover,a:visited:hover {
+	color: lighten(@brand-primary, -10%);
+}
+
+h1,h2,h3,h4,h5 {
+	margin:  0 0 0.5em 0;
+}
+h1 {
+    .typeset(@display-font-family, @display-font-weight, @font-size-h1, @headings-line-height, -0.0375em);
+    font-style: italic;
+    text-transform: uppercase;
+    a {
+        font-weight: @display-font-weight;
+    }
+}
+h2 {
+    .typeset(@headings-font-family, @headings-font-weight, @font-size-h2, @headings-line-height, -0.0125em);
+    a {
+        font-weight: @headings-font-weight;
+    }
+}
+h3 {
+    .typeset(@headings-font-family, @headings-font-weight, @font-size-h3, @headings-line-height, 0.25em);
+    text-transform: uppercase;
+    // color: @text-color;
+}
+h4 {
+    .typeset(@headings-font-family, @headings-font-weight, @font-size-h4, @headings-line-height, 0em);
+}
+h5 {
+    .typeset(@headings-font-family, @headings-font-weight, @font-size-h5, @headings-line-height, 0em);
+}
+p,li,dt,dd,blockquote {
+    font-size: 1.25em;
+    line-height: 1.5;
+}
+strong,b {
+    font-weight: @font-weight-bold;
+}
+em {
+    font-style: italic;
+}
+.large {
+    font-size: 1.2em;
+}
+.small {
+    font-size: .8em;
+}
+blockquote {
+    border-left-color: @gray;
+    font-style: italic;
+    font-size: 1.75em;
+}

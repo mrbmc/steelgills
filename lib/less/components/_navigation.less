@@ -1,0 +1,126 @@
+/* @group NAVIGATION */
+ul.navigation {
+    >li {
+        list-style-type: none;
+        display: block;
+        float: left;
+        margin: 0 1px 0 0;
+        >a {
+            display: block;
+            padding: @grid-gutter-width/4 @grid-gutter-width/2;
+        }
+    }
+
+}
+
+
+.pagenav {
+    height: 20px;
+    margin: 5px 0 0 0;
+    border: solid 0px #000;
+    & > li > a {
+        padding: 2px 5px;
+        background: #CCC;
+        #gradient.vertical(#FFF,#CCC);
+        .border-radius(5px);
+    }
+}
+
+
+.tab-content {
+    clear: both;
+    width: 100%;
+    height: auto;
+
+    .tab-pane {
+        display: none;
+        background: @white;
+        // padding: @grid-gutter-width;
+        .box-shadow(@global-shadow);
+        &.active {
+            display: block;
+        }
+    }
+}
+.navigation.segmented,.tabs,.tabs-dummy {
+    height: 2em;
+    margin: 1em 0;
+    li {
+        margin: 0;
+        a {
+            text-transform: uppercase;
+            margin: 0 0 0 1px;
+            padding: .25em .5em;
+            height: 1.5em;
+            line-height: 1.5em;
+            background: transparent;
+            // #gradient.vertical(#f0f0f0,#f0f0f0);
+            .border-radius(0);
+        }
+        &:first-child a {
+            margin: 0;
+            .border-radius(1em 0 0 1em);
+        }
+        &:last-child a {
+            .border-radius(0 1em 1em 0);
+        }
+        &.active a {
+            background: @white;
+            // #gradient.vertical(#FFFFFF,#EEEEEE);
+            color: #666;
+        }
+    }
+}
+.tabs,.tabs-dummy {
+    display: block;
+    clear: none;
+    margin-bottom: 0;
+    li,li:first-child,li:last-child {
+        a {
+            .border-radius(@border-radius-base @border-radius-base 0 0);
+        }
+        &.selected a {
+            background: @white;
+        }
+    }
+}
+
+
+.breadcrumb {
+    list-style-type: none;
+    margin: 0;
+    li {
+        list-style-type: none;
+    }
+    h1 {
+        margin: 0;
+    }
+}
+
+
+.modal.login {
+    width: 25%;
+    min-width: 260px;
+    margin-left: 19%;
+    padding: @grid-gutter-width 2%;
+
+    .row {
+        .span6 {
+            float: none;
+            width: 100%;
+            margin-left: 0;
+        }
+    }
+}
+@media (max-width:768px) {
+    .modal.login {
+        left: inherit;
+        margin-left: inherit;
+        right: 2%;
+    }
+    #globalnav > li > a {
+        padding: .5em;
+    }
+}
+
+/* @end */
