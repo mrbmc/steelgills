@@ -2,6 +2,7 @@ define(['jquery','underscore','gmaps'], function($,_,gmap) {
 	// console.log('google maps is ready',gmap)
 	return {
 		ajaxLoading: false,
+		apibase: "https://kkt5rh62j7.execute-api.us-east-1.amazonaws.com/dev/",
 		baseIcon : {},
 		bounds: {},
 		center : {latitude:30,longitude:-90},
@@ -116,7 +117,7 @@ define(['jquery','underscore','gmaps'], function($,_,gmap) {
 		},
 
 		init: function () {
-			//console.log("SG.map.init",arguments);
+			console.log("SG.map.init",arguments);
 
 			if(typeof arguments != "undefined" && arguments.length>0) {
 				if(typeof arguments[0] === "object")
@@ -124,6 +125,7 @@ define(['jquery','underscore','gmaps'], function($,_,gmap) {
 				else 
 					_.extend(this,arguments[0]);
 			}
+
 		    var mapOptions = {
 				zoom: this.zoom,
 				center: new gmap.LatLng(this.center.latitude,this.center.longitude),
@@ -133,9 +135,11 @@ define(['jquery','underscore','gmaps'], function($,_,gmap) {
 				navigationControl: true,
 				navigationControlOptions: {style: gmap.NavigationControlStyle.SMALL},
 		    };
+
 		    this.map = new this.gmap.Map(document.getElementById("map_canvas"),mapOptions);
 			this.geocoder = new window.google.maps.Geocoder();
 			this.bounds = new gmap.LatLngBounds();
+
 			if(this.markers.length>0) {
 				this.refreshMarkers();
 				//this.map.fitBounds(this.bounds);
@@ -167,7 +171,8 @@ define(['jquery','underscore','gmaps'], function($,_,gmap) {
 			var bounds = this.map.getBounds(),
 				sw = bounds.getSouthWest(),
 				ne = bounds.getNorthEast();
-			url = '/divesites/'+this.scope+'.json?q='+sw.lng() + "," + sw.lat() + "," +ne.lng() + "," + ne.lat();
+			// url = apibase + '/divesites/' + this.scope + '.json?q='+sw.lng() + "," + sw.lat() + "," +ne.lng() + "," + ne.lat();
+			url = apibase + '/divesites/?q='+sw.lng() + "," + sw.lat() + "," +ne.lng() + "," + ne.lat();
 			this.ajaxLoading=true;
 			$.ajax({
 				  url: url,
