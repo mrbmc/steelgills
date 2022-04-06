@@ -1,0 +1,224 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head>
+	<title>Dive Sites - SteelGills.com</title>
+
+	<link rel="stylesheet" href="http://steelgills.com/css/screen.css"/>
+
+</head>
+<body class="Divesites-edit">
+
+<div id="header">
+	<div class="container">
+		<h1 id="logo" class="logo"><a href="http://steelgills.com/">Steel Gills</a></h1>
+		<ul class="navigation" id="globalnav">
+			<li id="nav_divesites" class="active"><a href="http://steelgills.com/divesites">Dive-sites</a></li>
+			<li id="nav_logbook" class=""><a href="http://steelgills.com/logbook">Logbook</a></li>
+					<li id="nav_login" class=""><a href="http://steelgills.com/login" data-modal-src="/login/modal" onclick="$('#signin_form').toggleClass('in');return false;">Log in</a></li>
+			<li id="nav_signup"><a href="http://steelgills.com/signup">Sign Up</a></li>
+				</ul>
+
+	<div id="signin_form" class="fade ">
+	
+	<form method="post" action="http://steelgills.com/login">
+
+	<input type="hidden" name="referer" value="/divesites/edit/" />
+		
+	<div class="row">
+		<div class="span12">
+			<fieldset>
+				<h3>Use Your Social Account</h3>
+				<p>
+					<a href="http://steelgills.com/login/twitter" class="btn twitter"><!-- <img src="/images/connect_twitter.png" /> -->Use Twitter</a>
+					<a href="http://steelgills.com/login/facebook" class="btn facebook"><!-- <img src="/images/connect_facebook.gif" /> -->Use Facebook</a>
+				</p>
+				<hr />
+				<h3>Or Use Your Email</h3>
+				<div class="control-group">
+					<div class="control-label">
+						<label for="username">Email Or Username</label>
+						
+					</div>
+					<div class="controls">
+						<input type="text" id="username" name="username" class="input-block-level" tabindex="1" />
+					</div>
+				</div>
+				<div class="control-group">
+					<div class="control-label">
+						<label for="password">Password</label>
+						
+					</div>
+					<div class="controls">
+						<input type="password" id="password" name="password" class="input-block-level" tabindex="1" />
+					</div>
+				</div>
+				<p>
+					<button class="btn btn-large btn-primary input-block-level" name="btnSubmit" value="Sign In" tabindex="1">Sign In</button>
+				</p>
+				<hr />
+				<p><a href="http://steelgills.com/profile/pw_reminder">forgot your password?</a></p>
+				<p>
+					Not a Member? <a href="http://steelgills.com/signup">Sign up here.</a>
+				</p>
+			</fieldset>
+		</div>
+		<div class="span6">
+		</div>
+
+	</div>
+
+
+
+	</form>
+
+</div>
+
+	</div>
+</div>
+
+
+<div id="body" class="container">
+
+		
+
+
+<h2>Add a divesite</h2>
+<form method="POST" action="http://steelgills.com/divesites/update/" name="myForm" id="myForm">
+<input type="hidden" id="divesiteid" name="divesiteid" value="0" />
+
+<fieldset>
+	<h3>Divesite Info</h3>
+	<div class="control-group">
+		<label for="title">Name</label>
+		<span><input type="text" class="text input-block-level" id="title" name="title" value="" /></span>
+		<span class="status"></span>
+	</div>
+	<div class="control-group">
+		<label for="description">Notes</label>
+		<span><textarea name="description" id="description" class="input-block-level" cols="40" rows="6"></textarea></span>
+		<span class="status"></span>
+	</div>
+	<div class="control-group">
+		<label for="max_depth">Max Depth</label>
+		<span><input type="text" class="text" id="max_depth" name="max_depth" value="0" /></span>
+		<span class="status"></span>
+	</div>
+</fieldset>
+
+<fieldset>
+	<h3>Divesite Location</h3>
+	<div>
+		<label for="city"></label>
+		<p>Type the name of the closest city and country and we'll try to find it on the map.</p>
+	</div>
+
+	<div class="row-fluid">
+		
+		<div class="span6">
+			<div class="control-group">
+				<label for="city">Nearest City</label>
+				<span><input type="text" class="text long" id="city" name="city" value="" /></span>
+				<span class="status"></span>
+			</div>
+		</div>
+
+		
+
+		<div class="span3">
+			<div class="control-group">
+				
+				<label for="latitude">Latitude</label>
+				<span><input type="text" class="text" id="latitude" name="latitude" value="0" /></span>
+				<span class="status"></span>
+			</div>
+		</div>
+		<div class="span3">
+			<div class="control-group">
+				
+				<label for="longitude">Longitude</label>
+				<span><input type="text" class="text" id="longitude" name="longitude" value="0" /></span>
+				<span class="status"></span>
+			</div>
+		</div>
+	</div>
+
+	<p><strong>Tip:</strong> You can drag &amp; drop the pin on the map to mark the precise spot.</p>
+
+	<div class="map" id="map_canvas"></div>
+
+</fieldset>
+
+
+<fieldset>
+	<h3>Special Features</h3>
+	<div style="width:50%" class="left">
+	<div><label for="feature_drift">drift</label><span><input type="checkbox" name="feature_drift" /></span></div>
+	<div><label for="feature_wall">wall</label><span><input type="checkbox" name="feature_wall" /></span></div>
+	<div><label for="feature_swimthrough">swim through</label><span><input type="checkbox" name="feature_swimthrough" /></span></div>
+	<div><label for="feature_mooring">boat mooring</label><span><input type="checkbox" name="feature_mooring" /></span></div>
+	<div><label for="feature_shore">shore dive</label><span><input type="checkbox" name="feature_shore" /></span></div>
+	</div>
+	<div style="width:50%" class="right">
+	</div>
+</fieldset>
+
+
+<fieldset>
+<div>
+	<input type="submit" value="Save" class="button btn-primary" />
+	</div>
+</fieldset>
+
+
+
+</form>
+
+
+
+</div><!-- /body -->
+
+<div id="footer">
+	<div class="container">
+		<span class="pull-right">&copy;2018 Steel Gills</span>
+	
+		<ul class="navigation" id="footernav">
+			<li id="nav_about"><a href="http://steelgills.com/about">About</a></li>
+			<li id="nav_contact"><a href="http://steelgills.com/contact">Contact</a></li>
+					<li id="nav_login"><a href="http://steelgills.com/login">Log in</a></li>
+			<li id="nav_signup"><a href="http://steelgills.com/signup">Sign Up</a></li>
+				</ul>
+
+				
+		
+	</div><!-- /.container -->
+</div><!-- /#footer -->
+
+
+<div class="wallpaper"><span class="caption"></span></div>
+
+
+
+<script data-main="/js/app/divesite.edit" src="http://steelgills.com/js/lib/require/require.js"></script>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-4173628-3");
+pageTracker._trackPageview();
+} catch(err) {}
+
+</script>
+
+
+
+</body>
+</html>
+
+<script type="text/javascript">/*<![CDATA[*/
+if(typeof SG == 'undefined') var SG = {};
+/*]]>*/</script>
