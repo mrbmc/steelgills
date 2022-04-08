@@ -1,6 +1,6 @@
 define(["jquery","cookie"], function($) {
 	return {
-		init:function(){
+		init:function () {
 			$("a",'.tabs').click(function (e) {
 				e.preventDefault();
 				var me = $(this),

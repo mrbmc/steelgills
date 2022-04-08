@@ -3,131 +3,208 @@
 <head>
 	<title>Dive Sites - SteelGills.com</title>
 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
 	<link rel="stylesheet" href="/css/screen.min.css"/>
 
 </head>
 <body class="Divesites-index">
 
-<div id="header">
+<header id="header">
     <div class="container">
-        <a id="logo" class="logo" href="/">Steel Gills</a>
-        <ul class="navigation" id="globalnav">
-            <li id="nav_divesites" class="active"><a href="/divesites">Dive-sites</a></li>
-            <li id="nav_logbook" class=""><a href="/logbook">Logbook</a></li>
-            <li id="nav_login" class=""><a href="/login" data-modal-src="/login/modal" onclick="$('#signin_form').toggleClass('in');return false;">Log in</a></li>
-            <li id="nav_signup"><a href="/signup">Sign Up</a></li>
-        </ul>
+
+        <nav class="global-nav">
+            <a id="logo" class="logo" href="/">Steel Gills</a>
+            <a href="/search">Search</a>
+            <a href="/divesites">Dive-sites</a>
+            <a href="/logbook">Logbook</a>
+        </nav>
+
+        <nav class="user-nav">
+            <a href="/login" data-modal-src="/login/modal" onclick="$('#signin_form').toggleClass('in');return false;">Log in</a>
+            <!-- <a href="/signup">Sign Up</a> -->
+        </nav>
         <div id="signin_form" class="fade ">
             <form method="post" action="/login">
                 <input type="hidden" name="referer" value="/divesites/" />
-                <div class="row">
-                    <div class="span12">
-                        <fieldset>
-                            <h3>Use Your Social Account</h3>
-                            <p>
-                                <a href="/login/twitter" class="btn twitter">
-                                    <!-- <img src="/images/connect_twitter.png" /> -->Use Twitter</a>
-                                <a href="/login/facebook" class="btn facebook">
-                                    <!-- <img src="/images/connect_facebook.gif" /> -->Use Facebook</a>
-                            </p>
-                            <hr />
-                            <h3>Or Use Your Email</h3>
-                            <div class="control-group">
-                                <div class="control-label">
-                                    <label for="username">Email Or Username</label>
-                                </div>
-                                <div class="controls">
-                                    <input type="text" id="username" name="username" class="input-block-level" tabindex="1" />
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <div class="control-label">
-                                    <label for="password">Password</label>
-                                </div>
-                                <div class="controls">
-                                    <input type="password" id="password" name="password" class="input-block-level" tabindex="1" />
-                                </div>
-                            </div>
-                            <p>
-                                <button class="btn btn-large btn-primary input-block-level" name="btnSubmit" value="Sign In" tabindex="1">Sign In</button>
-                            </p>
-                            <hr />
-                            <p><a href="/profile/pw_reminder">forgot your password?</a></p>
-                            <p>
-                                Not a Member? <a href="/signup">Sign up here.</a>
-                            </p>
-                        </fieldset>
+                <fieldset>
+                    <p>
+                        <a href="/login/twitter" class="btn twitter">
+                            <!-- <img src="/images/connect_twitter.png" /> -->Log In With Twitter</a>
+                        <a href="/login/facebook" class="btn facebook">
+                            <!-- <img src="/images/connect_facebook.gif" /> -->Log In With Facebook</a>
+                    </p>
+                    <hr />
+                    <h3>Or Log In With Email</h3>
+                    <div class="control-group">
+                        <div class="control-label">
+                            <label for="username">Email</label>
+                        </div>
+                        <div class="controls">
+                            <input type="text" id="username" name="username" class="input-block-level" tabindex="1" />
+                        </div>
                     </div>
-                    <div class="span6">
+                    <div class="control-group">
+                        <div class="control-label">
+                            <label for="password">Password</label>
+                        </div>
+                        <div class="controls">
+                            <input type="password" id="password" name="password" class="input-block-level" tabindex="1" />
+                        </div>
                     </div>
-                </div>
+                    <p>
+                        <button class="btn btn-large btn-primary input-block-level" name="btnSubmit" value="Sign In" tabindex="1">Log In</button>
+                    </p>
+                    <hr />
+                    <p><a href="/profile/pw_reminder">forgot your password?</a></p>
+                    <p>
+                        Not a Member? <br />
+                        <a href="/signup" class="button">Sign up</a>
+                    </p>
+                </fieldset>
             </form>
         </div>
     </div>
-</div>
-<div id="body" class="container">
-    <div class="row">
+</header>
+
+
+<main id="body" class="container">
+
+    <div class="row" id="page-header">
         <div class="span6">
-            <ul class="navigation tabs pull-left">
-                <li class="active">
-                    <a href="index.html#tab-map" id="tab-link-map" rel="tab_map" title="View As Map">Map</a>
-                </li>
-                <li class="">
-                    <a href="index.html#tab-list" id="tab-link-list" rel="tab_map" title="View As List">List</a>
-                </li>
-            </ul>
+            <h2>Divesites</h2>
         </div>
         <div class="span6">
             <a href="/divesites/edit" class="btn btn-primary pull-right">&plus; add a dive site</a>
         </div>
     </div>
-    <div class="row">
-        <div class="span12">
-            <div class="tab-content">
-                <div class="tab-pane active" id="tab-map">
-                    <div id="map_canvas" class="map"></div>
-                    <div id="consolediv"></div>
-                </div>
-                <div class="tab-pane" id="tab-list">
-                    <ul class="list">
-                        <li class="head">
-                            <span class="ds-title">Name</span>
-                            <span class="ds-location">Location</span>
-                            <span class="ds-geocode">Geocode</span>
-                        </li>
-                        <li class="odd">
-                            <span class="ds-title"><a href="/divesites/show/1">Santa Rosa Wall</a></span>
-                            <span class="ds-location">Cozumel, Mexico</span>
-                            <span class="ds-geocode">20.3349' N x -87.0275' W</span>
-                        </li>
-                    </ul>
-                    <ul class="navigation segmented">
-                        <li class="active selected"><a href="index.html#" class="selected active">1</a></li>
-                        <li><a href="/divesites/index/p/2">2</a></li>
-                        <li><a href="/divesites/index/p/3">3</a></li>
-                        <li><a href="/divesites/index/p/4">4</a></li>
-                        <li><a href="/divesites/index/p/5">5</a></li>
-                        <li><a href="/divesites/index/p/6">6</a></li>
-                        <li><a href="/divesites/index/p/7">7</a></li>
-                        <li><a href="/divesites/index/p/8">8</a></li>
-                        <li><a href="/divesites/index/p/9">9</a></li>
-                        <li><a href="/divesites/index/p/10">10</a></li>
-                    </ul>
-                </div>
-                <div class="clear"></div>
-            </div>
+
+    <div class="row" id="sites-container">
+        <div class="span3">
+            <ul class="divesite-list">
+                <!-- <li class="head">
+                    <span class="ds-title">Name</span>
+                    <span class="ds-location">Location</span>
+                    <span class="ds-geocode">Geocode</span>
+                </li> -->
+                <li class="odd">
+                    <span class="ds-title"><a href="/divesites/#/santa-rosa-wall">Santa Rosa Wall</a></span>
+                    <span class="ds-location">Cozumel, Mexico</span>
+                    <span class="ds-geocode">20.3349' N x -87.0275' W</span>
+                </li>
+                <li class="even">
+                    <span class="ds-title"><a href="/divesites/#/temple-of-doom">Temple of Doom</a></span>
+                    <span class="ds-location">Tulum, Mexico</span>
+                    <span class="ds-geocode">20.2292' N x -87.4573' W</span>
+                </li>
+                <li class="odd">
+                    <span class="ds-title"><a href="/divesites/#/hol-chan">Hol Chan</a></span>
+                    <span class="ds-location">Ambergris, Belize</span>
+                    <span class="ds-geocode">17.8718' N x -87.9756' W</span>
+                </li>
+                <li class="even">
+                    <span class="ds-title"><a href="/divesites/#/eagle-ray-pass">Eagle Ray Pass</a></span>
+                    <span class="ds-location">7 Mile Beach, grand cayman</span>
+                    <span class="ds-geocode">19.361' N x -81.3994' W</span>
+                </li>
+                <li class="odd">
+                    <span class="ds-title"><a href="/divesites/#/sharm-el-sheik atoll">Sharm El-Sheik atoll</a></span>
+                    <span class="ds-location">Sharm El-sheik, Egypt</span>
+                    <span class="ds-geocode">27.9798' N x 34.4531' W</span>
+                </li>
+                <li class="even">
+                    <span class="ds-title"><a href="/divesites/#/galapagos islands">Galapagos Islands</a></span>
+                    <span class="ds-location">Galapagos Islands, Ecuador
+                        &nbsp;</span>
+                    <span class="ds-geocode">-0.823141' N x -91.0967' W</span>
+                </li>
+                <li class="odd">
+                    <span class="ds-title"><a href="/divesites/#/cocos-island">Cocos Island</a></span>
+                    <span class="ds-location">Cocos Island, Costa Rica</span>
+                    <span class="ds-geocode">5.52851' N x -87.0639' W</span>
+                </li>
+                <li class="even">
+                    <span class="ds-title"><a href="/divesites/#/truk-lagoon">Truk Lagoon</a></span>
+                    <span class="ds-location">Chuuk Island, Micronesia</span>
+                    <span class="ds-geocode">7.35293' N x 151.725' W</span>
+                </li>
+                <li class="odd">
+                    <span class="ds-title"><a href="/divesites/#/the-great-blue-hole">The Great Blue Hole</a></span>
+                    <span class="ds-location">Lighthouse Reef, Belize</span>
+                    <span class="ds-geocode">18.5473' N x -87.3715' W</span>
+                </li>
+                <li class="even">
+                    <span class="ds-title"><a href="/divesites/#/the-yongala">The Yongala</a></span>
+                    <span class="ds-location">Great Barrier Reef, Australia</span>
+                    <span class="ds-geocode">-18.8127' N x 147.656' W</span>
+                </li>
+                <li class="odd">
+                    <span class="ds-title"><a href="/divesites/#/red-sea-atoll">Red Sea</a></span>
+                    <span class="ds-location">Eilat, Israel</span>
+                    <span class="ds-geocode">29.4994' N x 34.9585' W</span>
+                </li>
+                <li class="even">
+                    <span class="ds-title"><a href="/divesites/#/ambergris-caye">Ambergris Caye</a></span>
+                    <span class="ds-location">Ambergris Caye, Belize</span>
+                    <span class="ds-geocode">17.9709' N x -87.9016' W</span>
+                </li>
+                <li class="odd">
+                    <span class="ds-title"><a href="/divesites/#/bikini-atoll">Bikini Atoll</a></span>
+                    <span class="ds-location">Bikini Atoll, Marshall Islands</span>
+                    <span class="ds-geocode">7.48094' N x 168.549' W</span>
+                </li>
+                <li class="even">
+                    <span class="ds-title"><a href="/divesites/#/the-maldives">The Maldives</a></span>
+                    <span class="ds-location"></span>
+                    <span class="ds-geocode">-0.639939' N x 73.1607' W</span>
+                </li>
+                <li class="odd">
+                    <span class="ds-title"><a href="/divesites/#/similan-island">Similan Island</a></span>
+                    <span class="ds-location">Surin and Similan Islands, Thailand</span>
+                    <span class="ds-geocode">8.6299' N x 97.6355' W</span>
+                </li>
+                <li class="even">
+                    <span class="ds-title"><a href="/divesites/#/sipadan-island">Sipadan Island</a></span>
+                    <span class="ds-location">Sipadan Island, Malaysian Borneo</span>
+                    <span class="ds-geocode">4.3738' N x 118.655' W</span>
+                </li>
+                <li class="odd">
+                    <span class="ds-title"><a href="/divesites/#/bazaruto-archipelago">Bazaruto Archipelago</a></span>
+                    <span class="ds-location">Bazaruto Archipelago, Mozambique</span>
+                    <span class="ds-geocode">-21.7876' N x 35.4941' W</span>
+                </li>
+                <li class="even">
+                    <span class="ds-title"><a href="/divesites/#/beqa-lagoon">Beqa Lagoon</a></span>
+                    <span class="ds-location">Beqa Island, Fiji</span>
+                    <span class="ds-geocode">-18.3806' N x 178.158' W</span>
+                </li>
+            </ul>
+        </div>
+        <div class="span9">
+            <div id="map_canvas" class="map"></div>
+            <div id="consolediv"></div>
         </div>
     </div>
-    <script type="text/javascript">
-    //<![CDATA[
 
-    if (typeof SG == 'undefined') var SG = {};
-    SG.map_scope = "index";
+    <ul class="navigation segmented">
+        <li class="active selected"><a href="index.html#" class="selected active">1</a></li>
+        <li><a href="/divesites/index/p/2">2</a></li>
+        <li><a href="/divesites/index/p/3">3</a></li>
+        <li><a href="/divesites/index/p/4">4</a></li>
+        <li><a href="/divesites/index/p/5">5</a></li>
+        <li><a href="/divesites/index/p/6">6</a></li>
+        <li><a href="/divesites/index/p/7">7</a></li>
+        <li><a href="/divesites/index/p/8">8</a></li>
+        <li><a href="/divesites/index/p/9">9</a></li>
+        <li><a href="/divesites/index/p/10">10</a></li>
+    </ul>
 
-    //]]>
-    </script>
-</div><!-- /body -->
-<div id="footer">
+</main>
+<!-- /body -->
+
+<footer id="footer">
     <div class="container">
         <span class="pull-right">&copy;2018 Steel Gills</span>
         <ul class="navigation" id="footernav">
@@ -137,23 +214,19 @@
             <li id="nav_signup"><a href="/signup">Sign Up</a></li>
         </ul>
     </div><!-- /.container -->
-</div><!-- /#footer -->
-<div class="wallpaper"><span class="caption"></span></div>
+</footer><!-- /#footer -->
 
-<script data-main="/js/app/divesites" src="/js/lib/require/require.js"></script>
 
 <script type="text/javascript">
-// var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-// document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-// try {
-// var pageTracker = _gat._getTracker("UA-4173628-3");
-// pageTracker._trackPageview();
-// } catch(err) {}
+//<![CDATA[
+
+if (typeof SG == 'undefined') var SG = {};
+SG.map_scope = "index";
+
+//]]>
 </script>
 
-
+<script data-main="/js/app/divesites" src="/js/lib/require/require.min.js"></script>
 
 </body>
 </html>

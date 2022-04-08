@@ -28,12 +28,11 @@ Typography
 // }
 
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 //== Typography
 //
 //## Font, line-height, and color for body text, headings, and more.
-
 
 @font-family-system:        -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue","HelveticaNeue", Helvetica, sans-serif;
 @font-family-sans-serif:    "Poppins",@font-family-system;
@@ -42,7 +41,7 @@ Typography
 
 @font-family-base:        @font-family-sans-serif;
 @font-weight-base:        400;
-@font-weight-bold:        400;
+@font-weight-bold:        700;
 @font-size-base:          16px;
 @font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
 @font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
@@ -60,15 +59,13 @@ Typography
 @line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
 
 //** By default, this inherits from the `<body>`.
-@headings-font-family:    @font-family-sans-serif;
+@headings-font-family:    inherit;
 @headings-font-weight:    700;
 @headings-line-height:    1.2;
 @headings-color:          inherit;
 
 @display-font-family:     @font-family-sans-serif;
 @display-font-weight:     700;
-
-
 
 .typeset (@face, @weight, @size: 1em, @line: 1.2, @kerning: 0) {
     font-size: @size;
@@ -78,15 +75,15 @@ Typography
     letter-spacing: @kerning;
 }
 
-
 // body,div,span,p,dd,dt,dl,li,td,h1,h2,h3 {
 // 	font-family: @baseFontFamily;
 // 	font-weight: @baseFontWeight;
 // 	margin: 0;
 // 	padding: 0;
 // }
+
 html, body {
-	color: @gray-dark;
+	color: @gray-200;
     .typeset(@font-family-base, @font-weight-base, @font-size-base, @line-height-base, 0em);
 }
 
@@ -108,8 +105,6 @@ h1,h2,h3,h4,h5 {
 }
 h1 {
     .typeset(@display-font-family, @display-font-weight, @font-size-h1, @headings-line-height, -0.0375em);
-    font-style: italic;
-    text-transform: uppercase;
     a {
         font-weight: @display-font-weight;
     }
@@ -132,8 +127,8 @@ h5 {
     .typeset(@headings-font-family, @headings-font-weight, @font-size-h5, @headings-line-height, 0em);
 }
 p,li,dt,dd,blockquote {
-    font-size: 1.25em;
-    line-height: 1.5;
+    // font-size: 1.25em;
+    // line-height: 1.5;
 }
 strong,b {
     font-weight: @font-weight-bold;
@@ -148,7 +143,36 @@ em {
     font-size: .8em;
 }
 blockquote {
-    border-left-color: @gray;
+    border-left-color: @gray-500;
     font-style: italic;
     font-size: 1.75em;
+}
+
+
+//PHONES
+@media (max-width: @breakpointPortrait-1) {
+    body {
+        h1,h2,h3,h4,h5 {
+            // margin-bottom: 0.2em;
+        }
+        h1 {
+            font-size: floor((@font-size-base * 3.0));
+        }
+        h2 {
+            font-size: floor((@font-size-base * 2.6));
+        }
+    }
+}
+// TABLETS & DESKTOPS
+@media (min-width: @breakpointPortrait) AND (max-width: @breakpointWidescreen-1) {
+    body {
+        // font-size: 21px;
+    }
+}
+
+// WIDESCREEN & LARGE DESKTOPS
+@media (min-width: @breakpointWidescreen) {
+    body {
+        // font-size: 24px;
+    }
 }

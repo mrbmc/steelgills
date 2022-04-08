@@ -1,11 +1,9 @@
-
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
 <html xmlns="http://www.w3.org/1999/xhtml"> 
 <head>
 	<title>Dive Sites - SteelGills.com</title>
 
-	<link rel="stylesheet" href="http://steelgills.com/css/screen.css"/>
+	<link rel="stylesheet" href="/css/screen.min.css"/>
 
 </head>
 <body class="Divesites-edit">
@@ -14,8 +12,8 @@
 	<div class="container">
 		<h1 id="logo" class="logo"><a href="http://steelgills.com/">Steel Gills</a></h1>
 		<ul class="navigation" id="globalnav">
-			<li id="nav_divesites" class="active"><a href="http://steelgills.com/divesites">Dive-sites</a></li>
-			<li id="nav_logbook" class=""><a href="http://steelgills.com/logbook">Logbook</a></li>
+			<li id="nav_divesites" class="active"><a href="/divesites">Dive-sites</a></li>
+			<li id="nav_logbook" class=""><a href="/logbook">Logbook</a></li>
 					<li id="nav_login" class=""><a href="http://steelgills.com/login" data-modal-src="/login/modal" onclick="$('#signin_form').toggleClass('in');return false;">Log in</a></li>
 			<li id="nav_signup"><a href="http://steelgills.com/signup">Sign Up</a></li>
 				</ul>
@@ -85,7 +83,7 @@
 
 
 <h2>Add a divesite</h2>
-<form method="POST" action="http://steelgills.com/divesites/update/" name="myForm" id="myForm">
+<form method="POST" action="/divesites/update/" name="myForm" id="myForm">
 <input type="hidden" id="divesiteid" name="divesiteid" value="0" />
 
 <fieldset>

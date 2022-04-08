@@ -18,8 +18,11 @@
   "bugs": {
     "url": "https://github.com/mrbmc/steelgills/issues"
   },
-  "dependencies":{
-    "requirejs": ">=2.3.0"
+  "dependencies": {
+    "handlebars": "^4.7.7",
+    "requirejs": ">=2.3.0",
+    "uglify-js": "^3.15.3",
+    "uglifyjs": "^2.4.11"
   },
   "homepage": "https://github.com/mrbmc/steelgills#readme"
 }

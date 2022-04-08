@@ -111,7 +111,7 @@ body {
 }
 
 #body {
-    margin: 1em auto;
+    margin: ~"calc("@navbarHeight~" + 1em)" auto 1em auto;
 }
 
 #sidebar,.sidebar {
@@ -126,15 +126,46 @@ body {
 
 
 #footer {
-    clear: both;
-    background: rgba(255, 255, 255, 0.8);
+    background: @gray-200;
     .container {
-        padding: @grid-gutter-width/2 0;
-        &:after {
-            clear: both;
-            content: "";
-            display: block;
+        display: flex;
+        padding: (@grid-gutter-width) 0;
+        justify-content: space-between;
+        nav {
+            a {
+                display: block;
+            }
         }
     }
+}
+
+//PHONES
+@media (max-width: @breakpointPortrait-1) {
+    #footer {
+        .container {
+            flex-direction: column;
+            nav {
+                margin-top: @spacerVerticalPhone;
+            }
+        }
+    }
+    .row {
+        display: flex;
+        flex-direction: column;
+        [class*="span"] {
+            float: none;
+            width: 100%;
+        }
+    }
+    #body {
+        margin-top: @spacerVerticalPhone;
+    }
+}
+// TABLETS & DESKTOPS
+@media (min-width: @breakpointPortrait) AND (max-width: @breakpointWidescreen-1) {
+}
+
+// WIDESCREEN & LARGE DESKTOPS
+@media (min-width: @breakpointWidescreen) {
 }
 /* @end */

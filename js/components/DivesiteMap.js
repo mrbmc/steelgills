@@ -2,7 +2,8 @@ define(['jquery','underscore','gmaps'], function($,_,gmap) {
 	// console.log('google maps is ready',gmap)
 	return {
 		ajaxLoading: false,
-		apibase: "https://kkt5rh62j7.execute-api.us-east-1.amazonaws.com/dev/",
+		gmapsKey: "AIzaSyC4X3vWcyvm3edkIiTBI0zwwn1Hwxk0fDE",
+		apibase: "https://kkt5rh62j7.execute-api.us-east-1.amazonaws.com/dev",
 		baseIcon : {},
 		bounds: {},
 		center : {latitude:30,longitude:-90},
@@ -24,7 +25,8 @@ define(['jquery','underscore','gmaps'], function($,_,gmap) {
 		zoom : 2,
 
 		addMarker: function (m) {
-			console.log('Add Marker',m);
+			console.log('DivesiteMap.addMarker',m);
+
 			if((m instanceof Object) && this.markerLibrary[m.id]!=undefined) {
 				marker = this.markerLibrary[m.id];
 				m = this.validatePoint(m);
@@ -32,14 +34,13 @@ define(['jquery','underscore','gmaps'], function($,_,gmap) {
 			} else {
 				m = this.validatePoint(m);
 				var markerOptions = { 
-					icon:this.iconImage, 
+					icon: this.iconImage, 
 					draggable:( (typeof m.draggable != undefined) ? m.draggable : false),
 					position: m.point,
 					map: this.map,
 					title: m.description,
 				}
 				var marker = new gmap.Marker(markerOptions);
-				console.log('m',markerOptions);
 
 				gmap.event.addListener(marker, 'click', function (event) {
 					for (var i in SG.map.markerLibrary) {
@@ -141,15 +142,13 @@ define(['jquery','underscore','gmaps'], function($,_,gmap) {
 			this.bounds = new gmap.LatLngBounds();
 
 			if(this.markers.length>0) {
-				this.refreshMarkers();
+				this.redrawMarkers();
 				//this.map.fitBounds(this.bounds);
 				// this.center = this.bounds.getCenter();
-			} else {
-				//this.refreshBounds();
-			}
-			if(this.markers.length>1) {
 				gmap.event.addListener(SG.map.map, "dragend", function(){SG.map.refreshBounds();});
 				gmap.event.addListener(SG.map.map, "zoom_changed", function(){SG.map.refreshBounds();});
+			} else {
+				this.refreshBounds();
 			}
 		},
 
@@ -158,7 +157,7 @@ define(['jquery','underscore','gmaps'], function($,_,gmap) {
 			if(!this.map) {
 				return this.init();
 			}
-			this.refreshMarkers();
+			this.redrawMarkers();
 			this.map.fitBounds(this.bounds);
 		},
 
@@ -168,42 +167,37 @@ define(['jquery','underscore','gmaps'], function($,_,gmap) {
 		refreshBounds: function (args) {
 			// console.log('refreshBounds');
 			if(this.ajaxLoading) return;
-			var bounds = this.map.getBounds(),
-				sw = bounds.getSouthWest(),
-				ne = bounds.getNorthEast();
-			// url = apibase + '/divesites/' + this.scope + '.json?q='+sw.lng() + "," + sw.lat() + "," +ne.lng() + "," + ne.lat();
-			url = apibase + '/divesites/?q='+sw.lng() + "," + sw.lat() + "," +ne.lng() + "," + ne.lat();
-			this.ajaxLoading=true;
-			$.ajax({
-				  url: url,
-				  dataType: 'json',
-				  data: {},
-				  success: function(data) {
-						// SG.map.markers = _.uniq($.merge(SG.map.markers,data));
-						// console.log(SG.map.markers.length);
-						SG.map.markers = data;
-						SG.map.refreshMarkers();
-						SG.map.ajaxLoading=false;
-					}
-				});
+			// var bounds = this.map.getBounds(),
+			// 	ne = bounds.getNorthEast(),
+			// 	sw = bounds.getSouthWest();
+
+			this.loadMarkers(
+				// ne.lat()
+				// ,sw.lat()
+				// ,ne.lng()
+				// ,sw.lng()
+			);
 		},
 
-		refreshMarkers: function () {
-			// console.log('refreshMarkers:'+this.markers.length);
+		redrawMarkers: function () {
+			console.log('DivesiteMap.redrawMarkers:'+this.markers.length,arguments);
 			if(this.markers.length>0) {
 				for(idx in this.markers) {
 					var m = this.markers[idx];
 						m.title = (m.title=="") ? (m.city+', ' + m.country) : m.title;
-						m.info = '<a href="/divesites/show/'+m.divesiteid+'">'+m.title+'</a>';
+						m.info = '<a href="/divesites/#/'+m.slug+'">'+m.title+'</a>';
 						m.info += '<br />';
 						m.info += (m.city!=null) ? m.city+', ' : '';
 						m.info += m.country;
 						//m.info += '<br /><small>'+m.latitude+' x '+m.longitude+'</small>';				
 					if(m.latitude!=undefined && m.longitude!=undefined) {
 						params = {
-							point:{latitude:m.latitude, longitude:m.longitude}, 
-							description:m.info, 
-							id:m.divesiteid 
+							point: {
+								latitude: Number(m.latitude), 
+								longitude: Number(m.longitude)
+							},
+							description:m.info,
+							id:m.slug 
 						}
 						this.addMarker(params);
 					} else if(m.street!=undefined) {
@@ -222,17 +216,43 @@ define(['jquery','underscore','gmaps'], function($,_,gmap) {
 			$("#latitude").val(arr[0].substr(1));
 			$("#longitude").val(arr[1].substr(0,arr[1].length-1));
 		},
+
+		loadMarkers: function (nw,ne,se,sw) {
+			console.log('DivesiteMap.loadMarkers',arguments);
+			// url = apibase + '/divesites/' + this.scope + '.json?q='+sw.lng() + "," + sw.lat() + "," +ne.lng() + "," + ne.lat();
+			url = this.apibase;
+			url += "/divesites/?";
+			url += "&limit=20";
+			url += "&offset=0";
+			// url += sw.lng() + "," + sw.lat() + "," +ne.lng() + "," + ne.lat();
+
+			this.ajaxLoading=true;
+			$.ajax({
+				  url: url,
+				  dataType: 'json',
+				  data: {},
+				  success: function(data) {
+						// SG.map.markers = _.uniq($.merge(SG.map.markers,data));
+						// console.log(SG.map.markers.length);
+						SG.map.markers = data;
+						SG.map.redrawMarkers();
+						SG.map.ajaxLoading=false;
+					}
+				});
+
+		},
 		
 		validatePoint: function (m) {
-				if(m instanceof String) {
-					return this.getGeocode(m);
-				} else if((m instanceof Object) && typeof m.point == 'string') {
-					return this.getGeocode(m);
-				} else if(!(m.point instanceof gmap.LatLng)) {
-					m.point = new gmap.LatLng(m.point.latitude, m.point.longitude);
-				}
-				this.bounds.extend(m.point);
-				return m;
+			console.log('DivesiteMap.validatePoint',m);
+			if(m instanceof String) {
+				return this.getGeocode(m);
+			} else if((m instanceof Object) && typeof m.point == 'string') {
+				return this.getGeocode(m);
+			} else if(!(m.point instanceof gmap.LatLng)) {
+				m.point = new gmap.LatLng(m.point.latitude, m.point.longitude);
+			}
+			this.bounds.extend(m.point);
+			return m;
 		},
 
 	}

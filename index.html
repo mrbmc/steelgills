@@ -2,69 +2,74 @@
 <html xmlns="http://www.w3.org/1999/xhtml"> 
 <head>
 	<title>Steel Gills</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Steel Gills is designed by divers for divers. We bring dive buddies together around beautiful divesites and social connections.">
 
-	<link rel="stylesheet" href="/css/screen.css"/>
+    <link rel="preload" as="style" href="./css/screen.min.css">
+    <link rel="preload" as="script" href="./js/steelgills.js">
+    <link rel="stylesheet" href="/css/screen.min.css"/>
 
 </head>
 <body class="Index-index">
 
-<div id="header">
+<header id="header">
     <div class="container">
-        <a href="index.html" class="logo">Steel Gills</a>
-        <ul class="navigation" id="globalnav">
-            <li id="nav_divesites" class=""><a href="/divesites">Dive-sites</a></li>
-            <li id="nav_logbook" class=""><a href="/logbook">Logbook</a></li>
-            <li id="nav_login" class=""><a href="/login" data-modal-src="/login/modal" onclick="$('#signin_form').toggleClass('in');return false;">Log in</a></li>
-            <li id="nav_signup"><a href="/signup">Sign Up</a></li>
-        </ul>
+
+        <nav class="global-nav">
+            <a id="logo" class="logo" href="/">Steel Gills</a>
+            <a href="/search">Search</a>
+            <a href="/divesites">Dive-sites</a>
+            <a href="/logbook">Logbook</a>
+        </nav>
+
+        <nav class="user-nav">
+            <a href="/login" data-modal-src="/login/modal" onclick="$('#signin_form').toggleClass('in');return false;">Log in</a>
+            <!-- <a href="/signup">Sign Up</a> -->
+        </nav>
         <div id="signin_form" class="fade ">
             <form method="post" action="/login">
-                <input type="hidden" name="referer" value="/" />
-                <div class="row">
-                    <div class="span12">
-                        <fieldset>
-                            <h3>Use Your Social Account</h3>
-                            <p>
-                                <a href="/login/twitter" class="btn twitter">
-                                    <!-- <img src="/images/connect_twitter.png" /> -->Use Twitter</a>
-                                <a href="/login/facebook" class="btn facebook">
-                                    <!-- <img src="/images/connect_facebook.gif" /> -->Use Facebook</a>
-                            </p>
-                            <hr />
-                            <h3>Or Use Your Email</h3>
-                            <div class="control-group">
-                                <div class="control-label">
-                                    <label for="username">Email Or Username</label>
-                                </div>
-                                <div class="controls">
-                                    <input type="text" id="username" name="username" class="input-block-level" tabindex="1" />
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <div class="control-label">
-                                    <label for="password">Password</label>
-                                </div>
-                                <div class="controls">
-                                    <input type="password" id="password" name="password" class="input-block-level" tabindex="1" />
-                                </div>
-                            </div>
-                            <p>
-                                <button class="btn btn-large btn-primary input-block-level" name="btnSubmit" value="Sign In" tabindex="1">Sign In</button>
-                            </p>
-                            <hr />
-                            <p><a href="/profile/pw_reminder">forgot your password?</a></p>
-                            <p>
-                                Not a Member? <a href="/signup">Sign up here.</a>
-                            </p>
-                        </fieldset>
+                <input type="hidden" name="referer" value="/divesites/" />
+                <fieldset>
+                    <p>
+                        <a href="/login/twitter" class="btn twitter">
+                            <!-- <img src="/images/connect_twitter.png" /> -->Log In With Twitter</a>
+                        <a href="/login/facebook" class="btn facebook">
+                            <!-- <img src="/images/connect_facebook.gif" /> -->Log In With Facebook</a>
+                    </p>
+                    <hr />
+                    <h3>Or Log In With Email</h3>
+                    <div class="control-group">
+                        <div class="control-label">
+                            <label for="username">Email</label>
+                        </div>
+                        <div class="controls">
+                            <input type="text" id="username" name="username" class="input-block-level" tabindex="1" />
+                        </div>
                     </div>
-                    <div class="span6">
+                    <div class="control-group">
+                        <div class="control-label">
+                            <label for="password">Password</label>
+                        </div>
+                        <div class="controls">
+                            <input type="password" id="password" name="password" class="input-block-level" tabindex="1" />
+                        </div>
                     </div>
-                </div>
+                    <p>
+                        <button class="btn btn-large btn-primary input-block-level" name="btnSubmit" value="Sign In" tabindex="1">Log In</button>
+                    </p>
+                    <hr />
+                    <p><a href="/profile/pw_reminder">forgot your password?</a></p>
+                    <p>
+                        Not a Member? <br />
+                        <a href="/signup" class="button">Sign up</a>
+                    </p>
+                </fieldset>
             </form>
         </div>
     </div>
-</div>
+</header>
 
 <main>
 	<div class="container home">
@@ -72,47 +77,69 @@
         <p>
             <a href="/signup" class="button hot big">Dive In</a>
         </p>
-	    <div class="row">
-	        <div class="span6 offset3">
-	        </div>
-	    </div>
 	</div>
 </main>
 <!-- /body -->
 
-<div id="footer">
+<footer id="footer">
 	<div class="container">
-		<span class="pull-right">&copy;2018 Steel Gills</span>
-	
-		<ul class="navigation" id="footernav">
-			<li id="nav_about"><a href="/about">About</a></li>
-			<li id="nav_contact"><a href="/contact">Contact</a></li>
-					<li id="nav_login"><a href="/login">Log in</a></li>
-			<li id="nav_signup"><a href="/signup">Sign Up</a></li>
-				</ul>
+        <div>
+            <div class="logo">Steel Gills</div>
+    		<span class="pull-right">&copy;2018 Steel Gills</span>
+        </div>
 
-		
+        <nav>
+            <h4>Menu</h4>
+            <a href="/about">About</a>
+            <a href="/features">Features</a>
+            <a href="/privacy">Privacy</a>
+            <a href="/contact">Contact</a>
+        </nav>
+
+        <nav>
+            <h4>Follow</h4>
+            <a href="/about">Instagram</a>
+            <a href="/features">Twitter</a>
+            <a href="/privacy">YouTube</a>
+        </nav>
+
+        <nav>
+            <h4>Get Started</h4>
+            <a href="/login">Log in</a>
+            <a href="/signup">Sign Up</a>
+        </nav>
+
 	</div><!-- /.container -->
-</div><!-- /#footer -->
+</footer><!-- /#footer -->
 
 
 <div class="wallpaper"><span class="caption"></span></div>
 
+<script type="text/javascript">
+//<![CDATA[
 
+if (typeof SG == 'undefined') var SG = {};
 
-<script data-main="/js/app/profile" src="/js/lib/require/require.js"></script>
+//]]>
+</script>
+
+<script data-main="/js/app/home" src="/js/lib/require/require.js"></script>
+
 <script type="text/javascript">
 // function jsonFlickrApi (data) {
-// 	console.log('jsonFlickrApi',data);
-// 	flickr.onload(data);
+	// console.log('jsonFlickrApi',data);
+	// SG.flickr.onload(data);
+    // var item,src;
+    // for(var i=0,max=data.photos.photo.length;i<max;i++) {
+    //     item = data.photos.photo[i];
+    //     src =   "http://farm"+ item['farm'] +
+    //             ".staticflickr.com/" +
+    //             item['server'] + "/" +
+    //             item['id']+"_"+item['secret']+".jpg";
+    //     item['src'] = src;
+    //     $('.wallpaper').css('background-image','url(' + src + ')');
+    // }
 // }
-// var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-// document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-// try {
-// var pageTracker = _gat._getTracker("UA-4173628-3");
-// pageTracker._trackPageview();
-// } catch(err) {}
-
 </script>
 
 

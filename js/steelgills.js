@@ -10,6 +10,13 @@ requirejs.config({
 		,cookie: "jquery-cookie/jquery.cookie"
 		,autocomplete: "jquery-autocomplete/src/jquery.autocomplete"
 		,typeahead: "twitter-typeahead/dist/typeahead.jquery"
+        // ,EventEmitter: 'bower_components/event-emitter/dist/EventEmitter'
+        // ,GA: 'bower_components/requirejs-google-analytics/dist/GoogleAnalytics'
+    },
+    config: {
+		'GA': {
+			'id' : 'UA-4173628-3'
+		}
     },
     shim: {
         'jquery': 				{ exports: "$" },

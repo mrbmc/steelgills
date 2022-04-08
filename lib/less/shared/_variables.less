@@ -14,43 +14,44 @@
 @brand-danger:          #ec008c;
 @brand-error: 			@brand-danger;
 
-@gray-darker:            hsl(hue(@brand-primary), 50%, 13.5%);
-@gray-dark:              hsl(hue(@brand-primary), 30%, 20%);
-@gray:                   hsl(hue(@brand-primary), 20%, 50%);
-@gray-light:             hsl(hue(@brand-primary), 10%, 80%);
-@gray-lighter:           hsl(hue(@brand-primary), 5%, 93.5%);
+@black: 				hsl(hue(@brand-primary), 80%, 5%);;
+@gray-100:            	hsl(hue(@brand-primary), 50%, 13.5%);
+@gray-200:              hsl(hue(@brand-primary), 30%, 20%);
+@gray-500:              hsl(hue(@brand-primary), 20%, 50%);
+@gray-800:              hsl(hue(@brand-primary), 10%, 80%);
+@gray-900:           	hsl(hue(@brand-primary), 5%, 93.5%);
 @white:                 #FFFFFF;
 
-@blue-surface:          hsl(195, 50%, 93%);
+@blue-surface:          hsl(195, 30%, 94%);
 @blue-shallow:          hsl(200, 66%, 77%);
-@blue-deep:             hsl(205, 80%, 30%);
+@blue-dive: 			hsl(200, 75%, 50%);
+@blue-deep:             hsl(205, 83%, 30%);
 @blue-abyss:            hsl(210, 100%, 13%);
 
 @facebook: #3b5998;
 @twitter: #55ACEE;
-
 
 @global-shadow:         0 1px 4px rgba(0,0,0,0.1);
 
 
 // Scaffolding
 // -------------------------
-@body-bg:        @blue-surface;
-@text-color:             @gray-dark;
-@text-bold-color:         @gray-darker;
-@text-disabled-color:         	@gray;
+@body-bg:        			@gray-900;
+@text-color:             	@gray-200;
+@text-bold-color:         	@gray-100;
+@text-disabled-color:       @gray-500;
 
 // Links
 // -------------------------
-@link-color:             @brand-primary;
-@link-hover-color:        lighten(@link-color, 10%);
+@link-color:             	@brand-primary;
+@link-hover-color:        	lighten(@link-color, 10%);
 
 
 // Navbar
 // -------------------------
-@navbarBackground:                @body-bg;
+@navbarBackground:                @white;
 @navbarBackgroundHighlight:       transparent;
-@navbarBorder:                    solid 0 0 2px 0 @gray-darker;
+@navbarBorder:                    solid 0 0 2px 0 @gray-100;
 
 @navbarText:                      @text-color;
 @navbarLinkColor:                 @text-bold-color;
@@ -63,36 +64,7 @@
 
 
 //== Typography
-//
-//## Font, line-height, and color for body text, headings, and more.
-
-@font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
-@font-family-serif:       Georgia, "Times New Roman", Times, serif;
-//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
-@font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
-@font-family-base:        @font-family-sans-serif;
-
-@font-size-base:          16px;
-@font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
-@font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
-
-@font-size-h1:            floor((@font-size-base * 2.6)); // ~36px
-@font-size-h2:            floor((@font-size-base * 2.15)); // ~30px
-@font-size-h3:            ceil((@font-size-base * 1.7)); // ~24px
-@font-size-h4:            ceil((@font-size-base * 1.25)); // ~18px
-@font-size-h5:            @font-size-base;
-@font-size-h6:            ceil((@font-size-base * 0.85)); // ~12px
-
-//** Unit-less `line-height` for use in components like buttons.
-@line-height-base:        1.428571429; // 20/14
-//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
-@line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
-
-//** By default, this inherits from the `<body>`.
-@headings-font-family:    inherit;
-@headings-font-weight:    500;
-@headings-line-height:    1.1;
-@headings-color:          inherit;
+// moved to @_type.less
 
 
 //-- Iconography
@@ -188,7 +160,7 @@
 @btn-danger-bg:                  @brand-danger;
 @btn-danger-border:              darken(@btn-danger-bg, 5%);
 
-@btn-link-disabled-color:        @gray-light;
+@btn-link-disabled-color:        @gray-800;
 
 
 //== Forms
@@ -198,10 +170,10 @@
 //** `<input>` background color
 @input-bg:                       #fff;
 //** `<input disabled>` background color
-@input-bg-disabled:              @gray-lighter;
+@input-bg-disabled:              @gray-900;
 
 //** Text color for `<input>`s
-@input-color:                    @gray;
+@input-color:                    @gray-500;
 //** `<input>` border color
 @input-border:                   #ccc;
 //** `<input>` border radius
@@ -210,7 +182,7 @@
 @input-border-focus:             #66afe9;
 
 //** Placeholder text color
-@input-color-placeholder:        @gray-light;
+@input-color-placeholder:        @gray-800;
 
 //** Default `.form-control` height
 @input-height-base:              (@line-height-computed + (@padding-base-vertical * 2) + 2);
@@ -219,11 +191,11 @@
 //** Small `.form-control` height
 @input-height-small:             (floor(@font-size-small * @line-height-small) + (@padding-small-vertical * 2) + 2);
 
-@legend-color:                   @gray-dark;
+@legend-color:                   @gray-200;
 @legend-border-color:            #e5e5e5;
 
 //** Background color for textual input addons
-@input-group-addon-bg:           @gray-lighter;
+@input-group-addon-bg:           @gray-900;
 //** Border color for textual input addons
 @input-group-addon-border-color: @input-border;
 
@@ -242,9 +214,9 @@
 @dropdown-divider-bg:            #e5e5e5;
 
 //** Dropdown link text color.
-@dropdown-link-color:            @gray-dark;
+@dropdown-link-color:            @gray-200;
 //** Hover color for dropdown links.
-@dropdown-link-hover-color:      darken(@gray-dark, 5%);
+@dropdown-link-hover-color:      darken(@gray-200, 5%);
 //** Hover background for dropdown links.
 @dropdown-link-hover-bg:         #f5f5f5;
 
@@ -254,10 +226,10 @@
 @dropdown-link-active-bg:        @component-active-bg;
 
 //** Disabled dropdown menu item background color.
-@dropdown-link-disabled-color:   @gray-light;
+@dropdown-link-disabled-color:   @gray-800;
 
 //** Text color for headers within dropdown menus.
-@dropdown-header-color:          @gray-light;
+@dropdown-header-color:          @gray-800;
 
 // Note: Deprecated @dropdown-caret-color as of v3.1
 @dropdown-caret-color:           #000;
@@ -320,12 +292,31 @@
 //** Number of columns in the grid.
 @grid-columns:              12;
 //** Padding between columns. Gets divided in half for the left and right.
-@grid-gutter-width:         30px;
+@grid-gutter-width:         10vw;
 // Navbar collapse
 //** Point at which the navbar becomes uncollapsed.
 @grid-float-breakpoint:     @screen-sm-min;
 //** Point at which the navbar begins collapsing.
 @grid-float-breakpoint-max: (@grid-float-breakpoint - 1);
+
+@gridColumns:             @grid-columns;
+@fluidGridGutterWidth:    @grid-gutter-width;
+@fluidGridWidth: 		  100vw - @fluidGridGutterWidth - @fluidGridGutterWidth;
+@fluidGridColumnWidth:    ((@fluidGridWidth - ((@gridColumns - 1)*@fluidGridGutterWidth)) / @gridColumns);
+
+@spacerHorizontal: 		  (@fluidGridGutterWidth / 2);
+@spacerHorizontalPhone:   @spacerHorizontal;
+@spacerVertical: 		  10vh;
+@spacerVerticalPhone: 	  1rem;
+
+@breakpointWidescreen: 1441px;
+@breakpointWidescreen-1: 1440px;
+@breakpointDesktop: 961px;
+@breakpointDesktop-1: @breakpointDesktop - 1;
+@breakpointPortrait: 769px;
+@breakpointPortrait-1: 768px;
+@breakpointPhone: 480px;
+
 
 
 //== Navbar
@@ -365,12 +356,12 @@
 
 // Inverted navbar
 // Reset inverted navbar basics
-@navbar-inverse-color:                      @gray-light;
+@navbar-inverse-color:                      @gray-800;
 @navbar-inverse-bg:                         #222;
 @navbar-inverse-border:                     darken(@navbar-inverse-bg, 10%);
 
 // Inverted navbar links
-@navbar-inverse-link-color:                 @gray-light;
+@navbar-inverse-link-color:                 @gray-800;
 @navbar-inverse-link-hover-color:           #fff;
 @navbar-inverse-link-hover-bg:              transparent;
 @navbar-inverse-link-active-color:          @navbar-inverse-link-hover-color;
@@ -395,20 +386,20 @@
 
 //=== Shared nav styles
 @nav-link-padding:                          10px 15px;
-@nav-link-hover-bg:                         @gray-lighter;
+@nav-link-hover-bg:                         @gray-900;
 
-@nav-disabled-link-color:                   @gray-light;
-@nav-disabled-link-hover-color:             @gray-light;
+@nav-disabled-link-color:                   @gray-800;
+@nav-disabled-link-hover-color:             @gray-800;
 
 @nav-open-link-hover-color:                 #fff;
 
 //== Tabs
 @nav-tabs-border-color:                     #ddd;
 
-@nav-tabs-link-hover-border-color:          @gray-lighter;
+@nav-tabs-link-hover-border-color:          @gray-900;
 
 @nav-tabs-active-link-hover-bg:             @body-bg;
-@nav-tabs-active-link-hover-color:          @gray;
+@nav-tabs-active-link-hover-color:          @gray-500;
 @nav-tabs-active-link-hover-border-color:   #ddd;
 
 @nav-tabs-justified-link-border-color:            #ddd;
@@ -429,14 +420,14 @@
 @pagination-border:                    #ddd;
 
 @pagination-hover-color:               @link-hover-color;
-@pagination-hover-bg:                  @gray-lighter;
+@pagination-hover-bg:                  @gray-900;
 @pagination-hover-border:              #ddd;
 
 @pagination-active-color:              #fff;
 @pagination-active-bg:                 @brand-primary;
 @pagination-active-border:             @brand-primary;
 
-@pagination-disabled-color:            @gray-light;
+@pagination-disabled-color:            @gray-800;
 @pagination-disabled-bg:               #fff;
 @pagination-disabled-border:           #ddd;
 
@@ -463,7 +454,7 @@
 
 @jumbotron-padding:              30px;
 @jumbotron-color:                inherit;
-@jumbotron-bg:                   @gray-lighter;
+@jumbotron-bg:                   @gray-900;
 @jumbotron-heading-color:        inherit;
 @jumbotron-font-size:            ceil((@font-size-base * 1.5));
 
@@ -541,7 +532,7 @@
 //##
 
 //** Default label background color
-@label-default-bg:            @gray-light;
+@label-default-bg:            @gray-800;
 //** Primary label background color
 @label-primary-bg:            @brand-primary;
 //** Success label background color
@@ -675,7 +666,7 @@
 @panel-inner-border:          #ddd;
 @panel-footer-bg:             #f5f5f5;
 
-@panel-default-text:          @gray-dark;
+@panel-default-text:          @gray-200;
 @panel-default-border:        #ddd;
 @panel-default-heading-bg:    #f5f5f5;
 
@@ -734,7 +725,7 @@
 @badge-color:                 #fff;
 //** Linked badge text color on hover
 @badge-link-hover-color:      #fff;
-@badge-bg:                    @gray-light;
+@badge-bg:                    @gray-800;
 
 //** Badge text color in active nav link
 @badge-active-color:          @link-color;
@@ -757,7 +748,7 @@
 //** Breadcrumb text color
 @breadcrumb-color:              #ccc;
 //** Text color of current page in the breadcrumb
-@breadcrumb-active-color:       @gray-light;
+@breadcrumb-active-color:       @gray-800;
 //** Textual separator for between breadcrumb elements
 @breadcrumb-separator:          "/";
 
@@ -799,7 +790,7 @@
 @kbd-bg:                      #333;
 
 @pre-bg:                      #f5f5f5;
-@pre-color:                   @gray-dark;
+@pre-color:                   @gray-200;
 @pre-border-color:            #ccc;
 @pre-scrollable-max-height:   340px;
 
@@ -809,17 +800,17 @@
 //##
 
 //** Text muted color
-@text-muted:                  @gray-light;
+@text-muted:                  @gray-800;
 //** Abbreviations and acronyms border color
-@abbr-border-color:           @gray-light;
+@abbr-border-color:           @gray-800;
 //** Headings small color
-@headings-small-color:        @gray-light;
+@headings-small-color:        @gray-800;
 //** Blockquote small color
-@blockquote-small-color:      @gray-light;
+@blockquote-small-color:      @gray-800;
 //** Blockquote border color
-@blockquote-border-color:     @gray-lighter;
+@blockquote-border-color:     @gray-900;
 //** Page header border color
-@page-header-border-color:    @gray-lighter;
+@page-header-border-color:    @gray-900;
 
 
 //== Miscellaneous
@@ -827,7 +818,7 @@
 //##
 
 //** Horizontal line color.
-@hr-border:                   @gray-lighter;
+@hr-border:                   @gray-900;
 
 //** Horizontal offset for forms and lists.
 @component-offset-horizontal: 180px;

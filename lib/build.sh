@@ -1,7 +1,7 @@
 #!/bin/bash
 
 css=0
-javascript=0
+javascript=1
 services=0
 version=3.1.4
 
@@ -19,6 +19,7 @@ while getopts 'scj?' OPTION
 shift $(($OPTIND - 1))
 
 
+echo "Compilng CSS";
 if [ $css = "1" ];
 then
 	echo "minifying web/screen.css"
@@ -27,20 +28,25 @@ then
 	java -jar ./bin/yuicompressor-2.4.2.jar --type css ./htdocs/css/mobile.css > ./htdocs/css/mobile.min.css
 fi
 
+echo "Compilng Javascript";
 if [ $javascript = "1" ];
 then
-	echo "minifying jquery.js"
-	java -jar ./bin/yuicompressor-2.4.2.jar --type js --nomunge ./htdocs/js/jquery.js > ./htdocs/js/common.min.js
-	echo "minifying common.js"
-	java -jar ./bin/yuicompressor-2.4.2.jar --type js --nomunge ./htdocs/js/common.js >> ./htdocs/js/common.min.js
-	echo "minifying maps.js"
-	java -jar ./bin/yuicompressor-2.4.2.jar --type js --nomunge ./htdocs/js/SGMap.js > ./htdocs/js/SGMap.min.js
-	echo "minifying jquery.validation.js"
-	java -jar ./bin/yuicompressor-2.4.2.jar --type js --nomunge ./htdocs/js/jquery.validation.js > ./htdocs/js/jquery.validation.min.js
+	# echo "minifying jquery.js"
+	# java -jar ./bin/yuicompressor-2.4.2.jar --type js --nomunge ./htdocs/js/jquery.js > ./htdocs/js/common.min.js
+	# echo "minifying common.js"
+	# java -jar ./bin/yuicompressor-2.4.2.jar --type js --nomunge ./htdocs/js/common.js >> ./htdocs/js/common.min.js
+	# echo "minifying maps.js"
+	# java -jar ./bin/yuicompressor-2.4.2.jar --type js --nomunge ./htdocs/js/SGMap.js > ./htdocs/js/SGMap.min.js
+	# echo "minifying jquery.validation.js"
+	# java -jar ./bin/yuicompressor-2.4.2.jar --type js --nomunge ./htdocs/js/jquery.validation.js > ./htdocs/js/jquery.validation.min.js
+	# echo "minifying password strength meter.js"
+	# java -jar ./bin/yuicompressor-2.4.2.jar --type js --nomunge ./htdocs/js/passwordStrengthMeter.js >> ./htdocs/js/jquery.validation.min.js
+
 	echo "minifying password strength meter.js"
 	java -jar ./bin/yuicompressor-2.4.2.jar --type js --nomunge ./htdocs/js/passwordStrengthMeter.js >> ./htdocs/js/jquery.validation.min.js
 fi
 
+echo "Compilng Services";
 if [ $services = "1" ];
 then
 	echo "clearing services.js"
